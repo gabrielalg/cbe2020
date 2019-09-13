@@ -291,5 +291,9 @@ footer {
   }
 
   .sponsor-logo {
-    width: 200px;
+    width: 100%;
+  }
+
+  .glide__slide {
+      background-color: coral;
   }
