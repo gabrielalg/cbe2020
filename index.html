@@ -56,7 +56,9 @@
     <!-- External Links -->
     <link rel="stylesheet" type="text/css" href="assets/normalize.css" />
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton:400,700|Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
@@ -67,50 +69,129 @@
 
 <body>
 
-        <header>
+        <header class="nav">
 
             <div>
 
-                 <img src="assets/img/logo cbe 2020.png" />
+                 <img class="logo-img" src="assets/img/logo cbe 2020.png" />
+
+                 <span class="container-logo"></span>
 
             </div>
 
-            <nav class="menu">
-                <ul>
-                    <li> <a> About </a> </li>
-                    <li> <a> Program </a> </li>
-                    <li> <a> Logistics </a> </li>
-                    <li> <a> Awards & Travel Support </a> </li>
-                    <li> <a> Registration & Submission </a> </li>
+            <nav>
+                <ul class="menu">
+                    <li> <a class="menu-item flex"> About <img src="assets/icons/seta-menu.svg"/></a> </li>
+                    <li> <a class="menu-item"> Program </a> </li>
+                    <li> <a class="menu-item"> Logistics </a> </li>
+                    <li> <a class="menu-item"> Awards & Travel Support </a> </li>
+                    <li> <a class="menu-item border-menu-item"> Registration & Submission </a> </li>
                 </ul>
             </nav>
+
         </header>
 
         <section>
 
-            <div>
-                <h1>
-                    7th International Symposium on
-                    Chemosynthesis-Based Ecosystems
-                    <span>Guarujá, Brazil </span>
-                </h1>
+            <div class="banner-img">
+
+                <div class="overlay">
+
+                    <div class="page-title-wrap">
+                        <h1 class="page-title">
+                            <span>7th International Symposium on</span>
+                            <span>Chemosynthesis-Based Ecosystems </span>
+                        </h1>    
+                        <p class="page-title-sub">Guarujá, Brazil </p>
+                    </div>
+
+                </div>
             </div>
 
-            <div>
-                <div>
+            <div class="banner-bottom-bar">
+                <div class="banner-bottom-item">
+                    <img src="assets/icons/placeholder.svg" />
                     <h2> Guarujá - SP, Brazil </h2>   
                 </div>
-                <div>
+                <div class="banner-bottom-item">
+                    <img src="assets/icons/calendar-2.svg" />
                     <h2> 23-28 August 2020 </h2>
                 </div>
-                <div>
-                    <h2> Registration until 30 June 2020 </h2>
+                <div class="banner-bottom-item">
+                    <img src="assets/icons/alarm-clock.svg" />
+                    <h2> Registration until <br> 30 June 2020 </h2>
                 </div>
             </div>
 
         </section>
 
-        <section></section>
+
+        <section class="container flex">
+
+            <div class="flex intro-content">
+
+                <h2 class="page-h2"><span>What is CBE?</span></h2>
+                <p>We would like to invite you for the 7th International
+                    Symposium on Chemosynthesis-Based Ecosystems (CBE7), 
+                    to be held between <strong>23-28 August 2020</strong> in Brazil.
+                    CBE7 represents the 7th iteration of a successful symposium series,
+                    that has already taken place in Europe (Portugal, France), 
+                    North America (United States and Canada), and Asia (Japan). 
+                    It is the premier meeting for scientists, explorers, managers, 
+                    policymakers, industry specialists and students to exchange ideas 
+                    and share knowledge of advances on chemosynthesis-based ecosystems.
+                    We are looking forward to offering you and spending with you
+                    a very productive and pleasant week in Guarujá, 
+                    on the north coast of São Paulo state.</p>
+
+                    <button>Read More</button>
+
+                </div>
+       
+            <div style="margin-left: 35px;">
+                <div class="circle-img">
+                    <img class="intro-img" src="assets/img/fotos mar/cbe4.jpg" />
+                </div>
+             </div>
+
+        </section>
+
+        <section class="container">
+
+            <h2 class="page-h2"><span>Important Dates</span></h2>
+
+        </section>
+
+
+        <section class="container">
+
+            <h2 class="page-h2"><span>Sponsors</span></h2>
+
+            <div>
+                <img class="sponsor-logo" src="assets/img/Logos_CBE7/logo_DOSI.png"/>
+                <img class="sponsor-logo" src="assets/img/Logos_CBE7/logo_IOUSP.png"/>
+                <img class="sponsor-logo" src="assets/img/Logos_CBE7/logo_Interridge.jpeg"/>
+                <img class="sponsor-logo" src="assets/img/Logos_CBE7/logo_USP.png"/>
+            </div>
+
+        </section>
+
+        <footer>
+
+            <nav>
+                <p>Navigation Map</p>
+                <ul class="">
+                    <li> <a class=""> About </a> </li>
+                    <li> <a class=""> Program </a> </li>
+                    <li> <a class=""> Logistics </a> </li>
+                    <li> <a class=""> Awards & Travel Support </a> </li>
+                    <li> <a class=""> Registration & Submission </a> </li>
+                </ul>
+            </nav>
+
+            <img src="assets/img/logo-cbe-branco.svg" />
+
+        </footer>
 
 
 </body>
