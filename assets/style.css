@@ -379,10 +379,6 @@ footer p {
     text-align: center;
   }
 
-  .calendar-date {
-      /* justify-content: space-around; */
-  }
-
   .calendar-date p:first-child {
       background-color: #DEDEDE;
       font-size: 18px;
