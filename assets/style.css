@@ -31,10 +31,6 @@ header {
     display: flex;
 }
 
-nav {
-    flex: 1;
-}
-
 button {
     background-color: transparent;
     border-style: solid;
@@ -44,6 +40,18 @@ button {
 
 footer {
     background-color: #1B1740;
+    color: #fff;
+    font-size: 16px;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #fff;
+  }
+
+footer p {
+    margin: 0;
 }
 
 .menu {
@@ -135,18 +143,39 @@ footer {
 }
 
 .banner-img {
-    background-image: url('img/fotos mar/cbe2.jpg');
+    /* background-image: url('img/fotos mar/cbe2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    /* position: relative;
+    height: 100%; */
+    /* width: 100%; */
+
+}
+
+.banner p {
+    position: absolute;
+    color:#fff;
+    bottom: 0;
+    font-size: 12px;
+    margin: 10px 20px;
+    max-width: 250px;
+    /* background-color:rgba(0, 0, 0, 0.25); */
+    background-image: radial-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0));
+    padding: 5px;
+    line-height: 16px;
+    text-shadow: 1px 1px 1px black;
 }
 
 .overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0));
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .page-title-wrap {
@@ -165,7 +194,7 @@ footer {
 }
 
 .page-title span {
-    background-color: #1B1740;
+    background-color: rgba(27, 23, 64, 0.8);
     padding: 15px;
     display: table;
     margin: 0 auto;
@@ -181,7 +210,7 @@ footer {
 }
 
 .page-title-sub {
-    background-color: #851C22;
+    background-color: rgba(133, 28, 33, 0.8);
     font-size: 24px;
     font-weight: 600;
     margin: 0;
@@ -192,16 +221,17 @@ footer {
 
 .banner-bottom-bar {
     background: #1B1740;
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 0 5%;
 }
 
 .banner-bottom-item {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .banner-bottom-item img {
@@ -210,7 +240,7 @@ footer {
 }
 
 .banner-bottom-item h2 {
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     line-height: 30px;
@@ -243,7 +273,7 @@ footer {
 
   .container {
     padding: 70px 10%;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 
   .circle-img {
@@ -259,7 +289,12 @@ footer {
     width: auto;
     height: 350px;
     position: relative;
-    left: -50%;
+    left: -7%;
+  }
+
+  .intro-img-sub {
+    font-size: 12px;
+    text-align: center;
   }
 
   .flex {
@@ -286,14 +321,242 @@ footer {
     align-self: center;
   }
 
-  footer img {
+  .intro-content button:hover {
+    color: #fff;
+    background-color: #851C22;
+  }
+
+  .footer-logo {
     width: 250px;
   }
 
   .sponsor-logo {
-    width: 100%;
+    width: 100%;  
+    max-width: 200px;
   }
 
-  .glide__slide {
-      background-color: coral;
+  .calendar {
+    justify-content: space-between;
+
   }
+
+  .calendar-sub span {
+    background-color: #851C22;
+    padding: 13px 60px;
+    padding-bottom: 10px;
+    /* padding-top: 2px; */
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    line-height: 0;
+    font-weight: 700;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  .calendar-months {
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    margin-top: 10px;
+  }
+
+  .calendar-month {
+     border-style: solid;
+     border-width: 2px;
+     border-color: #1B1740;
+     margin: 20px;
+     flex: 1;
+     min-width: 300px;
+  }
+
+  .calendar-month h4 {
+    background-color: #1B1740;
+    padding: 10px 20px ;
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .calendar-date {
+      /* justify-content: space-around; */
+  }
+
+  .calendar-date p:first-child {
+      background-color: #DEDEDE;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 20px;
+      margin: 0;
+  }
+
+  .calendar-date p:last-child {
+      margin: auto 10px;
+  }
+
+  .sponsors {
+    margin-bottom: 70px !important;
+    margin-top: 40px;
+  }
+
+  .location-img {
+    width: 20px;
+  }
+
+  .footer-menu {
+    padding: 0;
+    line-height: 30px;
+  }
+
+  .location-name {
+    margin-bottom: 20px !important;
+  }
+
+  .location-name::before {
+    background-image: url('icons/placeholder-fill.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    width: 18px;
+    height: 18px;
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    bottom: -3px;
+    position: relative;
+  }
+
+  /* .location .location-item:last-of-type {
+      margin-top: 40px;
+  } */
+
+  .location-item {
+    padding-right: 50px;
+    line-height: 24px;
+  }
+
+  .location-item p:nth-child(2), .location-item p:first-of-type {
+      margin-bottom: 10px;
+  }
+
+  .email {
+    margin-top: 40px;
+  }
+
+  .email::before {
+    background-image: url('icons/email.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    width: 18px;
+    height: 18px;
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    bottom: -3px;
+    position: relative;
+  }
+ 
+
+  /* .calendar-month .calendar-date:first-of-type {
+    border-bottom-style: solid;
+    border-width: 2px;
+  } */
+
+/* ------------------- GLIDE */
+/* 
+.glide-sponsors {
+    margin-bottom: 30px;
+}
+
+.glide__slides {
+    align-items: center;
+}
+
+.glide__slide {
+    background-color: coral;
+    text-align: center;
+}
+
+.glide__bullets {
+    bottom: -10px !important;
+}
+
+.glide__bullet {
+    border-color:#1B1740 !important;
+    border-width: 1px !important;
+}
+
+.glide__bullet--active {
+    background-color: #1B1740 !important;
+}
+
+.slides-banner {
+    margin: 0;
+    height: 80vh;
+}
+
+.slide-banner {
+    position: relative;
+    overflow: hidden;
+    
+} */
+
+/* --------- SLICK */
+
+.banner .slick-slide {
+    height: 85vh ;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsors .slick-slide {
+    align-items: center;
+    /* background-color: #851C22; */
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1000 ;
+    width: 40px;
+    height: 40px;
+}
+
+.slick-prev::before, .slick-next::before {
+
+    font-size: 40px ;
+    opacity: .1;
+}
+
+.slick-prev {
+    left: 20px ;
+}
+
+.slick-next {
+    right: 20px ;
+}
+
+.slick-dots {
+    bottom: -40px;
+}
+
+.slick-dots li button::before {
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #1B1740;
+    border-width: 1.5px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button::before {
+    background-color: #1B1740;
+    opacity: 1;
+}
