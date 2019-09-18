@@ -43,7 +43,8 @@ footer {
     color: #fff;
     font-size: 16px;
     justify-content: space-around;
-    padding: 40px 0;
+    padding: 20px 40px;
+    flex-wrap: wrap;
 }
 
 footer a {
@@ -316,7 +317,7 @@ footer p {
   }
 
   .footer-logo {
-    width: 250px;
+    width: 180px;
   }
 
   .calendar {
@@ -407,21 +408,51 @@ footer p {
     position: relative;
   }
 
+  .footer-email-logo {
+    flex-direction: column;
+  }
+
+  .footer-email-logo p, .footer-email-logo p a {
+    color:#9E9E9E;
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  .assinatura-img {
+    position: relative;
+    top: 8px;
+    margin-left:2px;
+    width: 16px !important;
+  }
+
   /* .location .location-item:last-of-type {
       margin-top: 40px;
   } */
 
   .location-item {
-    padding-right: 50px;
     line-height: 24px;
+   }
+
+  .location-item:first-of-type {
+    padding-right: 50px;
   }
 
-  .location-item p:nth-child(2), .location-item p:first-of-type {
-      margin-bottom: 10px;
+  .location-item p:nth-child(2) {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .location-item p:first-of-type {
+    font-size: 14px;
+    background-color: #851C22;
+    width: max-content;
+    padding: 0 5px;
+    margin-bottom: 10px;
+
   }
 
   .email {
-    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .email::before {
@@ -438,6 +469,10 @@ footer p {
     position: relative;
   }
  
+  .padding {
+    padding: 20px 40px;
+  }
+
 
   /* .calendar-month .calendar-date:first-of-type {
     border-bottom-style: solid;
