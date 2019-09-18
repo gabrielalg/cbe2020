@@ -142,17 +142,6 @@ footer p {
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.18);
 }
 
-.banner-img {
-    /* background-image: url('img/fotos mar/cbe2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    /* position: relative;
-    height: 100%; */
-    /* width: 100%; */
-
-}
-
 .banner p {
     position: absolute;
     color:#fff;
@@ -328,11 +317,6 @@ footer p {
 
   .footer-logo {
     width: 250px;
-  }
-
-  .sponsor-logo {
-    /* width: 100%;   */
-    /* max-width: 200px; */
   }
 
   .calendar {
