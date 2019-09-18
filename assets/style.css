@@ -517,6 +517,11 @@ footer p {
     float: none;
 }
 
+.sponsors .slick-slide img {
+    width: 100%;  
+    max-width: 200px;
+}
+
 .slick-prev, .slick-next {
     z-index: 1000 ;
     width: 40px;
