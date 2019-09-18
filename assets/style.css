@@ -234,7 +234,7 @@ footer p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     line-height: 30px;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .page-h2 {
@@ -296,7 +296,7 @@ footer p {
   }
 
   .intro-content p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 27px;
       margin: 20px 0;
   }
@@ -317,7 +317,7 @@ footer p {
   }
 
   .footer-logo {
-    width: 180px;
+    width: 160px;
   }
 
   .calendar {
@@ -412,10 +412,10 @@ footer p {
     flex-direction: column;
   }
 
-  .footer-email-logo p, .footer-email-logo p a {
+  .footer-email-logo p:last-of-type, .footer-email-logo p a {
     color:#9E9E9E;
     font-size: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
   }
 
   .assinatura-img {
@@ -452,7 +452,7 @@ footer p {
   }
 
   .email {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .email::before {
