@@ -13,7 +13,7 @@ $(document).ready(function() {
         dots: true,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        // slidesToScroll: 4,
         arrows: false,
         autoplay: true,
         speed: 2000,
