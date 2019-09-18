@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+    $('.banner').slick({
+        infinite: true,
+        speed: 700,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        cssEase: 'linear'
+    });
+
+    $('.sponsors').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 5000
+    });
+
     $(window).scroll(function() {
         
         const is_scroll = $(this).scrollTop() > 50;
