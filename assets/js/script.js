@@ -1,4 +1,35 @@
+function toggleMenuMobile(){
+    $('.menu-btn').toggleClass('active');
+    $('.menu-btn').toggleClass('not-active');
+    if (!$('#menu').hasClass('responsive')) {
+        $('#menu').addClass('responsive')
+        $('#mobile-menu').addClass('mobile-menu-active')
+        // $('.menu-layout').addClass('menu-mobile-active')
+    } else {
+        $('#menu').removeClass('responsive')
+        $('#menu').addClass('menu')
+        $('.mobile-menu').removeClass('mobile-menu-active')
+        // $('.menu-layout').removeClass('menu-mobile-active')
+    }
+}
+
 $(document).ready(function() {
+
+    $('.mobile-menu').on('click', () => {
+        toggleMenuMobile()
+    });
+
+    // $('body').on('click', '.menu .menu-item', function(e) {
+
+    // toggleMenuMobile()
+
+    // }
+
+    $(window).resize(function(){
+        if ($(this).width() >= 1240 && $('#menu').hasClass('responsive')){
+          toggleMenuMobile()
+        }
+      })
 
     $('.banner').slick({
         infinite: true,
@@ -22,11 +53,16 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         
-        const is_scroll = $(this).scrollTop() > 50;
+        const is_scroll = $(this).scrollTop() > 80;
 
         $('.nav').toggleClass('scroll', is_scroll);
         $('.container-logo').toggleClass('scroll', is_scroll);
         $('.logo-img').toggleClass('scroll', is_scroll);
+
+        if ($('#menu').hasClass('responsive')) {
+            $('#menu').toggleClass('scroll', is_scroll);
+        }
+        
     });
 
     // new Glide('.glide-sponsors', {

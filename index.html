@@ -58,18 +58,14 @@
     <!-- External Links -->
     <link rel="stylesheet" type="text/css" href="assets/normalize.css" />
 
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Neuton:400,700|Open+Sans:400,600,700&display=swap"
         rel="stylesheet">
 
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-
+ 
     <link rel="stylesheet" type="text/css" href="node_modules/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="node_modules/slick-1.8.1/slick/slick-theme.css">
 
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
@@ -89,12 +85,21 @@
         </div>
 
         <nav style="flex: 1;">
-            <ul class="menu">
+            
+            <a href="javascript:;" class="mobile-menu">
+                <div class="menu-btn not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+           </a>
+           
+            <ul class="menu" id="menu">
                 <li> <a class="menu-item flex"> About <img src="assets/icons/seta-menu.svg" /></a> </li>
                 <li> <a class="menu-item"> Program </a> </li>
                 <li> <a class="menu-item"> Logistics </a> </li>
                 <li> <a class="menu-item"> Awards & Travel Support </a> </li>
-                <li> <a class="menu-item border-menu-item"> Registration & Submission </a> </li>
+                <li> <a class="menu-item border-menu-item" style="margin-top: 20px;"> Registration & Submission </a> </li>
             </ul>
         </nav>
 
