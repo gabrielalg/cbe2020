@@ -81,7 +81,8 @@ $(document).ready(function() {
 
   
     $(window).on('click', function(event) {
-        if (!event.target.matches('.drop-btn')) {
+
+        if (!event.target.matches('.drop-btn') && !event.target.matches('.rotate')) {
           var dropdowns = document.getElementsByClassName("dropdown-menu");
           var i;
           for (i = 0; i < dropdowns.length; i++) {
