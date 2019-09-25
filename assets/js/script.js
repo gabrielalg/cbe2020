@@ -14,11 +14,7 @@ function toggleMenuMobile(){
 }
 
 $(document).ready(function() {
-
-    $('.mobile-menu').on('click', () => {
-        toggleMenuMobile()
-    });
-
+   
     // $('body').on('click', '.menu .menu-item', function(e) {
 
     // toggleMenuMobile()
@@ -29,7 +25,75 @@ $(document).ready(function() {
         if ($(this).width() >= 1240 && $('#menu').hasClass('responsive')){
           toggleMenuMobile()
         }
-      })
+    });
+
+
+    $('.mobile-menu').on('click', () => {
+        toggleMenuMobile()
+    });
+
+
+    $(window).scroll(function() {
+        
+        const is_scroll = $(this).scrollTop() > 80;
+        
+        if ($('.nav').hasClass('scroll')) return
+
+        $('.nav').toggleClass('scroll', is_scroll);
+        $('.container-logo').toggleClass('scroll', is_scroll);
+        $('.logo-img').toggleClass('scroll', is_scroll);
+        $('.dropdown-menu').toggleClass('scroll', is_scroll);
+
+        // if ($('#menu').hasClass('responsive')) {
+        //     $('#menu').toggleClass('scroll', is_scroll);
+        // }
+        
+    });
+
+    $('.drop-btn').on('click', () => {
+        $('.dropdown-menu').toggleClass('show'); 
+        $('.drop-btn img').toggleClass('rotate');
+     });
+      
+
+    $(".sponsors-btn").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+        scrollTop: $(hash).offset().top - 100
+        }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        // window.location.hash = hash;
+        });
+    } // End if
+    }); 
+
+
+  
+    $(window).on('click', function(event) {
+        if (!event.target.matches('.drop-btn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-menu");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              $('.dropdown-menu').removeClass('show');
+              $('.drop-btn img').removeClass('rotate');
+            }
+          }
+        }
+    }); 
+
 
     $('.banner').slick({
         infinite: true,
@@ -51,19 +115,7 @@ $(document).ready(function() {
         autoplaySpeed: 5000
     });
 
-    $(window).scroll(function() {
-        
-        const is_scroll = $(this).scrollTop() > 80;
-
-        $('.nav').toggleClass('scroll', is_scroll);
-        $('.container-logo').toggleClass('scroll', is_scroll);
-        $('.logo-img').toggleClass('scroll', is_scroll);
-
-        if ($('#menu').hasClass('responsive')) {
-            $('#menu').toggleClass('scroll', is_scroll);
-        }
-        
-    });
+ 
 
     // new Glide('.glide-sponsors', {
     //     type: 'carousel',

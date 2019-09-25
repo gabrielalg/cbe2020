@@ -95,7 +95,13 @@
            </a>
            
             <ul class="menu" id="menu">
-                <li> <a class="menu-item flex"> About <img src="assets/icons/seta-menu.svg" /></a> </li>
+                <li class="dropdown-wrap"> 
+                    <a href="javascript:;" class="menu-item flex drop-btn"> About <img src="assets/icons/seta-menu.svg" /></a> 
+                    <div class="dropdown-menu">
+                        <a href="pages/the-symposium.html" class="menu-item"> The Symposium</a>
+                        <a href="#sponsors" class="menu-item sponsors-btn"> Sponsors </a>
+                    </div>
+                </li>
                 <li> <a class="menu-item"> Program </a> </li>
                 <li> <a class="menu-item"> Logistics </a> </li>
                 <li> <a class="menu-item"> Awards & Travel Support </a> </li>
@@ -279,7 +285,7 @@
     </section>
 
 
-    <section class="container">
+    <section id="sponsors" class="container">
 
         <h2 class="page-h2"><span>Sponsors</span></h2>
 
@@ -303,7 +309,8 @@
         <nav class="padding">
             <p style="margin-top: 3px;"><b>Navigation Map</b></p>
             <ul class="footer-menu">
-                <li> <a class="" href=""> About </a> </li>
+                <li> <a class="" href=""> The Symposium </a> </li>
+                <li> <a class="" href="#sponsors"> Sponsors </a> </li>
                 <li> <a class="" href=""> Program </a> </li>
                 <li> <a class="" href=""> Logistics </a> </li>
                 <li> <a class="" href=""> Awards & Travel Support </a> </li>
@@ -351,30 +358,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="node_modules/slick-1.8.1/slick/slick.min.js"></script>
-
-    <!-- <script type="text/javascript">
-            $(document).ready(function(){
-                $('.banner').slick({
-                    infinite: true,
-                    speed: 700,
-                    fade: true,
-                    autoplay: true,
-                    autoplaySpeed: 5000,
-                    cssEase: 'linear'
-                });
-
-                $('.sponsors').slick({
-                    dots: true,
-                    infinite: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    arrows: false,
-                    autoplay: true,
-                    speed: 2000,
-                    autoplaySpeed: 5000
-                });
-            });
-          </script> -->
 
 </body>
 
