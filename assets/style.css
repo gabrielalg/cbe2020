@@ -239,6 +239,7 @@ footer p {
     margin: 8px 0;
 }
 
+
 .page-h2 {
     font-size: 38px;
     margin-top: 0;
@@ -261,6 +262,18 @@ footer p {
     position: absolute;
     bottom: 0px;
     left: 0;
+  }
+
+  .first-line-title {
+    z-index: 5;
+  }
+  
+  .first-line-title::after {
+    content: none !important;
+  }
+
+  .first-section {
+    margin-top: 85px;
   }
 
   .container {

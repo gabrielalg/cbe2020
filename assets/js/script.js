@@ -36,13 +36,23 @@ $(document).ready(function() {
     $(window).scroll(function() {
         
         const is_scroll = $(this).scrollTop() > 80;
-        
-        if ($('.nav').hasClass('scroll')) return
 
-        $('.nav').toggleClass('scroll', is_scroll);
-        $('.container-logo').toggleClass('scroll', is_scroll);
-        $('.logo-img').toggleClass('scroll', is_scroll);
-        $('.dropdown-menu').toggleClass('scroll', is_scroll);
+        var pageURL = window.location.pathname;
+
+        if (pageURL.indexOf('index') >= 0) {
+
+            $('.nav').toggleClass('scroll', is_scroll);
+            $('.container-logo').toggleClass('scroll', is_scroll);
+            $('.logo-img').toggleClass('scroll', is_scroll);
+            $('.dropdown-menu').toggleClass('scroll', is_scroll);
+
+        } else {
+
+            return
+        }
+        
+
+        // if ($('.nav').hasClass('scroll')) return
 
         // if ($('#menu').hasClass('responsive')) {
         //     $('#menu').toggleClass('scroll', is_scroll);
