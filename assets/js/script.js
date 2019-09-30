@@ -126,6 +126,30 @@ $(document).ready(function() {
         autoplaySpeed: 5000
     });
 
+    
+    $('.about-main-img').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 4000
+        // asNavFor: '.about-small-img'
+    });
+    
+    $('.about-small-img').slick({
+        // infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.about-main-img',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        vertical: true
+    });
+          
+
  
 
     // new Glide('.glide-sponsors', {
