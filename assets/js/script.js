@@ -21,6 +21,10 @@ $(document).ready(function() {
 
     // }
 
+    // $(window).load(function(){
+    //     $('#cover').fadeOut(1000);
+    // });
+
     $(window).resize(function(){
         if ($(this).width() >= 1240 && $('#menu').hasClass('responsive')){
           toggleMenuMobile()

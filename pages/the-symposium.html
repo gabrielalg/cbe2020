@@ -74,6 +74,16 @@
 
 <body>
 
+    <div id="cover">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+        <p>Loading...</p>
+    </div>
+
     <header class="nav scroll">
 
         <div>
@@ -291,7 +301,7 @@
             <p style="margin-top: 3px;"><b>Navigation Map</b></p>
             <ul class="footer-menu">
                 <li> <a class="" href=""> The Symposium </a> </li>
-                <li> <a class="" href="#sponsors"> Sponsors </a> </li>
+                <li> <a class="sponsors-btn" href="#sponsors"> Sponsors </a> </li>
                 <li> <a class="" href=""> Program </a> </li>
                 <li> <a class="" href=""> Logistics </a> </li>
                 <li> <a class="" href=""> Awards & Travel Support </a> </li>
@@ -339,6 +349,12 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../node_modules/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            $('#cover').fadeOut(1000);
+        });
+    </script>
 
 </body>
 
