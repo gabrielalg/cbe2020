@@ -291,7 +291,6 @@ footer p {
     position: relative;
   }
 
-
   .intro-img {
     width: auto;
     height: 350px;
@@ -340,6 +339,7 @@ footer p {
   .footer-logo {
     width: 160px;
   }
+
 
   .calendar {
     justify-content: space-between;
@@ -395,6 +395,14 @@ footer p {
 
   .calendar-date p:last-child {
       margin: auto 10px;
+  }
+
+  .org-sub span {
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 22px;
+    border-left-width: 8px;
+    border-right-width: 0;
   }
 
   .sponsors {
@@ -502,6 +510,46 @@ footer p {
     margin-left: 35px;
     margin-top: 10px;
   }
+
+  .organizers {
+    justify-content: space-around;
+    margin: 50px 0;
+    flex-wrap: wrap
+  }
+
+  .organizer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .organizer-item p:first-of-type {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .organizer-item p:last-child {
+    margin: 0;
+  }
+
+  .perfil {
+    width: 100px !important;
+    height: 100px;
+  }
+
+
+  .perfil img {
+    height: auto ;
+    width: 100px;
+    position: relative;
+  }
+
+  .sub-university {
+    font-size: 12px;
+    text-align: center;
+  }
+ 
   
 /* --------- SLICK */
 
