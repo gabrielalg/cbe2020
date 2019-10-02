@@ -111,8 +111,8 @@ $(document).ready(function() {
         infinite: true,
         speed: 700,
         fade: true,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         cssEase: 'linear'
     });
 
@@ -134,9 +134,9 @@ $(document).ready(function() {
         arrows: false,
         fade: true,
         autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 4000
-        // asNavFor: '.about-small-img'
+        speed: 600,
+        autoplaySpeed: 4000,
+        asNavFor: '.about-small-img'
     });
     
     $('.about-small-img').slick({
@@ -145,7 +145,6 @@ $(document).ready(function() {
         slidesToScroll: 1,
         asNavFor: '.about-main-img',
         dots: false,
-        centerMode: true,
         focusOnSelect: true,
         vertical: true
     });

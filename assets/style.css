@@ -23,6 +23,7 @@ h1, h2 {
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 li {
@@ -240,7 +241,7 @@ footer p {
     width: 250px;
     z-index: 450;
     position: relative;
-    top: 45px;;
+    top: 43px;;
     left: 12%;   
     transition:500ms ease;
 }
@@ -697,11 +698,24 @@ footer p {
   
 /* --------- SLICK */
 
+.slick-active, .slick-current, .slick-center, .slick-slide, .slick-slide:active, .slick-slide:focus, .slick-active:active, .slick-current:active, .slick-center:active, .slick-active:focus, .slick-current:focus, .slick-center:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}
+
 .banner .slick-slide {
     height: 85vh ;
-    display: flex !important;
+    /* display: flex !important;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
+}
+
+.banner .slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
 }
 
 .sponsors .slick-slide {
@@ -752,6 +766,10 @@ footer p {
 
 .about-small-img {
   margin-left: 15px;
+}
+
+.about-small-img .slick-track {
+  transform: none !important;
 }
 
 .about-small-img .slick-list {
