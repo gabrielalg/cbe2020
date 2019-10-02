@@ -43,16 +43,13 @@ $(document).ready(function() {
 
         var pageURL = window.location.pathname;
 
-        if (pageURL.indexOf('index') >= 0) {
+        if (pageURL.indexOf('index') >= 0 || pageURL === '/') {
 
             $('.nav').toggleClass('scroll', is_scroll);
             $('.container-logo').toggleClass('scroll', is_scroll);
             $('.logo-img').toggleClass('scroll', is_scroll);
             $('.dropdown-menu').toggleClass('scroll', is_scroll);
 
-        } else {
-
-            return
         }
         
 
