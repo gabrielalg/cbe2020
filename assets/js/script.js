@@ -114,8 +114,8 @@ $(document).ready(function() {
         infinite: true,
         speed: 700,
         fade: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
         cssEase: 'linear'
     });
 

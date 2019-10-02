@@ -240,7 +240,7 @@ footer p {
     width: 250px;
     z-index: 450;
     position: relative;
-    top: 33%;
+    top: 45px;;
     left: 12%;   
     transition:500ms ease;
 }
@@ -248,7 +248,7 @@ footer p {
 .logo-img.scroll {
     width: 210px;
     left: 17%;
-    top: 28%;
+    top: 20px;
 }
 
 .container-logo {
