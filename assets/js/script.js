@@ -113,6 +113,24 @@ $(document).ready(function() {
         }
     }); 
 
+    (!$('#menu').hasClass('responsive'))
+
+    $('.org-sub').on('click', function() {
+
+        if ($(this).hasClass('sub-active')) return
+
+        $('.org-sub').removeClass('sub-active')
+        $(this).addClass('sub-active');
+
+        if($('#organizers').hasClass('sub-active')) {
+            $('.organizers').css('display','flex')
+            $('.local-organizing').css('display','none')
+        } else {
+            $('.organizers').css('display','none')
+            $('.local-organizing').css('display','block')
+        }
+            
+    });
 
     $('.banner').slick({
         infinite: true,

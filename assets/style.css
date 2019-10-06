@@ -492,7 +492,6 @@ footer p {
   }
 
   .calendar-sub span {
-    background-color: #851C22;
     padding: 13px 60px;
     padding-bottom: 10px;
     /* padding-top: 2px; */
@@ -543,11 +542,25 @@ footer p {
   }
 
   .org-sub span {
-    padding: 10px 20px;
+    background-color: #63181C;
+    padding: 5px 15px;
+    font-size: 18px;
+    bottom: -6px;
+    cursor: pointer;
     font-weight: 400;
-    font-size: 22px;
+    right: -5px;
     border-left-width: 8px;
     border-right-width: 0;
+  }
+
+
+  .sub-active span {
+    background-color: #851C22;
+    padding: 10px 20px;
+    font-size: 22px;
+    bottom: 0;
+    cursor: initial;
+    
   }
 
   .sponsors {
@@ -656,9 +669,17 @@ footer p {
     margin-top: 10px;
   }
 
+  .local-organizing {
+    display: none;
+    padding-bottom: 0;
+    padding-top: 25px;
+    padding-left: 10px;
+  }
+
   .organizers {
     justify-content: space-around;
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
     flex-wrap: wrap
   }
 
@@ -695,6 +716,43 @@ footer p {
     text-align: center;
   }
  
+  .previous-symp {
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .previous-item {
+    flex-wrap: wrap;
+  }
+
+  .previous-item p {
+    font-weight: 600;
+    margin-top: 7px;
+    margin-bottom: 5px;
+  }
+
+  .previous-item p:first-child {
+    font-size: 20px;
+    background-color: #851C22;
+    width: max-content;
+    color: #fff;
+    padding: 5px 10px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
+  .previous-item div {
+    margin: 20px;
+    text-align: center;
+    min-width: 230px;
+    flex: 1;
+  }
+
+  .previous-item span {
+    font-weight:400; 
+    font-size: 16px; 
+  }
   
 /* --------- SLICK */
 
