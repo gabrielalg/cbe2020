@@ -418,7 +418,7 @@ footer p {
   }
 
   .first-section {
-    margin-top: 85px;
+    margin-top: 95px;
     flex-direction: column
   }
 
@@ -468,6 +468,7 @@ footer p {
   .intro-content p {
       line-height: 26px;
       margin: 20px 0;
+      margin-top: 50px;
   }
 
   .intro-content a {
@@ -759,10 +760,12 @@ footer p {
   .organizer-item p:first-of-type {
     font-weight: 600;
     margin-bottom: 5px;
+    line-height: initial;
   }
 
   .organizer-item p:last-child {
     margin: 0;
+    line-height: initial;
   }
 
   .perfil {
