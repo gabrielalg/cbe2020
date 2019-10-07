@@ -13,6 +13,8 @@ body {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
 }
 
 h1, h2 {
@@ -44,7 +46,6 @@ button {
 footer {
     background-color: #1B1740;
     color: #fff;
-    font-size: 16px;
     justify-content: space-around;
     padding: 20px 40px;
     flex-wrap: wrap;
@@ -387,8 +388,7 @@ footer p {
 
 .page-h2 {
     font-size: 38px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .page-h2 span {
@@ -422,6 +422,14 @@ footer p {
     flex-direction: column
   }
 
+  .program-year-title {
+    background-color: transparent !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #1B1740;
+  }
+
   .container {
     padding: 70px 10%;
     padding-bottom: 0px;
@@ -446,6 +454,7 @@ footer p {
   .intro-img-sub {
     font-size: 12px;
     text-align: center;
+    line-height: initial;
   }
 
   .flex {
@@ -457,7 +466,6 @@ footer p {
   }
 
   .intro-content p {
-      font-size: 16px;
       line-height: 26px;
       margin: 20px 0;
   }
@@ -481,6 +489,24 @@ footer p {
     cursor: pointer;
   }
 
+  .btn-note {
+    padding-top: 10px;
+  }
+
+  .btn-note p:last-child {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .btn-disabled {
+    padding: 10px 20px;
+    border-color:#9E9E9E;
+    border-width: 2px;
+    border-radius: 50px;
+    color: #9E9E9E;
+    cursor: not-allowed;
+  }
+
   .footer-logo {
     width: 160px;
   }
@@ -491,18 +517,22 @@ footer p {
 
   }
 
+  .calendar-sub {
+    margin: 0;
+  }
+
   .calendar-sub span {
     padding: 13px 60px;
-    padding-bottom: 10px;
-    /* padding-top: 2px; */
     position: relative;
     color: #fff;
     font-size: 24px;
-    line-height: 0;
     font-weight: 700;
     border-color: white;
     border-style: solid;
     border-width: 5px;
+    background-color: #851C22;
+    display: table;
+    bottom: 5px;
   }
 
   .calendar-months {
@@ -541,16 +571,42 @@ footer p {
       margin: auto 10px;
   }
 
+  .program-calendar-date {
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .sub-active .program-calendar-date  p {
+    background-color: #1B1740;
+    font-weight: 600;
+    font-size: 16px;
+  }  
+
+  .program-calendar-date p {
+    font-size: 14px;
+    color: #fff;
+    display: table;
+    padding: 5px 10px;
+    margin: -5px;
+    background-color: #110E27;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
   .org-sub span {
     background-color: #63181C;
-    padding: 5px 15px;
-    font-size: 18px;
-    bottom: -6px;
+    padding: 8px 18px;
+    font-size: 16px;
     cursor: pointer;
     font-weight: 400;
-    right: -5px;
     border-left-width: 8px;
     border-right-width: 0;
+    border-top-width: 0;
+    display: table;
+    bottom: -5px;
+    /* top: 0; */
   }
 
 
@@ -558,10 +614,11 @@ footer p {
     background-color: #851C22;
     padding: 10px 20px;
     font-size: 22px;
-    bottom: 0;
     cursor: initial;
-    
+    font-weight: 600;
   }
+
+
 
   .sponsors {
     margin-bottom: 70px !important;
@@ -762,6 +819,35 @@ footer p {
     font-weight:400; 
     font-size: 16px; 
   }
+
+  .program-head p:first-child {
+    padding: 5px 10px;
+    background-color: #851c22;
+    color: #fff;
+    display: table;
+    margin-bottom: 0;
+  }
+
+  .program-head p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  .program-head p:last-child {
+    color: #851C22;
+    margin: 0;
+  }
+
+  .not-available-item {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .not-available-item img {
+    max-width: 200px; 
+  }
   
 /* --------- SLICK */
 
@@ -829,6 +915,7 @@ footer p {
   font-size: 12px;
   text-align: center;
   min-height: 50px;
+  line-height: initial;
 }
 
 .about-small-img {
