@@ -673,7 +673,16 @@ footer p {
     display: none;
     padding-bottom: 0;
     padding-top: 25px;
-    padding-left: 10px;
+  }
+
+  .local-organizing li {
+    list-style-type: circle;
+  }
+
+  .local-organizing span {
+    margin-bottom: 5px;
+    font-weight: 600;
+    display: inline-block;
   }
 
   .organizers {
