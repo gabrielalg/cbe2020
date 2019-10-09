@@ -924,6 +924,7 @@ footer p {
     outline: 0;
     border: none;
     -moz-outline-style: none;
+    outline-style: none;
 }
 
 .banner .slick-slide {
