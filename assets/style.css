@@ -400,13 +400,43 @@ footer p {
 }
 
 .page-h2 span::after {
-    width: 79vw;
+    width: 78vw;
     height: 3px;
     content: "";
     background-color: #1B1740;
     position: absolute;
     bottom: 0px;
     left: 0;
+  }
+
+  .page-h2-full {
+    width: 30%;
+    background-color:#1B1740;
+  }
+
+  .page-h2-full span::after {
+    content: none !important;
+  }
+
+  .page-h2-full span {
+    background-color: transparent;
+    width: 100%;
+    display: table;
+    text-align: end;
+    padding: 20px;
+    padding-right: 30px;
+  
+  }
+
+  .location-item-full {
+    background-color: #851C22;
+    width: 70%;
+    color: #fff;
+    padding: 10px 30px;
+  }
+
+  .title-after-change span::after {
+    width: 60vw;
   }
 
   .first-line-title {
@@ -468,12 +498,12 @@ footer p {
   .intro-content p {
       line-height: 26px;
       margin: 20px 0;
-      margin-top: 50px;
+      margin-top: 30px;
   }
 
   .intro-content a {
     width: max-content;
-    align-self: center;
+    /* align-self: center; */
   }
 
   .intro-content button {
@@ -491,12 +521,13 @@ footer p {
   }
 
   .btn-note {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   .btn-note p:last-child {
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 12px;
+    line-height: initial;
   }
 
   .btn-disabled {
@@ -585,14 +616,13 @@ footer p {
   }  
 
   .program-calendar-date p {
-    font-size: 14px;
     color: #fff;
     display: table;
     padding: 5px 10px;
     margin: -5px;
     background-color: #110E27;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 5px;
   }
 
@@ -837,7 +867,7 @@ footer p {
     margin: 5px 0;
   }
 
-  .program-head p:last-child {
+  .program-head p:nth-child(3) {
     color: #851C22;
     margin: 0;
   }
@@ -851,6 +881,42 @@ footer p {
   .not-available-item img {
     max-width: 200px; 
   }
+
+  .city-text p {
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .city-title h3 {
+    margin: 0;
+  }
+
+  .logistics-city-sub span {
+    padding: 10px 16px;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-color: white;
+    background-color: #851C22;
+    display: table;
+    bottom: -8px;
+  }
+
+  .logistics-city-img {
+    width: 450px !important;
+    height: 450px;
+    bottom: 40px;
+    left: 50px;
+  }
+
+  .logistics-city-img img {
+    width: auto;
+    height: 450px;
+    position: relative;
+    left: -20%;
+  }
+
   
 /* --------- SLICK */
 
