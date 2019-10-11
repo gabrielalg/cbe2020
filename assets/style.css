@@ -528,6 +528,7 @@ footer p {
     margin-top: 8px;
     font-size: 12px;
     line-height: initial;
+    /* max-width: 250px; */
   }
 
   .btn-disabled {
@@ -562,7 +563,7 @@ footer p {
     border-color: white;
     border-style: solid;
     border-width: 5px;
-    background-color: #851C22 !important;
+    background-color: #851C22;
     display: table;
     bottom: 5px;
   }
@@ -915,6 +916,11 @@ footer p {
     height: 450px;
     position: relative;
     left: -20%;
+  }
+
+  .other-info h3 {
+    font-size: 24px;
+    font-weight: 700;
   }
 
   

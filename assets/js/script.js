@@ -15,9 +15,6 @@ function toggleMenuMobile(){
 
 $(document).ready(function() {
 
-    $("#gallery").unitegallery({
-        tiles_type:"justified"
-    }); 
 
    
     // $('body').on('click', '.menu .menu-item', function(e) {
@@ -179,6 +176,11 @@ $(document).ready(function() {
         vertical: true
     });
           
+
+    $("#gallery").unitegallery({
+        tiles_type:"justified"
+    }); 
+
 
 
 
