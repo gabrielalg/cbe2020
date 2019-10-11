@@ -14,6 +14,11 @@ function toggleMenuMobile(){
 }
 
 $(document).ready(function() {
+
+    $("#gallery").unitegallery({
+        tiles_type:"justified"
+    }); 
+
    
     // $('body').on('click', '.menu .menu-item', function(e) {
 
@@ -175,23 +180,6 @@ $(document).ready(function() {
     });
           
 
- 
 
-    // new Glide('.glide-sponsors', {
-    //     type: 'carousel',
-    //     startAt: 0,
-    //     perView: 4,
-    //     autoplay: 3000,
-    //     gap: 30
-    // }).mount()
-
-    // new Glide('.glide-banner', {
-    //     type: 'carousel',
-    //     startAt: 0,
-    //     perView: 1,
-    //     // autoplay: 3000,
-    //     // gap: 30
-    // }).mount()
- 
 
 });
