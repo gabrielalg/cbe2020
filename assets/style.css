@@ -923,7 +923,41 @@ footer p {
     font-weight: 700;
   }
 
+  .reg-title h3 {
+    background-color: #851C22;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: table;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+
+  .reg-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reg-info p:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1B1740;
+    
+  }
   
+  .reg-item {
+    margin: 0;
+    margin-left: 40px;
+    min-width: unset;
+  }
+
+  .reg-btn {
+    padding-top: 0; 
+    flex-direction: column; 
+    align-items: center;
+  }
+
 /* --------- SLICK */
 
 .slick-active, .slick-current, .slick-center, .slick-slide, .slick-slide:active, .slick-slide:focus, .slick-active:active, .slick-current:active, .slick-center:active, .slick-active:focus, .slick-current:focus, .slick-center:focus {
