@@ -47,7 +47,7 @@ button {
 footer {
     background-color: #1B1740;
     color: #fff;
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px 40px;
     flex-wrap: wrap;
 }
@@ -58,6 +58,10 @@ footer a {
 
 footer p {
     margin: 0;
+}
+
+footer li:hover {
+  font-weight: 600;
 }
 
 /* ------------------------ LOADER SPINNER */
@@ -372,7 +376,7 @@ footer p {
 .banner-bottom-item {
     display: flex;
     align-items: center;
-    padding: 10px 18px;
+    padding: 10px 15px;
     min-width: 240px;
 }
 
@@ -469,6 +473,12 @@ footer p {
     padding-bottom: 0px;
   }
 
+
+  .box-circle-img {
+    margin-left: 35px; 
+    flex: 1;
+  }
+
   .circle-img {
     border-radius: 50%;
     width: 350px !important;
@@ -476,6 +486,7 @@ footer p {
     background-color:navajowhite;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
   }
 
   .intro-img {
@@ -497,6 +508,8 @@ footer p {
 
   .intro-content {
       flex-direction: column;
+      min-width: 250px;
+      flex: 2;
   }
 
   .intro-content p {
@@ -523,6 +536,8 @@ footer p {
     background-color: #851C22;
     cursor: pointer;
   }
+
+  .
 
   .btn-note {
     padding-top: 20px;
@@ -551,7 +566,7 @@ footer p {
 
   .calendar {
     justify-content: space-between;
-
+    flex-wrap: wrap;
   }
 
   .calendar-sub {
@@ -584,7 +599,7 @@ footer p {
      border-color: #1B1740;
      margin: 20px;
      flex: 1;
-     min-width: 300px;
+     min-width: 250px;
   }
 
   .calendar-month h4 {
@@ -668,6 +683,7 @@ footer p {
   .footer-menu {
     padding: 0;
     line-height: 30px;
+    margin-bottom: 0;
   }
 
   .location-name {
@@ -711,10 +727,12 @@ footer p {
 
   .location-item {
     line-height: 24px;
+    /* min-width: 250px; */
    }
 
   .location-item:first-of-type {
     padding-right: 50px;
+    margin-bottom: 30px;
   }
 
   .location-item p:nth-child(2) {
@@ -1139,6 +1157,9 @@ footer p {
   display: flex;
 }
 
+.nav-footer {
+  min-width: 300px;
+}
 
 /* MOBILE MENU  */
 
@@ -1435,14 +1456,49 @@ footer p {
   }
 
   .banner-bottom-bar {
-    padding: 15px 10%;
+    padding: 10px 10%;
   }
 
   .banner-bottom-item{
-    padding: 18px;
+    padding: 10px 18px;
+  }
+
+ 
+}
+
+@media screen and (max-width: 680px) { 
+
+  .display-table {
+    display: table;
+  }
+
+  .location-item:first-of-type {
+    padding-right: 0;
+  }
+
+  .nav-footer {
+    min-width: 325px;
+  }
+
+  .assinatura-img {
+    width: 14px !important;
+  }
+
+  .footer-email-logo p:last-of-type, .footer-email-logo p a {
+    font-size: 9px;
+    margin-top: 10px;
   }
 
 }
+
+@media screen and (max-width: 600px) { 
+  
+  footer {
+    padding: 20px 0;
+  }
+
+}
+
 
 /* ----------- MOBILE  */
 
@@ -1529,4 +1585,57 @@ footer p {
   .banner-bottom-bar {
     padding: 8px 10%;
   }
+
+  .intro-img {
+    height: 250px;
+  }
+
+  .circle-img {
+    width: 250px !important;
+    height: 250px;
+  }
+
+  .box-circle-img {
+    margin-left: 0; 
+    margin-top: 40px;
+  }
+
+  .intro-content a {
+    align-self: center;
+  }
+
+  .page-h2 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .calendar-sub {
+    margin-top: 13px;
+  }
+
+  .calendar-sub span {
+    font-size: 20px;
+    padding: 15px;
+    border-style: none;
+  }
+
+  .calendar-month {
+    margin: 10px 20px;
+  }
+
+  .location-name {
+    margin-bottom: 25px !important;
+  }
+
+ 
+
+  .location-item.margin-top {
+    margin-top: 30px;
+  }
+
+
+
 }
