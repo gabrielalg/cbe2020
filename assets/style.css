@@ -432,6 +432,7 @@ footer li:hover {
   .page-h2-full {
     width: 30%;
     background-color:#1B1740;
+    margin: 0;
   }
 
   .page-h2-full span::after {
@@ -453,6 +454,7 @@ footer li:hover {
     width: 70%;
     color: #fff;
     padding: 10px 30px;
+    margin: 0 !important;
   }
 
   .title-after-change::after {
