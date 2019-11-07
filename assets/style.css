@@ -61,7 +61,7 @@ footer p {
 }
 
 footer li:hover {
-  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* ------------------------ LOADER SPINNER */
@@ -397,6 +397,23 @@ footer li:hover {
 .page-h2 {
     font-size: 38px;
     margin: 0;
+    margin-bottom: 15px;
+    max-width: 630px;
+    position: relative;
+}
+
+.page-h2::after {
+  width: 78vw;
+  height: 3px;
+  content: "";
+  background-color: #1B1740;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.no-after::after {
+  content: none !important;
 }
 
 .page-h2 span {
@@ -405,17 +422,12 @@ footer li:hover {
     padding-bottom: 6px;
     padding-top: 0;
     position: relative;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
-.page-h2 span::after {
-    width: 78vw;
-    height: 3px;
-    content: "";
-    background-color: #1B1740;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-  }
 
   .page-h2-full {
     width: 30%;
@@ -443,16 +455,8 @@ footer li:hover {
     padding: 10px 30px;
   }
 
-  .title-after-change span::after {
+  .title-after-change::after {
     width: 60vw;
-  }
-
-  .first-line-title {
-    z-index: 5;
-  }
-  
-  .first-line-title::after {
-    content: none !important;
   }
 
   .first-section {
@@ -508,14 +512,14 @@ footer li:hover {
 
   .intro-content {
       flex-direction: column;
-      min-width: 250px;
+      min-width: 350px;
       flex: 2;
   }
 
   .intro-content p {
       line-height: 26px;
       margin: 20px 0;
-      margin-top: 30px;
+      margin-top: 20px;
   }
 
   .intro-content a {
@@ -536,8 +540,6 @@ footer li:hover {
     background-color: #851C22;
     cursor: pointer;
   }
-
-  .
 
   .btn-note {
     padding-top: 20px;
@@ -582,10 +584,13 @@ footer li:hover {
     border-color: white;
     border-style: solid;
     border-width: 5px;
+    border-bottom-width: 0px;
     background-color: #851C22;
     display: table;
-    bottom: 5px;
+    bottom: 7px;
+    right: -3px;
   }
+
 
   .calendar-months {
     flex-wrap: wrap;
@@ -775,9 +780,14 @@ footer li:hover {
     position: absolute !important;
   }
 
-  .about-imgs {
+  .about-main-img {
     margin-left: 35px;
-    margin-top: 10px;
+  }
+
+  .about-imgs {
+    margin: 10px auto;
+    flex: 1;
+    max-width: 500px;
   }
 
   .local-organizing {
@@ -980,6 +990,8 @@ footer li:hover {
     align-items: center;
   }
 
+
+
 /* --------- SLICK */
 
 .slick-active, .slick-current, .slick-center, .slick-slide, .slick-slide:active, .slick-slide:focus, .slick-active:active, .slick-current:active, .slick-center:active, .slick-active:focus, .slick-current:focus, .slick-center:focus {
@@ -1072,7 +1084,7 @@ footer li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 0;
+    margin: 5px 3px;
     cursor: pointer;
 }
 
@@ -1489,6 +1501,10 @@ footer li:hover {
     margin-top: 10px;
   }
 
+  .title-after-change::after {
+    width: 78vw;
+  }
+
 }
 
 @media screen and (max-width: 600px) { 
@@ -1606,6 +1622,7 @@ footer li:hover {
 
   .page-h2 {
     font-size: 34px;
+
   }
 
   p {
@@ -1613,13 +1630,14 @@ footer li:hover {
   }
 
   .calendar-sub {
-    margin-top: 13px;
+    min-width: 250px;
   }
 
   .calendar-sub span {
     font-size: 20px;
     padding: 15px;
     border-style: none;
+    right: 0;
   }
 
   .calendar-month {
@@ -1636,6 +1654,56 @@ footer li:hover {
     margin-top: 30px;
   }
 
+  .intro-content {
+    min-width: 250px;
+  }
 
+  .about-imgs {
+    max-width: 320px;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  /* SLICK--------------- */
+
+  .about-main-img {
+    margin: 0;
+  }
+
+  .about-main-img .slick-slide span {
+    width: 250px !important;
+    height: 250px; 
+    margin: 0 auto;
+
+  }
+
+  .about-main-img .slick-slide img {
+    height: 250px;
+  }
+ 
+  .about-main-img .slick-slide p {
+    font-size: 10px;
+    max-width: 250px;
+    margin: 10px auto;
+  }
+
+  .about-small-img {
+    margin: 0;
+  }
+
+  .about-small-img .slick-slide {
+    width: 55px !important;
+    height: 55px;
+  }
+
+  .about-small-img .slick-slide img {
+    height: 55px ;
+  }
+
+   /* --------- */
+
+   .first-section {
+
+    margin-top: 70px;
+   }
 }
