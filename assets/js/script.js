@@ -1,7 +1,14 @@
-function toggleMenuMobile(){
-    $('.menu-btn').toggleClass('active');
-    $('.menu-btn').toggleClass('not-active');
-    if (!$('#menu').hasClass('responsive')) {
+function toggleMenuMobile(is_closed) {
+
+    if (is_closed) {
+      $('.menu-btn').removeClass('active');
+      $('.menu-btn').addClass('not-active');
+    } else {
+      $('.menu-btn').toggleClass('active');
+      $('.menu-btn').toggleClass('not-active');
+    }
+    
+    if (!$('#menu').hasClass('responsive') && !is_closed) {
         $('#menu').addClass('responsive')
         $('#mobile-menu').addClass('mobile-menu-active')
         // $('.menu-layout').addClass('menu-mobile-active')
@@ -9,6 +16,9 @@ function toggleMenuMobile(){
         $('#menu').removeClass('responsive')
         $('#menu').addClass('menu')
         $('.mobile-menu').removeClass('mobile-menu-active')
+        $('.dropdown-menu .menu-item').removeClass('show-txt-menu');
+        $('.dropdown-menu').removeClass('show');
+        $('.drop-btn img').removeClass('rotate');
         // $('.menu-layout').removeClass('menu-mobile-active')
     }
 }
@@ -45,7 +55,7 @@ $(document).ready(function() {
 
     function changeNavColor(_this) {
 
-        const is_scroll = $(_this || window).scrollTop() > 80;
+        const is_scroll = $(_this || window).scrollTop() > 60;
 
         var pageURL = window.location.pathname;
     
@@ -81,33 +91,39 @@ $(document).ready(function() {
      });
       
 
-    $(".sponsors-btn").on('click', function(event) {
+    $(".sponsors-btn, .page-top-btn").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+      let top_distance = 80
 
-        // Store hash
-        var hash = this.hash;
+      if ($(this).hasClass('sponsors-btn')) {
+        // top_distance = 80
+        toggleMenuMobile(true)
+      }
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-        scrollTop: $(hash).offset().top - 90
-        }, 800, function(){
+          // Store hash
+          var hash = this.hash;
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        // window.location.hash = hash;
-        });
-    } // End if
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - top_distance
+          }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          // window.location.hash = hash;
+          });
+      } // End if
     }); 
-
-
   
     $(window).on('click', function(event) {
 
-        if (!event.target.matches('.drop-btn') && !event.target.matches('.rotate')) {
+        if (!event.target.matches('.drop-btn') && 
+          !event.target.matches('.rotate') &&
+          $('.mobile-menu').is(':hidden')) {
           var dropdowns = document.getElementsByClassName("dropdown-menu");
           var i;
           for (i = 0; i < dropdowns.length; i++) {
@@ -115,14 +131,13 @@ $(document).ready(function() {
             if (openDropdown.classList.contains('show')) {
               $('.dropdown-menu').removeClass('show');
               $('.drop-btn img').removeClass('rotate');
-              $('.dropdown-menu .menu-item').removeClass('show-txt-menu');
-              $('#menu').removeClass('responsive');
+            
             }
           }
         }
     }); 
 
-    (!$('#menu').hasClass('responsive'))
+    // TOGGLE ORGANIZADORES
 
     $('.org-sub').on('click', function() {
 
@@ -131,12 +146,35 @@ $(document).ready(function() {
         $('.org-sub').removeClass('sub-active')
         $(this).addClass('sub-active');
 
+        $('.organizers, .local-organizing').stop(true,false)
+
         if($('#organizers').hasClass('sub-active')) {
-            $('.organizers').css('display','flex')
-            $('.local-organizing').css('display','none')
+          
+            $('.organizers').show()
+            
+            $('.organizers').animate({
+              left: 0
+            }, 500, 'swing', function(){
+            })
+            $('.local-organizing').animate({
+              left: '100vw'
+            }, 500, 'swing', function(){
+              $(this).hide()
+            })
         } else {
-            $('.organizers').css('display','none')
-            $('.local-organizing').css('display','block')
+            $('.local-organizing').show()
+
+            $('.local-organizing').animate({
+              left: '0'
+            }, 400, 'swing', function(){
+
+            })
+            $('.organizers').animate({
+              left: '-100vw'
+            }, 400, 'swing', function(){
+              $(this).hide()
+            })
+   
         }
             
     });
@@ -182,14 +220,18 @@ $(document).ready(function() {
                 breakpoint: 780,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 2
+                  slidesToScroll: 2,
+                  autoplaySpeed: 4200,
+                  speed: 1000
                 }
               },
               {
                 breakpoint: 550,
                 settings: {
                   slidesToShow: 1,
-                  slidesToScroll: 1
+                  slidesToScroll: 1,
+                  autoplaySpeed: 4200,
+                  speed: 1000
                 }
               }
             ]

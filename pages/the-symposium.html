@@ -147,7 +147,7 @@
 
     </header>
 
-    <section class="container flex first-section">
+    <section id="page-top" class="container flex first-section">
 
         <h2 class="page-h2">
             <span> 7th International Symposium on
@@ -246,71 +246,74 @@
 
         <div class="flex calendar">
             <h2 class="page-h2"><span>Organization</span></h2>
-            <div class="flex" style="align-items: flex-end; bottom: 12px;; position: relative;">
-                <h3 class="calendar-sub org-sub sub-active" id="organizers"><span>Organizers</span></h3>
-                <h3 class="calendar-sub org-sub " id="local-organizing"><span>Local Organizing Committee</span></h3>
+            <div class="flex sub-wrap" >
+                <h3 class="org-sub sub-active" id="organizers"><span>Organizers</span></h3>
+                <h3 class="org-sub " id="local-organizing"><span>Local Organizing Committee</span></h3>
             </div>
         </div>
 
-        <div class="flex organizers">
-            <div class="organizer-item">
-                <div class="circle-img perfil">
-                    <img src="../assets/img/perfil-pesquisadores/camila-signori-usp.jpeg" />
+        <div class="org-wrap ">
+
+            <div class="flex organizers org-padding">
+                <div class="organizer-item">
+                    <div class="circle-img perfil">
+                        <img src="../assets/img/perfil-pesquisadores/camila-signori-usp.jpeg" />
+                    </div>
+                    <p> Camila Signori </p>
+                    <p class="sub-university">Universidade de São Paulo,<br> Brazil</p>
+
                 </div>
-                <p> Camila Signori </p>
-                <p class="sub-university">Universidade de São Paulo,<br> Brazil</p>
+
+                <div class="organizer-item">
+                    <div class="circle-img perfil">
+                        <img src="../assets/img/perfil-pesquisadores/default-user-image.png" />
+                    </div>
+                    <p> Cristina Nakayama</p>
+                    <p class="sub-university">Universidade Federal de São Paulo,<br> Brazil</p>
+                </div>
+
+                <div class="organizer-item">
+                    <div class="circle-img perfil">
+                        <img src="../assets/img/perfil-pesquisadores/default-user-image.png" />
+                    </div>
+                    <p> Maurício Shimabukuro</p>
+                    <p class="sub-university"> Universidade de São Paulo, <br> Brazil </p>
+                </div>
+
+                <div class="organizer-item">
+                    <div class="circle-img perfil">
+                        <img src="../assets/img/perfil-pesquisadores/default-user-image.png" />
+                    </div>
+                    <p> Paulo Sumida</p>
+                    <p class="sub-university">Universidade de São Paulo, <br> Brazil </p>
+                </div>
+
+                <div class="organizer-item">
+                    <div class="circle-img perfil">
+                        <img src="../assets/img/perfil-pesquisadores/default-user-image.png" />
+                    </div>
+                    <p> Vivian Pellizari </p>
+                    <p class="sub-university">Universidade de São Paulo, <br> Brazil </p>
+                </div>
 
             </div>
 
-            <div class="organizer-item">
-                <div class="circle-img perfil">
-                    <img src="../assets/img/perfil-pesquisadores/default-user-image.png" />
-                </div>
-                <p> Cristina Nakayama</p>
-                <p class="sub-university">Universidade Federal de São Paulo,<br> Brazil</p>
+            <div class="local-organizing org-padding">
+                <ul>
+                    <li>
+                        <p><span>Flávia Saldanha-Corrêa </span>| Universidade de São Paulo, Brazil</p>
+                    </li>
+                    <li>
+                        <p><span>Júlia Gonçalves </span>| Universidade de São Paulo, Brazil</p>
+                    </li>
+                    <li>
+                        <p><span>Gabriela Gonçalves</span> | <a href="http://www.gabidigital.work/"
+                                style="color:#851C22; text-decoration: underline;" target="_blank">www.gabidigital.work</a>,
+                            Brazil</p>
+                    </li>
+                    <p> e quem mais quiser colaborar!</p>
+                </ul>
             </div>
-
-            <div class="organizer-item">
-                <div class="circle-img perfil">
-                    <img src="../assets/img/perfil-pesquisadores/default-user-image.png" />
-                </div>
-                <p> Maurício Shimabukuro</p>
-                <p class="sub-university"> Universidade de São Paulo, <br> Brazil </p>
-            </div>
-
-            <div class="organizer-item">
-                <div class="circle-img perfil">
-                    <img src="../assets/img/perfil-pesquisadores/default-user-image.png" />
-                </div>
-                <p> Paulo Sumida</p>
-                <p class="sub-university">Universidade de São Paulo, <br> Brazil </p>
-            </div>
-
-            <div class="organizer-item">
-                <div class="circle-img perfil">
-                    <img src="../assets/img/perfil-pesquisadores/default-user-image.png" />
-                </div>
-                <p> Vivian Pellizari </p>
-                <p class="sub-university">Universidade de São Paulo, <br> Brazil </p>
-            </div>
-
-        </div>
-
-        <div class="local-organizing">
-            <ul>
-                <li>
-                    <p><span>Flávia Saldanha-Corrêa </span>| Universidade de São Paulo, Brazil</p>
-                </li>
-                <li>
-                    <p><span>Júlia Gonçalves </span>| Universidade de São Paulo, Brazil</p>
-                </li>
-                <li>
-                    <p><span>Gabriela Gonçalves</span> | <a href="http://www.gabidigital.work/"
-                            style="color:#851C22; text-decoration: underline;" target="_blank">www.gabidigital.work</a>,
-                        Brazil</p>
-                </li>
-                <p> e quem mais quiser colaborar!</p>
-            </ul>
         </div>
 
     </section>
@@ -374,55 +377,57 @@
 
     </section>
 
+ 
     <footer class="flex">
 
-        <nav class="padding">
-            <p style="margin-top: 3px;"><b>Navigation Map</b></p>
-            <ul class="footer-menu">
-                <li> <a class="" href=""> The Symposium </a> </li>
-                <li> <a class="sponsors-btn" href="#sponsors"> Sponsors </a> </li>
-                <li> <a class="" href=""> Program </a> </li>
-                <li> <a class="" href=""> Logistics </a> </li>
-                <li> <a class="" href=""> Awards & Travel Support </a> </li>
-                <li> <a class="" href=""> Registration & Submission </a> </li>
-            </ul>
-        </nav>
-
-        <div class="location padding">
-
-            <p class="location-name"><b>Adresses</b></p>
-            <div class="flex">
-                <div class="location-item">
-                    <p style="font-size: 14px">Event Place</p>
-                    <p>Casa Grande Hotel Resort & Spa</p>
-                    <p style="font-size: 14px">Av. Miguel Stéfano, 1001 <br>
-                        Praia da Enseada, Guarujá, SP – Brazil <br>
-                        CEP: 11440-530</p>
+            <nav class="padding nav-footer">
+                <p style="margin-top: 3px;"><b>Navigation Map</b></p>
+                <ul class="footer-menu">
+                    <li> <a class="" href="../"> Home </a> </li>
+                    <li> <a class="page-top-btn" href="#page-top"> The Symposium </a> </li>
+                    <li> <a class="sponsors-btn" href="#sponsors"> Sponsors </a> </li>
+                    <li> <a class="" href="program.html"> Program </a> </li>
+                    <li> <a class="" href="logistics.html"> Logistics </a> </li>
+                    <li> <a class="" href="awards-and-travel-support.html"> Awards & Travel Support </a> </li>
+                    <li> <a class="" href="registration-and-submission.html"> Registration & Submission </a> </li>
+                </ul>
+            </nav>
+    
+            <div class="location padding">
+    
+                <p class="location-name"><b>Adresses</b></p>
+                <div class="flex display-table" style="flex-wrap: wrap;">
+                    <div class="location-item">
+                        <p style="font-size: 14px">Event Place</p>
+                        <p>Casa Grande Hotel Resort & Spa</p>
+                        <p style="font-size: 14px">Av. Miguel Stéfano, 1001 <br>
+                            Praia da Enseada, Guarujá, SP – Brazil <br>
+                            CEP: 11440-530</p>
+                    </div>
+                    <div class="location-item" style="margin-right: 20px;">
+                        <p style="font-size: 14px">Organizing Institute</p>
+                        <p>Instituto Oceanográfico</p>
+                        <p style="font-size: 14px">Praça do Oceanográfico, 191 <br>
+                            São Paulo, SP - Brazil <br>
+                            CEP: 05508-120</p>
+                    </div>
                 </div>
-                <div class="location-item">
-                    <p style="font-size: 14px">Organizing Institute</p>
-                    <p>Instituto Oceanográfico</p>
-                    <p style="font-size: 14px">Praça do Oceanográfico, 191 <br>
-                        São Paulo, SP - Brazil <br>
-                        CEP: 05508-120</p>
-                </div>
+    
             </div>
-
-        </div>
-
-        <div class="flex footer-email-logo padding">
-
-            <p class="email"><b>Contact</b></p>
-            <a style="margin-bottom: 40px;" href="mailto:cbe7brazil@gmail.com">cbe7brazil@gmail.com</a>
-
-            <img class="footer-logo" src="../assets/img/logo-cbe-branco.svg" />
-
-            <p>&copy; CBE 2020 - All Rights Reserved - <a href="http://www.gabidigital.work/" class="assinatura"
-                    target="blank">Developed by <img src="../assets/img/fav-gabi.svg" class="assinatura-img" /></a></p>
-
-        </div>
-
-    </footer>
+    
+            <div class="flex footer-email-logo padding">
+    
+                <p class="email"><b>Contact</b></p>
+                <a style="margin-bottom: 40px;" href="mailto:cbe7brazil@gmail.com">cbe7brazil@gmail.com</a>
+    
+                <img class="footer-logo" src="../assets/img/logo-cbe-branco.svg" />
+    
+                <p>&copy; CBE 2020 - All Rights Reserved - <a href="http://www.gabidigital.work/" class="assinatura"
+                        target="blank">Developed by <img src="../assets/img/fav-gabi.svg" class="assinatura-img" /></a></p>
+    
+            </div>
+    
+        </footer>
 
 
 </body>

@@ -397,8 +397,9 @@ footer li:hover {
 .page-h2 {
     font-size: 38px;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     max-width: 630px;
+    padding: 9px 0;
     position: relative;
 }
 
@@ -408,7 +409,7 @@ footer li:hover {
   content: "";
   background-color: #1B1740;
   position: absolute;
-  bottom: -8px;
+  bottom: 0;
   left: 0;
 }
 
@@ -419,7 +420,7 @@ footer li:hover {
 .page-h2 span {
     background-color: #1B1740;
     padding: 15px;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
     padding-top: 0;
     position: relative;
     -webkit-box-decoration-break: clone;
@@ -573,26 +574,6 @@ footer li:hover {
     flex-wrap: wrap;
   }
 
-  .calendar-sub {
-    margin: 0;
-  }
-
-  .calendar-sub span {
-    padding: 13px 60px;
-    position: relative;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 700;
-    border-color: white;
-    border-style: solid;
-    border-width: 5px;
-    border-bottom-width: 0px;
-    background-color: #851C22;
-    display: table;
-    bottom: 7px;
-    right: -3px;
-  }
-
 
   .calendar-months {
     flex-wrap: wrap;
@@ -653,6 +634,20 @@ footer li:hover {
     margin-left: 5px;
   }
 
+  .org-wrap {
+    position: relative;
+    min-height: 240px;
+  }
+
+  .org-padding {
+    padding-top: 50px;
+  }
+
+  .org-sub {
+    margin: 0;
+    margin-left: -5px;
+  }
+
   .org-sub span {
     background-color: #63181C;
     padding: 8px 18px;
@@ -663,7 +658,15 @@ footer li:hover {
     border-right-width: 0;
     border-top-width: 0;
     display: table;
-    bottom: -5px;
+    right: -5px;
+    /* bottom: -5px; */
+    position: relative;
+    color: #fff;
+
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-bottom-width: 0px;
     /* top: 0; */
   }
 
@@ -677,6 +680,11 @@ footer li:hover {
   }
 
 
+  .sub-wrap {
+    align-items: flex-end; 
+    position: relative; 
+    padding-bottom: 10px;
+  }
 
   .sponsors {
     margin-bottom: 70px !important;
@@ -723,9 +731,9 @@ footer li:hover {
 
   .assinatura-img {
     position: relative;
-    top: 8px;
+    top: 6px;
     margin-left:2px;
-    width: 16px !important;
+    width: 14px !important;
   }
 
   /* .location .location-item:last-of-type {
@@ -793,9 +801,11 @@ footer li:hover {
   }
 
   .local-organizing {
-    display: none;
     padding-bottom: 0;
-    padding-top: 25px;
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    width: 100%;
   }
 
   .local-organizing li {
@@ -810,9 +820,9 @@ footer li:hover {
 
   .organizers {
     justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    position: relative;
+    left: 0;
   }
 
   .organizer-item {
@@ -1164,7 +1174,7 @@ footer li:hover {
 
 .dropdown-menu .menu-item {
   width: 100%;
-  padding: 15px 20px;
+  padding: 12px 18px;
 }
 
 .show {
@@ -1172,7 +1182,7 @@ footer li:hover {
 }
 
 .nav-footer {
-  min-width: 300px;
+  min-width: 280px;
 }
 
 /* MOBILE MENU  */
@@ -1189,9 +1199,9 @@ footer li:hover {
   }
 
 .mobile-menu-active {
-    top:0 !important;
-    margin-top: 60px !important;
-    transition: all 0.2s ease-in-out;
+  top:0 !important;
+  margin-top: 60px !important;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu-btn, .close-modal-btn {
@@ -1439,7 +1449,6 @@ footer li:hover {
   .dropdown-menu .menu-item {
     display: table;
     height: 0;
-    padding: 12px 18px;
     overflow: hidden;
     text-align: initial;
     width: auto;
@@ -1477,6 +1486,9 @@ footer li:hover {
     padding: 10px 18px;
   }
 
+  .organizer-item {
+    min-width: 190px;
+  }
  
 }
 
@@ -1495,7 +1507,8 @@ footer li:hover {
   }
 
   .assinatura-img {
-    width: 14px !important;
+    width: 12px !important;
+    top: 5px;
   }
 
   .footer-email-logo p:last-of-type, .footer-email-logo p a {
@@ -1624,22 +1637,33 @@ footer li:hover {
 
   .page-h2 {
     font-size: 34px;
-
   }
 
-  p {
-    font-size: 15px;
-  }
-
-  .calendar-sub {
+  .sub-wrap {
+    margin-top: -10px;
     min-width: 250px;
+    align-items: flex-start;
+    margin-right: -8px;
+    min-height: 122px;
+  }
+/* 
+  .org-sub {
+    min-width: 250px;
+  } */
+
+  .org-sub span {
+    padding: 15px;
+    right: 0;
+    /* border-top-width: 0; */
+    /* border-left-width: 0; */
   }
 
-  .calendar-sub span {
-    font-size: 20px;
-    padding: 15px;
-    border-style: none;
-    right: 0;
+  #organizers span {
+    border-right-width: 5px;
+  }
+
+  .sub-active {
+    font-size: 18px;
   }
 
   .calendar-month {
@@ -1687,6 +1711,7 @@ footer li:hover {
     font-size: 10px;
     max-width: 250px;
     margin: 10px auto;
+    margin-bottom: 0;
   }
 
   .about-small-img {
@@ -1702,10 +1727,48 @@ footer li:hover {
     height: 55px ;
   }
 
+  .about-small-img .slick-list {
+    height: 110px !important;
+  }
+
    /* --------- */
 
    .first-section {
-
     margin-top: 70px;
+   }
+
+   .perfil {
+     width: 150px !important;
+     height: 150px;
+   }
+
+   .perfil img {
+    width: 150px;
+   }
+
+   .org-wrap {
+    min-height: 250px;
+   }
+
+   .org-padding {
+    padding-top: 10px;
+   }
+
+   .organizer-item { 
+     min-width: 200px;
+   }
+
+   .local-organizing ul {
+    padding-left: 20px;
+   }
+
+   .previous-symp {
+     padding: 0;
+     padding-top: 40px;
+   }
+
+   .previous-item div {
+    margin: 20px 0;
+
    }
 }
