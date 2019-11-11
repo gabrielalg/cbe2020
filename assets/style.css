@@ -627,11 +627,13 @@ footer li:hover {
     color: #fff;
     display: table;
     padding: 5px 10px;
-    margin: -5px;
+    margin-bottom: -2px;
+    margin-left: 10px;
+    margin-top:0;
     background-color: #110E27;
     font-weight: 400;
     font-size: 12px;
-    margin-left: 5px;
+ 
   }
 
   .org-wrap {
@@ -654,9 +656,6 @@ footer li:hover {
     font-size: 16px;
     cursor: pointer;
     font-weight: 400;
-    border-left-width: 8px;
-    border-right-width: 0;
-    border-top-width: 0;
     display: table;
     right: -5px;
     /* bottom: -5px; */
@@ -665,8 +664,7 @@ footer li:hover {
 
     border-color: white;
     border-style: solid;
-    border-width: 5px;
-    border-bottom-width: 0px;
+    border-width: 0 5px;
     /* top: 0; */
   }
 
@@ -904,6 +902,7 @@ footer li:hover {
     color: #fff;
     display: table;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   .program-head p:nth-child(2) {
@@ -1654,7 +1653,7 @@ footer li:hover {
   .org-sub span {
     padding: 15px;
     right: 0;
-    /* border-top-width: 0; */
+    margin-top: 5px;
     /* border-left-width: 0; */
   }
 
