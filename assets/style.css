@@ -1644,7 +1644,7 @@ footer li:hover {
     margin-top: -10px;
     min-width: 250px;
     align-items: flex-start;
-    margin-right: -8px;
+    /* margin-right: -8px; */
     min-height: 122px;
   }
 /* 
@@ -1664,7 +1664,7 @@ footer li:hover {
   }
 
   .sub-active {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .calendar-month {
@@ -1749,6 +1749,7 @@ footer li:hover {
 
    .org-wrap {
     min-height: 250px;
+    overflow: hidden;
    }
 
    .org-padding {
