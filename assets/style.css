@@ -804,6 +804,7 @@ footer li:hover {
     top: 0;
     left: 100vw;
     width: 100%;
+    display: none;
   }
 
   .local-organizing li {
@@ -1203,14 +1204,15 @@ footer li:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.menu-btn, .close-modal-btn {
-    position: absolute;
+.menu-btn {
+    position: relative;
     top: 40px;
     right: 0;
     transform: translate(-50%, -50%);
     width: 55px;
     padding: 10px;
     z-index: 200;
+    float: right;
   }
   
   .menu-btn:hover, .close-modal-btn:hover {
