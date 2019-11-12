@@ -145,37 +145,81 @@ $(document).ready(function() {
 
         $('.org-sub').removeClass('sub-active')
         $(this).addClass('sub-active');
-
-        $('.organizers, .local-organizing').stop(true,false)
+        $('.organizers, .local-organizing, .scicom').stop(true,false)
 
         if($('#organizers').hasClass('sub-active')) {
-          
+
             $('.organizers').show()
-            
-            $('.organizers').animate({
-              left: 0
-            }, 500, 'swing', function(){
-            })
-            $('.local-organizing').animate({
-              left: '100vw'
-            }, 500, 'swing', function(){
-              $(this).hide()
-            })
-        } else {
-            $('.local-organizing').show()
 
-            $('.local-organizing').animate({
+            $('.organizers').animate({
               left: '0'
-            }, 400, 'swing', function(){
-
+            }, 300, 'swing', function(){
+              $('.org-wrap').css('height','auto')
             })
-            $('.organizers').animate({
-              left: '-100vw'
+
+            $('.scicom').animate({
+              left: '100vw'
+            }, 400, 'swing', function(){
+              $(this).hide()
+              
+            })
+            $('.local-organizing').animate({
+              left: '200vw'
             }, 400, 'swing', function(){
               $(this).hide()
             })
-   
-        }
+            
+        } else if($('#scicom').hasClass('sub-active')) {
+         
+          $('.scicom').css('display','flex') 
+          
+
+          $('.scicom').animate({
+            left: '0'
+          }, 300, 'swing', function(){
+            
+          })
+
+          $('.org-wrap').css('height',$('.scicom').height())
+
+          $('.organizers').animate({
+            left: '-100vw'
+          }, 400, 'swing', function(){
+            $(this).hide()
+          })
+          $('.local-organizing').animate({
+            left: '100vw'
+          }, 400, 'swing', function(){
+            $(this).hide()
+          })
+          
+ 
+      } else {
+
+          $('.local-organizing').show()
+        
+          
+          $('.local-organizing').animate({
+            left: '0'
+          }, 300, 'swing', function(){
+            $('.org-wrap').css('height',$('.local-organizing').height())
+          })
+
+          $('.scicom').animate({
+            left: '-100vw'
+          }, 400, 'swing', function(){
+            $(this).hide()
+            
+          })
+
+          $('.organizers').animate({
+            left: '-200vw'
+          }, 400, 'swing', function(){
+            $(this).hide()
+          })
+           
+          
+        } 
             
     });
 
@@ -235,6 +279,25 @@ $(document).ready(function() {
                 }
               }
             ]
+    });
+
+    $('.org-sub-slick').slick({
+      responsive: [
+        {
+          breakpoint: 550,
+          settings: {
+            dots: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            focusOnSelect: true,
+            speed: 400
+          }
+        }
+      ]
     });
 
     $('.responsive').slick({

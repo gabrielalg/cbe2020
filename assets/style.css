@@ -643,11 +643,13 @@ footer li:hover {
 
   .org-padding {
     padding-top: 50px;
+    padding-bottom: 10px;
   }
 
   .org-sub {
     margin: 0;
     margin-left: -5px;
+    
   }
 
   .org-sub span {
@@ -682,6 +684,8 @@ footer li:hover {
     align-items: flex-end; 
     position: relative; 
     padding-bottom: 10px;
+    /* min-height: 82px; */
+    
   }
 
   .sponsors {
@@ -799,13 +803,23 @@ footer li:hover {
   }
 
   .local-organizing {
+    left: 200vw;
     padding-bottom: 0;
     position: absolute;
     top: 0;
-    left: 100vw;
     width: 100%;
     display: none;
   }
+
+  .scicom {
+    left: 100vw;
+    padding-bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+  }
+
 
   .local-organizing li {
     list-style-type: circle;
@@ -824,11 +838,17 @@ footer li:hover {
     left: 0;
   }
 
+  .scicom {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
   .organizer-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    min-width: 160px;
   }
 
   .organizer-item p:first-of-type {
@@ -854,9 +874,16 @@ footer li:hover {
     position: relative;
   }
 
+  .perfil-horizontal img {
+    height: 100px;
+    width: auto;
+    left: -18px;
+  }
+
   .sub-university {
     font-size: 12px;
     text-align: center;
+    max-width: 155px;
   }
  
   .previous-symp {
@@ -1495,6 +1522,10 @@ footer li:hover {
 
 @media screen and (max-width: 680px) { 
 
+  .sub-wrap {
+    min-height: 82px;
+  }
+
   .display-table {
     display: table;
   }
@@ -1644,18 +1675,20 @@ footer li:hover {
     margin-top: -10px;
     min-width: 250px;
     align-items: flex-start;
-    margin-right: -8px;
+    flex-wrap: wrap;
     min-height: 122px;
   }
-/* 
+
   .org-sub {
-    min-width: 250px;
-  } */
+    width: 100%;
+  } 
 
   .org-sub span {
     padding: 15px;
     right: 0;
     margin-top: 5px;
+    width: 100%;
+    font-size: 14px;
     /* border-left-width: 0; */
   }
 
@@ -1748,11 +1781,12 @@ footer li:hover {
    }
 
    .org-wrap {
-    min-height: 250px;
+    min-height: 260px;
    }
 
    .org-padding {
     padding-top: 10px;
+    padding-bottom: 0;
    }
 
    .organizer-item { 
@@ -1770,6 +1804,9 @@ footer li:hover {
 
    .previous-item div {
     margin: 20px 0;
+   }
 
+   .sub-active span {
+    font-size: 18px;
    }
 }
