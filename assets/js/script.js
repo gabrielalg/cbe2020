@@ -139,13 +139,8 @@ $(document).ready(function() {
 
     // TOGGLE ORGANIZADORES
 
-    $('.org-sub').on('click', function() {
-
-        if ($(this).hasClass('sub-active')) return
-
-        $('.org-sub').removeClass('sub-active')
-        $(this).addClass('sub-active');
-        $('.organizers, .local-organizing, .scicom').stop(true,false)
+    function animateOrgSlide() {
+      $('.organizers, .local-organizing, .scicom').stop(true,false)
 
         if($('#organizers').hasClass('sub-active')) {
 
@@ -218,8 +213,33 @@ $(document).ready(function() {
             $(this).hide()
           })
            
-          
         } 
+    }
+
+    let tm = null
+    $('.org-sub-slick, .program-slick').on('swipe', function(event, slick, direction){
+      clearTimeout(tm)
+      tm = setTimeout(() => {
+        $('.slick-slide .org-sub.sub-active', $(this)).removeClass('sub-active')
+        $('.slick-current', $(this)).find('.org-sub').addClass('sub-active')
+        
+        animateOrgSlide()
+            
+      }, 0) 
+      // tempo que o victor pediu pra animação acontecer
+      
+      // left
+    });
+
+    $('.org-sub').on('click', function() {
+
+        if ($(this).hasClass('sub-active')) return
+
+        $('.org-sub').removeClass('sub-active')
+
+        $(this).addClass('sub-active');
+
+        animateOrgSlide()
             
     });
 
@@ -244,18 +264,18 @@ $(document).ready(function() {
         dots: true,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 5000,
+        speed: 1500,
+        autoplaySpeed: 3500,
         responsive: [
             {
               breakpoint: 1100,
               settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
-                autoplaySpeed: 4200
+                slidesToScroll: 1,
+                autoplaySpeed: 3000
                 // infinite: true,
                 // dots: true
               }
@@ -264,9 +284,9 @@ $(document).ready(function() {
                 breakpoint: 780,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 2,
-                  autoplaySpeed: 4200,
-                  speed: 1000
+                  slidesToScroll: 1,
+                  autoplaySpeed: 3000,
+                  speed: 800
                 }
               },
               {
@@ -274,31 +294,13 @@ $(document).ready(function() {
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
-                  autoplaySpeed: 4200,
-                  speed: 1000
+                  autoplaySpeed: 3000,
+                  speed: 800
                 }
               }
             ]
     });
 
-    $('.org-sub-slick').slick({
-      responsive: [
-        {
-          breakpoint: 550,
-          settings: {
-            dots: false,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            focusOnSelect: true,
-            speed: 400
-          }
-        }
-      ]
-    });
 
     $('.responsive').slick({
         dots: true,
@@ -357,7 +359,72 @@ $(document).ready(function() {
         focusOnSelect: true,
         vertical: true
     });
+
+
+    if ($(window).width() <= 530) {
+      $('.org-sub-slick').slick({
+          dots: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '50px',
+          focusOnSelect: true,
+          cssEase: 'ease-in-out',
+          speed: 350
+      });
+
+      $('.program-slick').slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '70px',
+        focusOnSelect: true,
+        cssEase: 'ease-in-out',
+        speed: 350
+     });
+
+    }
+
           
+    $(window).resize(function(){
+      if ($(this).width() <= 530) {
+        $('.org-sub-slick').slick({
+            dots: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            focusOnSelect: true,
+            cssEase: 'ease-in-out',
+            speed: 350
+        });
+
+        $('.program-slick').slick({
+          dots: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '70px',
+          focusOnSelect: true,
+          cssEase: 'ease-in-out',
+          speed: 350
+       });
+
+      } else {
+        $('.org-sub-slick').slick('unslick');
+        $('.program-slick').slick('unslick');
+      }
+    })
+
 
     $("#gallery").unitegallery({
         tiles_type:"justified"
