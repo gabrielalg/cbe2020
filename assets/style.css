@@ -670,10 +670,9 @@ footer li:hover {
     /* top: 0; */
   }
 
-
-  .sub-active span {
+  .slick-current h3 span, .sub-active span {
     background-color: #851C22;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 22px;
     cursor: initial;
     font-weight: 600;
@@ -1522,6 +1521,10 @@ footer li:hover {
 
 @media screen and (max-width: 680px) { 
 
+  .about-main-img {
+    margin-left: 10px;
+  }
+
   .sub-wrap {
     min-height: 82px;
   }
@@ -1676,29 +1679,41 @@ footer li:hover {
     min-width: 250px;
     align-items: flex-start;
     flex-wrap: wrap;
-    min-height: 122px;
+    min-height: 90px;
   }
 
   .org-sub {
-    width: 100%;
+    width: 103%;
   } 
 
   .org-sub span {
-    padding: 15px;
-    right: 0;
+    padding: 10px 20px;
+    right: 0; 
     margin-top: 5px;
     width: 100%;
     font-size: 14px;
     /* border-left-width: 0; */
   }
 
+  .slick-current h3 span {
+    font-size: 18px;
+   }
+
   #organizers span {
     border-right-width: 5px;
+    margin-left: -55px;
+    width: calc(100% + 52px);
   }
 
-  .sub-active {
-    font-size: 18px;
+  #scicom span {
+    width: calc(100% - 3px);
   }
+
+  #local-organizing span {
+    width: 120%;
+  }
+
+
 
   .calendar-month {
     margin: 10px 20px;
@@ -1780,6 +1795,11 @@ footer li:hover {
     width: 150px;
    }
 
+   .perfil-horizontal img {
+    height: 150px;
+    width: auto;
+   }
+
    .org-wrap {
     min-height: 260px;
     overflow: hidden;
@@ -1807,7 +1827,5 @@ footer li:hover {
     margin: 20px 0;
    }
 
-   .sub-active span {
-    font-size: 16px;
-   }
+
 }

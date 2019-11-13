@@ -139,13 +139,8 @@ $(document).ready(function() {
 
     // TOGGLE ORGANIZADORES
 
-    $('.org-sub').on('click', function() {
-
-        if ($(this).hasClass('sub-active')) return
-
-        $('.org-sub').removeClass('sub-active')
-        $(this).addClass('sub-active');
-        $('.organizers, .local-organizing, .scicom').stop(true,false)
+    function animateOrgSlide() {
+      $('.organizers, .local-organizing, .scicom').stop(true,false)
 
         if($('#organizers').hasClass('sub-active')) {
 
@@ -218,8 +213,33 @@ $(document).ready(function() {
             $(this).hide()
           })
            
-          
         } 
+    }
+
+    let tm = null
+    $('.org-sub-slick').on('swipe', function(event, slick, direction){
+      clearTimeout(tm)
+      tm = setTimeout(() => {
+        $('.slick-slide .org-sub.sub-active', $(this)).removeClass('sub-active')
+        $('.slick-current', $(this)).find('.org-sub').addClass('sub-active')
+        
+        animateOrgSlide()
+            
+      }, 0) 
+      // tempo que o victor pediu pra animação acontecer
+      
+      // left
+    });
+
+    $('.org-sub').on('click', function() {
+
+        if ($(this).hasClass('sub-active')) return
+
+        $('.org-sub').removeClass('sub-active')
+
+        $(this).addClass('sub-active');
+
+        animateOrgSlide()
             
     });
 
@@ -281,24 +301,6 @@ $(document).ready(function() {
             ]
     });
 
-    $('.org-sub-slick').slick({
-      responsive: [
-        {
-          breakpoint: 550,
-          settings: {
-            dots: false,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            focusOnSelect: true,
-            speed: 400
-          }
-        }
-      ]
-    });
 
     $('.responsive').slick({
         dots: true,
@@ -357,7 +359,41 @@ $(document).ready(function() {
         focusOnSelect: true,
         vertical: true
     });
+
+
+    if ($(window).width() <= 532) {
+      $('.org-sub-slick').slick({
+          dots: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '50px',
+          focusOnSelect: true,
+          speed: 350
+      });
+    }
+
           
+    $(window).resize(function(){
+      if ($(this).width() <= 532) {
+        $('.org-sub-slick').slick({
+            dots: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            focusOnSelect: true,
+            speed: 400
+        });
+      } else {
+        $('.org-sub-slick').slick('unslick');
+      }
+    })
+
 
     $("#gallery").unitegallery({
         tiles_type:"justified"
