@@ -681,7 +681,7 @@ footer li:hover {
 
   .sub-active span {
     background-color: #851C22;
-    padding: 15px 20px;
+    padding: 10px 20px;
     font-size: 22px;
     cursor: initial;
     font-weight: 600;
@@ -1710,6 +1710,7 @@ footer li:hover {
 
   .sub-active span {
     font-size: 18px;
+    padding: 15px 20px;
    }
 
   #organizers span {
