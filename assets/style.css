@@ -670,7 +670,7 @@ footer li:hover {
     /* top: 0; */
   }
 
-  .slick-current h3 span, .sub-active span {
+  .sub-active span {
     background-color: #851C22;
     padding: 15px 20px;
     font-size: 22px;
@@ -951,6 +951,10 @@ footer li:hover {
   
   .not-available-item img {
     max-width: 200px; 
+  }
+
+  .not-available-item p {
+    text-align: center;
   }
 
   .city-text p {
@@ -1695,7 +1699,7 @@ footer li:hover {
     /* border-left-width: 0; */
   }
 
-  .slick-current h3 span {
+  .sub-active span {
     font-size: 18px;
    }
 
@@ -1777,7 +1781,7 @@ footer li:hover {
   }
 
   .about-small-img .slick-list {
-    height: 110px !important;
+    height: 90px !important;
   }
 
    /* --------- */
@@ -1827,5 +1831,24 @@ footer li:hover {
     margin: 20px 0;
    }
 
+
+   .program-calendar-date p {
+     margin-left: 0;
+     margin-bottom: -5px;
+   }
+
+   .program-calendar-date span {
+     text-align: center;
+     border-width: 0 6px;
+   }
+
+   .sub-active .program-calendar-date p {
+    font-size: 14px;
+   }
+
+   .not-available-item p {
+    text-align: center;
+    width: 250px;
+  }
 
 }
