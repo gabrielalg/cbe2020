@@ -473,6 +473,9 @@ footer li:hover {
     font-size: 38px;
     font-weight: 700;
     color: #1B1740;
+    display: table;
+    margin-top: 38%;
+    /* padding-bottom: 0 !important; */
   }
 
   .container {
@@ -615,6 +618,12 @@ footer li:hover {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    margin-top: 15px;
+  }
+
+  .program-slick {
+    flex-wrap: wrap;
+    padding-bottom: 0 !important;
   }
 
   .sub-active .program-calendar-date  p {
@@ -1706,11 +1715,11 @@ footer li:hover {
   #organizers span {
     border-right-width: 5px;
     margin-left: -55px;
-    width: calc(100% + 52px);
+    width: calc(100% + 50px);
   }
 
   #scicom span {
-    width: calc(100% - 3px);
+    width: calc(100% - 5px);
   }
 
   #local-organizing span {
@@ -1805,7 +1814,7 @@ footer li:hover {
    }
 
    .org-wrap {
-    min-height: 260px;
+    /* min-height: 260px; */
     overflow: hidden;
    }
 
@@ -1831,6 +1840,10 @@ footer li:hover {
     margin: 20px 0;
    }
 
+   .program-calendar-date {
+    margin-top: 10px;
+   }
+
 
    .program-calendar-date p {
      margin-left: 0;
@@ -1839,7 +1852,7 @@ footer li:hover {
 
    .program-calendar-date span {
      text-align: center;
-     border-width: 0 6px;
+     border-width: 0 8px;
    }
 
    .sub-active .program-calendar-date p {
@@ -1849,6 +1862,10 @@ footer li:hover {
    .not-available-item p {
     text-align: center;
     width: 250px;
+  }
+
+  .program-year-title {
+    margin-top: 20%;
   }
 
 }
