@@ -160,13 +160,15 @@
     </header>
 
 
-    <section id="page-top" class="container flex" style="margin-top: 95px;">
+    <section id="page-top" class="container flex" style="margin-top: 95px; flex-wrap: wrap;">
 
             <div class="flex intro-content">
 
-                <div class="flex city-title">
+                <div class="flex calendar city-title">
                     <h2 class="page-h2 title-after-change"><span>The City</span></h2>
-                    <h3 class="logistics-city-sub"><span>Guarujá, Brazil</span></h3>
+                    <div class="flex sub-wrap" style="min-height: auto;" >
+                        <h3 class="org-sub sub-active"><span style="width: auto;">Guarujá, Brazil</span></h3>
+                    </div>
                 </div>
                 
                 <div class="city-text" style="margin-top: 40px;">
@@ -224,9 +226,9 @@
 
             <h2 class="page-h2"><span> Hotel & Accomodation</span></h2>
             
-            <div class="flex" style="margin: 50px 0;">
+            <div class="flex" style="margin: 50px 0; flex-wrap: wrap-reverse;">
 
-                <div  style="margin-right: 40px;">
+                <div  style="margin-right: 40px; flex: 45%;">
                     <p style="margin-top: 0;">The proposed venue is called Casa Grande Hotel Resort & Spa, located on Enseada beach in Guarujá.
                         With a unique architecture in an authentic Brazilian colonial style, 
                         the hotel has an ocean view, and perfectly integrates with the 5.5 
@@ -242,8 +244,10 @@
                     </p>
                 </div>
 
-                <img style="width: auto; height: 300px" src="../assets/img/logistics/casa-grande-hotel/casa-grande-hotel.jpg"/>
-        
+                <div style=" flex: 1;">
+                    <img class="hotel-img" src="../assets/img/logistics/casa-grande-hotel/casa-grande-hotel.jpg"/>
+                </div>
+
             </div>
               
 
@@ -399,6 +403,34 @@
                 
             </div>
     
+    </section>
+
+    <section class="container other-info">
+
+        <h2 class="page-h2"><span>Transportation</span></h2>
+
+        <div style="margin-top: 50px;">
+            <h3> Airports</h3> 
+            <p>The closest international airports to Guarujá are: </p>
+            <ul>
+                <li>1. Guarulhos (GRU), São Paulo-Guarulhos International Airport <a href="https://www.gru.com.br/en">Link</a></li>
+                <li>2. Viracopos (VCP), Viracopos-Campinas International Airport <a href="http://www.viracopos.com/home-1.html">Link</a></li>
+            </ul>
+
+            <p>
+                From the airport to Guarujá you can: 
+            </p>
+                <ul class="airports-sub">
+                    <li> Take the bus/ shuttles we will provide (more information soon)</li>
+                    <li> Take the bus </li>
+                    <li> Take uber  </li>
+                    <li> Rent a car </li>
+                </ul>
+            
+           
+                    
+        </div>
+
     </section>
 
     
