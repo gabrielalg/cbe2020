@@ -971,20 +971,15 @@ footer li:hover {
     margin-top: 0;
   }
 
-  .city-title h3 {
-    margin: 0;
+  .city-title {
+    align-items: baseline;
+    justify-content: flex-start;
   }
 
-  .logistics-city-sub span {
-    padding: 10px 16px;
-    position: relative;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    border-color: white;
-    background-color: #851C22;
-    display: table;
-    bottom: -8px;
+  .city-title h3 span {
+   border-style: none;
+   bottom: 1px;
+   
   }
 
   .logistics-city-img {
@@ -999,6 +994,12 @@ footer li:hover {
     height: 450px;
     position: relative;
     left: -20%;
+  }
+
+  .hotel-img {
+    width: auto; 
+    height: 300px; 
+    margin-bottom: 20px;
   }
 
   .other-info h3 {
@@ -1041,6 +1042,9 @@ footer li:hover {
     align-items: center;
   }
 
+  .airports-sub li {
+    list-style-type: circle ;
+  }
 
 
 /* --------- SLICK */
@@ -1689,7 +1693,7 @@ footer li:hover {
 
   .sub-wrap {
     margin-top: -10px;
-    min-width: 250px;
+    min-width: 290px;
     align-items: flex-start;
     flex-wrap: wrap;
     min-height: 90px;
@@ -1867,6 +1871,14 @@ footer li:hover {
 
   .program-year-title {
     margin-top: 20%;
+  }
+
+  .page-h2::after {
+    width: 80vw;
+  }
+
+  .city-title h3 {
+    margin-left: 0;
   }
 
 }
