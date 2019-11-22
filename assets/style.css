@@ -1056,6 +1056,15 @@ footer li:hover {
     list-style-type: circle ;
   }
 
+  .text-link-red {
+    color:#851C22; 
+    text-decoration: underline;
+  }
+
+  .text-link-red:visited {
+    color:#851C22; 
+  }
+
 
 /* --------- SLICK */
 
