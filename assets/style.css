@@ -1952,11 +1952,12 @@ footer li:hover {
 
   .page-h2-full span {
     text-align: start;
+    padding-left: 10%;
   }
 
   .location-item-full {
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 10%;
   }
 
   .container-full {
