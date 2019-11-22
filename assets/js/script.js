@@ -243,6 +243,15 @@ $(document).ready(function() {
             
     });
 
+    $(".load-more-btn").on('click', function() {
+    
+      $('.load-more').css('display','none')
+      $('#gallerypt2').removeClass('force-display-none')
+
+    });
+
+  //  --------- SLICK 
+
     $('.banner').slick({
         infinite: true,
         speed: 700,
@@ -425,14 +434,18 @@ $(document).ready(function() {
       }
     })
 
+  // --------- UNITE GALLERY
 
-    $("#gallery").unitegallery({
-        tiles_type:"justified",
-        lightbox_numbers_padding_top: 20,				//the top padding of the numbers (used in compact mode)
-				lightbox_numbers_padding_right: 20
+    $('#gallery').unitegallery({
+        tiles_type:"justified"
         // lightbox_textpanel_width: 230
     }); 
 
+
+    $('#gallerypt2').unitegallery({
+      tiles_type:"justified"
+      // lightbox_textpanel_width: 230
+  }); 
 
 
 

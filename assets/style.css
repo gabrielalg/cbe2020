@@ -83,6 +83,7 @@ footer li:hover {
   color: #fff;
 }
 
+
 .sk-circle {
   margin: 100px auto;
   width: 40px;
@@ -1063,6 +1064,30 @@ footer li:hover {
 
   .text-link-red:visited {
     color:#851C22; 
+  }
+
+  .force-display-none {
+   display: none !important;
+  }
+
+  .load-more {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .load-more a {
+    position: relative;
+    margin: auto;
+    display: table;
+    min-width: 20px;
+  }
+
+  .load-more button {
+    min-width: 120px;
+  }
+
+  #gallerypt2 {
+    margin-top: 3px;
   }
 
 
