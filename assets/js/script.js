@@ -427,8 +427,8 @@ $(document).ready(function() {
 
 
     $("#gallery").unitegallery({
-        tiles_type:"justified",
-        lightbox_textpanel_width: 230
+        tiles_type:"justified"
+        // lightbox_textpanel_width: 230
     }); 
 
 

@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #110E27;
     overflow-x: hidden;
-    min-width: 320px;
+    min-width: 220px;
     /* scroll-behavior: smooth; */
 }
 
@@ -966,6 +966,10 @@ footer li:hover {
     text-align: center;
   }
 
+  .city-text {
+    margin-top: 40px;
+  }
+
   .city-text p {
     margin-bottom: 15px;
     margin-top: 0;
@@ -985,8 +989,8 @@ footer li:hover {
   .logistics-city-img {
     width: 450px !important;
     height: 450px;
-    bottom: 40px;
-    left: 50px;
+    margin: 0 auto;
+    margin-bottom: -60px;
   }
 
   .logistics-city-img img {
@@ -994,6 +998,12 @@ footer li:hover {
     height: 450px;
     position: relative;
     left: -20%;
+  }
+
+  .hotel-intro {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    flex-wrap: wrap-reverse;
   }
 
   .hotel-img {
@@ -1401,7 +1411,7 @@ footer li:hover {
   }
 
   .logo-img {
-    width: 220px;
+    width: 200px;
     /* top: 35px; */
   }
 
@@ -1533,10 +1543,22 @@ footer li:hover {
   .organizer-item {
     min-width: 190px;
   }
+
+  .logistics-city-img {
+    margin-bottom: 45px;
+  }
+
+  
+  
  
 }
 
 @media screen and (max-width: 680px) { 
+
+  .margin-null {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
   .about-main-img {
     margin-left: 10px;
@@ -1880,5 +1902,46 @@ footer li:hover {
   .city-title h3 {
     margin-left: 0;
   }
+
+  .city-text {
+    margin-top: 20px;
+  }
+
+  .logistics-city-img img {
+    height: 250px;
+  }
+
+  .page-h2-full {
+    width: 100%;
+    padding: 0;
+  }
+
+  .page-h2-full span {
+    text-align: start;
+  }
+
+  .location-item-full {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .container-full {
+    flex-wrap: wrap;
+  }
+
+  .hotel-img {
+      height: auto;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: -10px;
+      width: 100%;
+      min-width: 250px;
+  }
+
+  /* 
+  .nav-footer {
+    min-width: 325px;
+  } */
+
 
 }
