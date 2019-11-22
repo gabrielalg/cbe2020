@@ -427,7 +427,9 @@ $(document).ready(function() {
 
 
     $("#gallery").unitegallery({
-        tiles_type:"justified"
+        tiles_type:"justified",
+        lightbox_numbers_padding_top: 20,				//the top padding of the numbers (used in compact mode)
+				lightbox_numbers_padding_right: 20
         // lightbox_textpanel_width: 230
     }); 
 
