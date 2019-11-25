@@ -1,5 +1,7 @@
 function toggleMenuMobile(is_closed) {
 
+    $(".menu-btn span").removeClass("not-animate");
+
     if (is_closed) {
       $('.menu-btn').removeClass('active');
       $('.menu-btn').addClass('not-active');

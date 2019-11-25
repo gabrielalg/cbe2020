@@ -1358,11 +1358,11 @@ footer li:hover {
     display: none;
   }
 
-.mobile-menu-active {
+/* .mobile-menu-active {
   top:0 !important;
   margin-top: 60px !important;
   transition: all 0.2s ease-in-out;
-}
+} */
 
 .menu-btn {
     position: relative;
@@ -1394,28 +1394,33 @@ footer li:hover {
     margin-top: 8px;
   }
   
+ 
   .active span:nth-child(1) {
     animation: ease .4s top forwards;
   }
   
-  .not-active span:nth-child(1) {
-    animation: ease .4s top-2 forwards;
-  }
-  
   .active span:nth-child(2) {
     animation: ease .4s scaled forwards;
+  }
+
+  .active span:nth-child(3) {
+    animation: ease .4s bottom forwards;
+  }
+
+  .not-active span:nth-child(1) {
+    animation: ease .4s top-2 forwards;
   }
   
   .not-active span:nth-child(2) {
     animation: ease .4s scaled-2 forwards;
   }
   
-  .active span:nth-child(3) {
-    animation: ease .4s bottom forwards;
-  }
-  
   .not-active span:nth-child(3) {
     animation: ease .4s bottom-2 forwards;
+  }
+
+  .not-animate {
+    animation: none !important;
   }
   
   @keyframes top {
