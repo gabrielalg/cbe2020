@@ -1116,14 +1116,12 @@ footer li:hover {
     max-width: 100%;
   }
 
-
-
   .aiport-name {
     border-style: solid;
     border-width: 2px;
     border-color: #1B1740;
     margin-top: -5px;
-
+    color: #110E27;
   }
   
   .airports-sub li {
