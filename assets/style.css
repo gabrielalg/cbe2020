@@ -299,12 +299,21 @@ footer li:hover {
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.18);
 }
 
+.banner {
+  position: fixed;
+  z-index: -1;
+  height: 90vh;
+  width: 100vw;
+  transition: top 0.4s ease-in-out;
+  top: 0;
+}
+
 .banner p {
     position: absolute;
     color:#fff;
     bottom: 0;
     font-size: 12px;
-    margin: 10px 20px;
+    margin: 45px 20px;
     max-width: 250px;
     /* background-color:rgba(0, 0, 0, 0.25); */
     background-image: radial-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0));
@@ -313,15 +322,20 @@ footer li:hover {
     text-shadow: 1px 1px 1px black;
 }
 
+.move-banner {
+  top: -20px;
+}
+
 .overlay {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0));
     min-height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .page-title-wrap {
@@ -484,6 +498,7 @@ footer li:hover {
   .container {
     padding: 60px 10%;
     padding-bottom: 0px;
+    background-color: #fff;
   }
 
 
@@ -1174,10 +1189,11 @@ footer li:hover {
 }
 
 .banner .slick-slide {
-    height: 85vh ;
-    /* display: flex !important;
+    height: 90vh ;
+    /* width: 100vw !important;
+    display: flex !important;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center; / */
 }
 
 .banner .slick-slide img {

@@ -58,6 +58,7 @@ $(document).ready(function() {
     function changeNavColor(_this) {
 
         const is_scroll = $(_this || window).scrollTop() > 60;
+        const is_scrollBanner = $(_this || window).scrollTop() > 150;
 
         var pageURL = window.location.pathname;
     
@@ -67,6 +68,8 @@ $(document).ready(function() {
             $('.container-logo').toggleClass('scroll', is_scroll);
             $('.logo-img').toggleClass('scroll', is_scroll);
             $('.dropdown-menu').toggleClass('scroll', is_scroll);
+
+            $('.banner').toggleClass('move-banner', is_scrollBanner)
     
         }
     }
@@ -259,6 +262,7 @@ $(document).ready(function() {
         infinite: true,
         speed: 700,
         fade: true,
+        appendArrows: $('.overlay'),
         autoplay: true,
         autoplaySpeed: 5000,
         cssEase: 'linear',
