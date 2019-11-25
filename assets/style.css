@@ -405,7 +405,7 @@ footer li:hover {
 }
 
 .page-h2::after {
-  width: 79.5vw;
+  width: 79vw;
   height: 3px;
   content: "";
   background-color: #1B1740;
