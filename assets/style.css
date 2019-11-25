@@ -898,7 +898,7 @@ footer li:hover {
  
   .previous-symp {
     padding: 20px;
-    padding-top: 25px;
+    padding-top: 40px;
     padding-bottom: 0;
   }
 
@@ -1979,7 +1979,7 @@ footer li:hover {
 
    .previous-symp {
      padding: 0;
-     padding-top: 40px;
+     padding-top: 25px;
    }
 
    .previous-item div {
