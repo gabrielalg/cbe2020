@@ -1252,6 +1252,9 @@ footer li:hover {
   text-align: center;
   min-height: 50px;
   line-height: initial;
+  max-width: 310px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .about-small-img {
@@ -1951,8 +1954,6 @@ footer li:hover {
   .about-main-img .slick-slide p {
     font-size: 10px;
     max-width: 250px;
-    margin: 10px auto;
-    margin-bottom: 0;
   }
 
   .about-small-img {
@@ -2121,6 +2122,7 @@ footer li:hover {
 
   .intro-img-sub { 
     max-width: 250px;
+    font-size: 10px;
   }
 
 }
