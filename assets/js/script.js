@@ -58,7 +58,7 @@ $(document).ready(function() {
     function changeNavColor(_this) {
 
         const is_scroll = $(_this || window).scrollTop() > 60;
-        const is_scrollBanner = $(_this || window).scrollTop() > 150;
+        const is_scrollBanner = $(_this || window).scrollTop() > 200;
 
         var pageURL = window.location.pathname;
     

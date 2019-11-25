@@ -420,7 +420,7 @@ footer li:hover {
 }
 
 .page-h2::after {
-  width: 79vw;
+  width: 78.5vw;
   height: 3px;
   content: "";
   background-color: #1B1740;
@@ -528,6 +528,9 @@ footer li:hover {
     font-size: 12px;
     text-align: center;
     line-height: initial;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 
   .flex {
@@ -1285,22 +1288,35 @@ footer li:hover {
 
 .slick-prev, .slick-next {
     z-index: 100 ;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 70%;
 }
 
 .slick-prev::before, .slick-next::before {
 
-    font-size: 40px ;
-    opacity: .1;
+    font-size: 50px ;
+    opacity: .2;
+    bottom: 20px;
+    position: relative;
 }
 
 .slick-prev {
-    left: 20px ;
+    left: 0 ;
+    padding-left: 20px;
 }
 
 .slick-next {
-    right: 20px ;
+    right: 0 ;
+    padding-right: 20px;
+}
+
+
+.slick-next:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.8));
+}
+
+.slick-prev:hover {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.8));
 }
 
 .slick-dots {
@@ -2101,6 +2117,10 @@ footer li:hover {
 
   .reg-sub span {
     margin-top: 10px;
+  }
+
+  .intro-img-sub { 
+    max-width: 250px;
   }
 
 }
