@@ -172,10 +172,11 @@ $(document).ready(function() {
           $('.scicom').animate({
             left: '0'
           }, 300, 'swing', function(){
-            
+           
           })
 
-          $('.org-wrap').css('height',$('.scicom').height())
+          $('.org-wrap').css('height',$('.scicom').height() + 30)
+
 
           $('.organizers').animate({
             left: '-100vw'
