@@ -405,7 +405,7 @@ footer li:hover {
 }
 
 .page-h2::after {
-  width: 78vw;
+  width: 79.5vw;
   height: 3px;
   content: "";
   background-color: #1B1740;
@@ -1018,14 +1018,20 @@ footer li:hover {
     font-weight: 700;
   }
 
-  .reg-title h3 {
-    background-color: #851C22;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 15px;
+  .reg-title {
+    flex:1; 
+    min-width: 360px;
+  }
+
+  .reg-sub {
+    margin-top: -12px;
+    width: auto !important;
     display: table;
-    margin-top: 8px;
-    font-weight: 600;
+  }
+
+  .reg-sub span {
+    border-style: none;
+    font-size: 18px;
   }
 
 
@@ -1040,11 +1046,17 @@ footer li:hover {
     color: #1B1740;
     
   }
+
+  
   
   .reg-item {
-    margin: 0;
-    margin-left: 40px;
-    min-width: unset;
+    margin: 7px 0;
+    min-width: 270px;
+    flex: 1;
+  }
+
+  .reg-item:first-of-type {
+    margin-right: 30px;
   }
 
   .reg-btn {
@@ -1692,6 +1704,16 @@ footer li:hover {
     width: 78vw;
   }
 
+  .reg-fee {
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+
+  .reg-item {
+    margin: 15px 0 !important;
+  }
+
+
 }
 
 @media screen and (max-width: 600px) { 
@@ -2051,6 +2073,19 @@ footer li:hover {
 
   .airports-sub {
     padding-left: 20px;
+  }
+
+  .reg-title {
+    min-width: 200px ;
+  }
+
+  .reg-sub {
+    margin-left: 0;
+  }
+
+  .reg-sub span {
+    padding: 10px 20px;
+    margin-top: 10px;
   }
 
 }
