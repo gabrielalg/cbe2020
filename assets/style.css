@@ -410,7 +410,7 @@ footer li:hover {
   content: "";
   background-color: #1B1740;
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
   left: 0;
 }
 
@@ -424,6 +424,7 @@ footer li:hover {
     padding-bottom: 5px;
     padding-top: 0;
     position: relative;
+    line-height: normal;
     -webkit-box-decoration-break: clone;
     -ms-box-decoration-break: clone;
     -o-box-decoration-break: clone;
@@ -897,7 +898,7 @@ footer li:hover {
  
   .previous-symp {
     padding: 20px;
-    padding-top: 40px;
+    padding-top: 25px;
     padding-bottom: 0;
   }
 
@@ -983,8 +984,6 @@ footer li:hover {
 
   .city-title h3 span {
    border-style: none;
-   bottom: 1px;
-   
   }
 
   .logistics-city-img {
@@ -1024,7 +1023,7 @@ footer li:hover {
   }
 
   .reg-sub {
-    margin-top: -12px;
+    margin-top: -10px;
     width: auto !important;
     display: table;
   }
@@ -1848,7 +1847,7 @@ footer li:hover {
   .org-sub span {
     padding: 10px 20px;
     right: 0; 
-    margin-top: 5px;
+    margin-top: 3px;
     width: 100%;
     font-size: 14px;
     /* border-left-width: 0; */
@@ -1856,7 +1855,7 @@ footer li:hover {
 
   .sub-active span {
     font-size: 18px;
-    padding: 15px 20px;
+    padding: 12px 20px;
    }
 
   #organizers span {
@@ -1988,7 +1987,7 @@ footer li:hover {
    }
 
    .program-calendar-date {
-    margin-top: 10px;
+    margin-top: 5px;
    }
 
 
@@ -2084,7 +2083,6 @@ footer li:hover {
   }
 
   .reg-sub span {
-    padding: 10px 20px;
     margin-top: 10px;
   }
 
