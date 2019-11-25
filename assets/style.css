@@ -35,6 +35,7 @@ li {
 
 header {
     display: flex;
+    z-index: 2000;
 }
 
 button {
@@ -71,7 +72,7 @@ footer li:hover {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index: 1000;
+  z-index: 500;
   top: 0;
   display: flex;
   justify-content: center;
