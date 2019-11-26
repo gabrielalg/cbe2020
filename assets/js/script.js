@@ -180,7 +180,7 @@ $(document).ready(function() {
            
           })
 
-          $('.org-wrap').css('height',$('.scicom').height() + 30)
+          $('.org-wrap').css('height',$('.scicom').height() + 25)
 
 
           $('.organizers').animate({
@@ -203,7 +203,7 @@ $(document).ready(function() {
           $('.local-organizing').animate({
             left: '0'
           }, 300, 'swing', function(){
-            $('.org-wrap').css('height',$('.local-organizing').height())
+            $('.org-wrap').css('height',$('.local-organizing').height() + 25)
           })
 
           $('.scicom').animate({

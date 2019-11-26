@@ -623,17 +623,55 @@ footer li:hover {
     text-align: center;
   }
 
-  .calendar-date p:first-child {
+  .calendar-date p:first-child, .hotel-table-sub {
       background-color: #DEDEDE;
       font-size: 18px;
       font-weight: 700;
       padding: 20px;
-      margin: 0;
+      margin: 0 !important;
   }
 
   .calendar-date p:last-child {
       margin: auto 10px;
   }
+
+  .hotel-table-sub {
+    text-align: center;
+    padding: 20px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 0.5px;
+  }
+
+  .hotel-price {
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    margin: 0 !important;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 0.5px;
+  }
+
+  
+  .hotel-column {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .hotel-column h4 {
+    text-align: center;
+    min-height: 62px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hotel-table {
+    margin: 10px 0;
+    margin-bottom: 60px;
+  }
+
 
   .program-calendar-date {
     flex-direction: column;
@@ -851,6 +889,11 @@ footer li:hover {
 
   .local-organizing li {
     list-style-type: circle;
+    margin: 20px 0;
+  }
+
+  .local-organizing p {
+    line-height: normal;
   }
 
   .local-organizing span {
@@ -1380,9 +1423,9 @@ footer li:hover {
   min-width: 280px;
 }
 
+
+
 /* MOBILE MENU  */
-
-
 
     
 .menu li {
@@ -2123,6 +2166,11 @@ footer li:hover {
   .intro-img-sub { 
     max-width: 250px;
     font-size: 10px;
+  }
+
+  .hotel-table {
+    margin: 10px 0;
+    margin-bottom: 60px;
   }
 
 }
