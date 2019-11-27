@@ -179,8 +179,8 @@ $(document).ready(function() {
           }, 300, 'swing', function(){
            
           })
-
-          $('.org-wrap').css('height',$('.scicom').height() + 25)
+          
+          $('.org-wrap').css('height', $('.scicom').height() + (+$('.scicom').css('padding-top').replace('px', '')) + 10)
 
 
           $('.organizers').animate({
@@ -203,7 +203,7 @@ $(document).ready(function() {
           $('.local-organizing').animate({
             left: '0'
           }, 300, 'swing', function(){
-            $('.org-wrap').css('height',$('.local-organizing').height() + 25)
+            $('.org-wrap').css('height',$('.local-organizing').height() + (+$('.local-organizing').css('padding-top').replace('px', '')) + 10)
           })
 
           $('.scicom').animate({

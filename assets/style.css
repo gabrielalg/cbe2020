@@ -311,9 +311,9 @@ footer li:hover {
 .banner p {
     position: absolute;
     color:#fff;
-    bottom: 0;
+    bottom: 7.2vh;
     font-size: 12px;
-    margin: 45px 20px;
+    margin: 0 20px;
     max-width: 250px;
     /* background-color:rgba(0, 0, 0, 0.25); */
     background-image: radial-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0));
@@ -611,7 +611,7 @@ footer li:hover {
      border-color: #1B1740;
      margin: 20px;
      flex: 1;
-     min-width: 250px;
+     min-width: 300px;
   }
 
   .calendar-month h4 {
@@ -635,6 +635,10 @@ footer li:hover {
       margin: auto 10px;
   }
 
+  #hotel-table-mobile {
+    display: none;
+  }
+
   .hotel-table-sub {
     text-align: center;
     padding: 20px;
@@ -651,8 +655,18 @@ footer li:hover {
     border-style: solid;
     border-width: 0;
     border-top-width: 0.5px;
+    flex: 1;
+    position: relative;
   }
 
+  #hotel-reais .hotel-price::after {
+    content: '';
+    height: 26px;
+    width: 1px;
+    background-color:#110E27;
+    position: absolute;
+    right: 0;
+  }
   
   .hotel-column {
     flex-direction: column;
@@ -669,7 +683,14 @@ footer li:hover {
 
   .hotel-table {
     margin: 10px 0;
-    margin-bottom: 60px;
+  }
+
+  #hotel-rates p:only-of-type {
+    font-size: 14px;
+    font-weight: 400; 
+    margin-bottom: 50px; 
+    margin-top: 0;
+    text-align: end;
   }
 
 
@@ -884,6 +905,7 @@ footer li:hover {
     top: 0;
     width: 100%;
     display: none;
+    /* bottom: 0 !important; */
   }
 
 
@@ -1174,7 +1196,7 @@ footer li:hover {
   }
 
   .airport-logo img {
-    max-width: 100%;
+    width: 100%;
   }
 
   .aiport-name {
@@ -1334,17 +1356,26 @@ footer li:hover {
 
 .slick-prev, .slick-next {
     z-index: 100 ;
-    width: 100px;
+    width: 120px;
     height: 70%;
 }
 
 .slick-prev::before, .slick-next::before {
-
-    font-size: 50px ;
-    opacity: .2;
-    bottom: 20px;
+    font-size: 65px ;
+    opacity: .3;
+    bottom: 25px;
     position: relative;
+    
 }
+
+.slick-prev::before {
+  padding-right: 20px;
+}
+
+.slick-next::before {
+  padding-left: 20px;
+}
+
 
 .slick-prev {
     left: 0 ;
@@ -1793,6 +1824,43 @@ footer li:hover {
     margin: 15px 0 !important;
   }
 
+  #hotel-table-desktop {
+    display: none;
+  }
+
+  #hotel-table-mobile {
+    display: flex;
+  }
+
+  .hotel-price {
+    border-style: none;
+    font-size: 16px !important;
+    padding: 15px !important;
+  }
+
+  .hotel-price:first-of-type::after {
+    content: '';
+    height: 26px;
+    width: 1px;
+    background-color:#110E27;
+    position: absolute;
+    right: 0;
+  }
+
+  .hotel-table {
+    margin: 10px 0;
+  }
+
+  .hotel-column h4 {
+    font-size: 16px;
+    min-height: 50px;
+  }
+
+  .hotel-table-sub {
+    font-size: 16px;
+    padding: 15px;
+  }
+
 
 }
 
@@ -1955,6 +2023,7 @@ footer li:hover {
 
   .calendar-month {
     margin: 10px 20px;
+    min-width: 220px;
   }
 
   .location-name {
@@ -2042,7 +2111,7 @@ footer li:hover {
    }
 
    .org-padding {
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 0;
    }
 
@@ -2170,7 +2239,7 @@ footer li:hover {
 
   .hotel-table {
     margin: 10px 0;
-    margin-bottom: 60px;
   }
+
 
 }
