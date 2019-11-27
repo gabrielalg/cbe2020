@@ -50,6 +50,7 @@ footer {
     color: #fff;
     justify-content: center;
     padding: 20px 40px;
+    padding-bottom: 35px;
     flex-wrap: wrap;
 }
 
@@ -1835,7 +1836,7 @@ footer li:hover {
   .hotel-price {
     border-style: none;
     font-size: 16px !important;
-    padding: 15px !important;
+    padding: 10px !important;
   }
 
   .hotel-price:first-of-type::after {
@@ -1858,7 +1859,7 @@ footer li:hover {
 
   .hotel-table-sub {
     font-size: 16px;
-    padding: 15px;
+    padding: 10px;
   }
 
 
@@ -2111,7 +2112,7 @@ footer li:hover {
    }
 
    .org-padding {
-    padding-top: 0;
+    padding-top: 10px;
     padding-bottom: 0;
    }
 
