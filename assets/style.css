@@ -571,12 +571,14 @@ footer li:hover {
 
   .btn-note {
     padding-top: 20px;
+   
   }
 
-  .btn-note p:last-child {
-    margin-top: 8px;
+  .reg-item p:last-child {
+    margin-top: 5px;
     font-size: 12px;
     line-height: initial;
+    text-align: center;
     /* max-width: 250px; */
   }
 
@@ -613,6 +615,7 @@ footer li:hover {
      margin: 20px;
      flex: 1;
      min-width: 300px;
+     
   }
 
   .calendar-month h4 {
@@ -760,7 +763,7 @@ footer li:hover {
     /* top: 0; */
   }
 
-  .sub-active span {
+  .sub-active span, .non-clickable span {
     background-color: #851C22;
     padding: 10px 20px;
     font-size: 22px;
@@ -1121,15 +1124,48 @@ footer li:hover {
   .reg-info {
     flex-direction: column;
     align-items: center;
+    flex: 1;
   }
 
-  .reg-info p:first-child {
-    font-size: 24px;
+  .reg-info p:first-of-type {
+    font-size: 22px;
     font-weight: 700;
     color: #1B1740;
-    
+    margin-top: 12px;
   }
 
+  .reg-info h5 {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color:#DEDEDE;
+    position: relative;
+    min-height: 60px;
+    line-height: 20px;
+  }
+    
+  .line-height-change {
+    line-height: 37px !important;
+  }
+
+  .table-center-line::after {
+    content: '';
+    height: 25px;
+    width: 1px;
+    background-color:
+    #110E27;
+    position: absolute;
+    right: 0;
+    top: 18px;
+  }
+
+  .reg-btn::after {
+    height: 90px;
+    top: 25px;
+  }
   
   
   .reg-item {
@@ -1143,9 +1179,12 @@ footer li:hover {
   }
 
   .reg-btn {
-    padding-top: 0; 
+    padding: 15px; 
     flex-direction: column; 
     align-items: center;
+    position: relative;
+    width: 100%;
+    
   }
 
   .airports-list {
@@ -1822,7 +1861,8 @@ footer li:hover {
   }
 
   .reg-item {
-    margin: 15px 0 !important;
+    margin: 0 !important;
+    margin-top: 20px !important;
   }
 
   #hotel-table-desktop {
@@ -2241,6 +2281,19 @@ footer li:hover {
   .hotel-table {
     margin: 10px 0;
   }
+
+  .reg-btn {
+    padding: 10px;
+  }
+
+  .reg-info p:first-of-type {
+    font-size: 20px;
+  }
+
+  .line-height-change {
+    line-height: 20px !important;
+  }
+
 
 
 }

@@ -237,7 +237,7 @@ $(document).ready(function() {
       // left
     });
 
-    $('.org-sub').on('click', function() {
+    $('.org-sub').not('.non-clickable').on('click', function() {
 
         if ($(this).hasClass('sub-active')) return
 
@@ -283,7 +283,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        speed: 1500,
+        speed: 800,
         autoplaySpeed: 3500,
         responsive: [
             {
@@ -302,7 +302,7 @@ $(document).ready(function() {
                   slidesToShow: 2,
                   slidesToScroll: 1,
                   autoplaySpeed: 3000,
-                  speed: 800
+                  speed: 500
                 }
               },
               {
@@ -311,7 +311,7 @@ $(document).ready(function() {
                   slidesToShow: 1,
                   slidesToScroll: 1,
                   autoplaySpeed: 3000,
-                  speed: 800
+                  speed: 500
                 }
               }
             ]
