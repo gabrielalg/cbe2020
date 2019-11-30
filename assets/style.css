@@ -43,6 +43,7 @@ button {
     border-style: solid;
     font-size: 15px;
     font-weight: 600;
+    outline: none; 
 }
 
 footer {
@@ -1163,7 +1164,7 @@ footer li:hover {
   }
 
   .reg-btn::after {
-    height: 90px;
+    height: 80px;
     top: 25px;
   }
   
@@ -1501,6 +1502,7 @@ footer li:hover {
     
 .menu li {
     margin: 15px 0px;
+    display: table;
 }  
 
 .mobile-menu {
@@ -1766,7 +1768,7 @@ footer li:hover {
     height: 0;
     overflow: hidden;
     text-align: initial;
-    width: auto;
+    width: max-content;
     opacity: 0;
     line-height: initial;
     transition: all 0.2s ease-in-out;
@@ -1857,7 +1859,7 @@ footer li:hover {
 
   .reg-fee {
     flex-wrap: wrap;
-    margin-top: 5px;
+    /* margin-top: 5px; */
   }
 
   .reg-item {
@@ -2034,7 +2036,7 @@ footer li:hover {
     width: 103%;
   } 
 
-  .org-sub span {
+  .org-sub span  {
     padding: 10px 20px;
     right: 0; 
     margin-top: 3px;
@@ -2043,7 +2045,7 @@ footer li:hover {
     /* border-left-width: 0; */
   }
 
-  .sub-active span {
+  .sub-active span, .non-clickable span {
     font-size: 18px;
     padding: 12px 20px;
    }
@@ -2292,8 +2294,20 @@ footer li:hover {
 
   .line-height-change {
     line-height: 20px !important;
+    padding: 10px 55px !important;
   }
 
+}
 
 
+@media screen and (max-width: 450px) { 
+  .line-height-change {
+    padding: 10px 35px !important;
+  }
+}
+
+@media screen and (max-width: 340px) { 
+  .line-height-change {
+    padding: 10px !important;
+  }
 }
