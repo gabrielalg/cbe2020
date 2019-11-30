@@ -1165,7 +1165,7 @@ footer li:hover {
 
   .reg-btn::after {
     height: 80px;
-    top: 25px;
+    top: 23px;
   }
   
   
@@ -1728,6 +1728,12 @@ footer li:hover {
   .menu-item.flex {
       margin-bottom: -15px;
       display: table;
+  }
+
+  .menu-item img {
+    margin-left: 4px;
+    margin-top: 0;
+    margin-bottom: 2px;
   }
 
   .menu.responsive {
