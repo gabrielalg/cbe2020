@@ -101,7 +101,7 @@ $(document).ready(function() {
       let top_distance = 80
 
       if ($(this).hasClass('sponsors-btn')) {
-        // top_distance = 80
+        top_distance = 70
         toggleMenuMobile(true)
       }
       // Make sure this.hash has a value before overriding default behavior
