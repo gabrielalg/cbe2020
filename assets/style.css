@@ -377,7 +377,7 @@ footer li:hover {
     font-size: 24px;
     font-weight: 600;
     margin: 0;
-    padding: 10px;
+    padding: 13px 18px;
     width: max-content;
     color: #fff;
 }
@@ -1272,6 +1272,11 @@ footer li:hover {
     color:#851C22; 
   }
 
+  /* .text-link-red:hover {
+    background-color: rgba(133, 28, 33, 0.1);
+    text-decoration: none;
+  } */
+
   .force-display-none {
    display: none !important;
   }
@@ -1294,6 +1299,24 @@ footer li:hover {
 
   #gallerypt2 {
     margin-top: 3px;
+  }
+
+  .info-tip {
+    margin-top: 30px;
+    background-color: #DEDEDE;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+
+  .info-img {
+    width: 200px;
+    margin: 20px 0;
+    margin-right: 40px;
+  }
+
+  .info-txt {
+    min-width: 400px;
+    flex:1;
   }
 
 
@@ -1588,6 +1611,10 @@ footer li:hover {
   .not-animate {
     animation: none !important;
   }
+
+  .h3-paragraph {
+    margin-top: -10px;
+  }
   
   @keyframes top {
     0% {
@@ -1689,8 +1716,9 @@ footer li:hover {
   }
 
   .logo-img {
-    width: 200px;
-    /* top: 35px; */
+    width: 210px;
+    top: 32px;
+    left: 16%;
   }
 
   .logo-img.scroll {
@@ -1942,6 +1970,19 @@ footer li:hover {
     padding: 10px;
   }
 
+  .info-img {
+    margin-top: 0;
+    width: 230px;
+  }
+
+  .info-txt {
+    min-width: 200px;
+  }
+
+  .info-tip {
+    min-width: 200px;
+  }
+
 
 }
 
@@ -1958,6 +1999,13 @@ footer li:hover {
 
 @media screen and (max-width: 550px) { 
 
+  .info-img {
+    margin-right: 0;
+  }
+
+  .info-txt {
+    min-width: 160px;
+  }
 
   .container-logo {
     width: 270px;
