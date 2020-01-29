@@ -96,12 +96,16 @@ $(document).ready(function() {
      });
       
 
-    $(".sponsors-btn, .page-top-btn").on('click', function(event) {
+    $(".sponsors-btn, .page-top-btn, .session-btn").on('click', function(event) {
 
       let top_distance = 80
 
       if ($(this).hasClass('sponsors-btn')) {
         top_distance = 70
+        toggleMenuMobile(true)
+      }
+      if ($(this).hasClass('session-btn')) {
+        top_distance = 110
         toggleMenuMobile(true)
       }
       // Make sure this.hash has a value before overriding default behavior
