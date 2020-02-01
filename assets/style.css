@@ -587,7 +587,7 @@ footer li:hover {
     content: "";
     background-color:#DEDEDE;
     position: absolute;
-    top: 50px;
+    top: 45px;
   }
 
   .btn-note {
@@ -2397,8 +2397,16 @@ footer li:hover {
     margin: 10px 0;
   }
 
+  .mobile-margin-top {
+    margin-top: 10px !important;
+  }
+
   .reg-btn {
     padding: 10px;
+  }
+
+  .reg-btn::after {
+    height: 20px;
   }
 
   .reg-info p:first-of-type {
