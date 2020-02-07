@@ -580,6 +580,20 @@ footer li:hover {
     /* border-color: #63181C; */
   }
 
+  .flag-reg-open {
+    position: absolute;
+    background: #851C22;
+    right: 0;
+    top: 120px;
+    padding: 2px 25px;
+  }
+
+  .flag-reg-open p {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 30px
+  }
+
 
   .before-line::before {
     width: 79vw;
@@ -2417,6 +2431,17 @@ footer li:hover {
   .line-height-change {
     line-height: 20px !important;
     padding: 10px 55px !important;
+  }
+
+  
+  .flag-reg-open {
+  
+    top: 130px;
+   
+  }
+
+  .flag-reg-open p {
+    margin-right: 5px
   }
 
 }
