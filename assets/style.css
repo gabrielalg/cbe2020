@@ -721,13 +721,13 @@ footer li:hover {
   }
 
   .hotel-table {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   #hotel-rates p:only-of-type {
     font-size: 14px;
     font-weight: 400; 
-    margin-bottom: 50px; 
+    margin-bottom: 40px; 
     margin-top: 0;
     text-align: end;
   }
@@ -927,12 +927,14 @@ footer li:hover {
 
   .about-main-img {
     margin-left: 35px;
+    top: -10px;
   }
 
   .about-imgs {
     margin: 10px auto;
     flex: 1;
     max-width: 500px;
+    flex-direction: column;
   }
 
   .local-organizing {
@@ -1418,6 +1420,7 @@ footer li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .about-main-img .slick-slide img {
@@ -1434,15 +1437,31 @@ footer li:hover {
   line-height: initial;
   max-width: 310px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: -5px;
+  position: relative;
+  top: 0;
+  z-index: -1;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.about-main-img .slick-list {
+  overflow: initial !important;
 }
 
 .about-small-img {
   margin-left: 15px;
 }
 
-.about-small-img .slick-track {
+.about-small-img-2 {
+  margin-bottom: 30px;
+}
+
+.about-small-img-2 .slick-track {
   transform: none !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about-small-img .slick-list {
@@ -1462,11 +1481,30 @@ footer li:hover {
     cursor: pointer;
 }
 
-.about-small-img .slick-slide img {
+.about-small-img-2 .slick-slide {
+  border-radius: 50%;
+  width: 80px !important; 
+  height: 80px;
+  background-color:whitesmoke;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.about-small-img-2 .slick-current {
+  border-color: deepskyblue;
+  border-width: 3px;
+  border-style: solid;
+}
+
+
+.about-small-img-2 .slick-slide img {
   width: auto;
   height: 80px;
   position: relative;
-
 }
 
 .slick-prev, .slick-next {
@@ -2239,22 +2277,21 @@ footer li:hover {
     max-width: 250px;
   }
 
-  .about-small-img {
+
+
+  .about-small-img-2 {
     margin: 0;
   }
 
-  .about-small-img .slick-slide {
-    width: 55px !important;
-    height: 55px;
+  .about-small-img-2 .slick-slide {
+    width: 60px !important;
+    height: 60px;
   }
 
-  .about-small-img .slick-slide img {
-    height: 55px ;
+  .about-small-img-2 .slick-slide img {
+    height: 60px ;
   }
 
-  .about-small-img .slick-list {
-    height: 90px !important;
-  }
 
    /* --------- */
 
