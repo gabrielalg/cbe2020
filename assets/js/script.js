@@ -364,20 +364,27 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
+        infinite: true,
         autoplay: true,
         speed: 600,
         autoplaySpeed: 4000,
-        asNavFor: '.about-small-img'
+        asNavFor: '.about-small-img-2'
     });
     
-    $('.about-small-img').slick({
-        // infinite: true,
-        slidesToShow: 4,
+    $('.about-small-img-2').slick({
+        slidesToShow: 18,
         slidesToScroll: 1,
         asNavFor: '.about-main-img',
         dots: false,
         focusOnSelect: true,
-        vertical: true
+        infinite: false,
+        arrows: false
+        // centerMode: true,
+        // centerPadding: '60px',
+        // infinite: true,
+        // autoplay: true,
+        // vertical: true,
+       
     });
 
 
