@@ -2117,6 +2117,10 @@ footer li:hover {
     margin-right: 0;
   }
 
+  .mobile-margin-btn {
+    margin-top: 10px;
+  }
+
 }
 
 @media screen and (max-width: 600px) { 
@@ -2538,9 +2542,6 @@ footer li:hover {
     min-width: 200px;
   }
 
-  .mobile-margin-btn {
-    margin-top: 12px;
-  }
 
 }
 
