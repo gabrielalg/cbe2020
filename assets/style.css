@@ -270,7 +270,7 @@ footer li:hover {
   min-width: 150px;
   max-width: 200px;
   margin: 0 auto;
-  height: auto;
+  max-height: 100px;
 }
 
 .news-font-size {
@@ -2150,11 +2150,12 @@ footer li:hover {
   }
 
   .padding-top-news {
-    padding-top: 100px !important;
+    padding-top: 80px !important;
   }
 
   .head-news {
     padding: 0 20px; 
+    font-size: 18px;
   }
 
   .margin-control img:first-child {
