@@ -270,11 +270,14 @@ footer li:hover {
   min-width: 150px;
   max-width: 200px;
   margin: 0 auto;
+  height: auto;
 }
 
 .news-font-size {
   font-size: 36px !important;
   top: 4vh;
+  margin-right: 150px !important;
+  left: 8vw;
 }
 
 .padding-top-news {
@@ -681,6 +684,7 @@ footer li:hover {
     top: 120px;
     padding: 2px 25px;
     z-index: 200;
+    display: table;
   }
 
   .flag-reg-open p {
@@ -2141,7 +2145,8 @@ footer li:hover {
 
   .news-font-size {
     font-size: 26px !important;
-    top: 3vh;
+    top: 2vh;
+    left: 6vw;
   }
 
   .padding-top-news {
@@ -2696,6 +2701,10 @@ footer li:hover {
 @media screen and (max-width: 450px) { 
   .line-height-change {
     padding: 10px 35px !important;
+  }
+
+  .news-font-size {
+    margin-right: 90px !important;
   }
 }
 
