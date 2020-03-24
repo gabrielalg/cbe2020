@@ -267,7 +267,7 @@ footer li:hover {
 .logo-img-modal {
   width: 180px;
   min-width: 150px;
-  max-width: 250px;
+  max-width: 220px;
   margin: 0 auto;
 }
 
@@ -287,6 +287,14 @@ footer li:hover {
   padding-right: 0; 
   font-weight: 700; 
   font-family: 'Open Sans', sans-serif;
+}
+
+.margin-control img {
+  margin: 0 15px;
+}
+
+.margin-control {
+  margin:10px 0;
 }
 
 /* .modal-dialog p {
@@ -2141,6 +2149,15 @@ footer li:hover {
 
   .head-news {
     padding: 0 20px; 
+  }
+
+  .margin-control img:first-child {
+    margin: 0;
+    margin-right:15px;
+  }
+
+  .margin-control img:last-child {
+    margin: 0;
   }
 
   .margin-null {
