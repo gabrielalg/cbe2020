@@ -86,7 +86,6 @@ footer li:hover {
   color: #fff;
 }
 
-
 .sk-circle {
   margin: 100px auto;
   width: 40px;
@@ -211,6 +210,91 @@ footer li:hover {
 
 /* ------------------------------ */
 
+
+.modal-dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(17, 14, 39, 0.8);
+  z-index: 900;
+  pointer-events: revert;
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+/* .modal-dialog:target {
+  display: none;
+  opacity: 0;
+  pointer-events: auto;
+  
+}*/
+
+.modal-dialog h2, .modal-dialog p {
+  color: #110E27;
+}
+
+.modal-dialog .content-modal {
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  margin: 0 auto;
+  /* padding: 20px 0;
+  padding-bottom: 70px; */
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+  /* overflow-y: scroll; */
+  scrollbar-width: thin;
+  z-index: 1000;
+}
+
+.close-modal {
+  position: absolute;
+  top: -35px;
+  right: -40px;
+}
+
+.close-modal div:hover {
+  background-color: rgb(108, 125, 141) !important;
+}
+
+.logo-img-modal {
+  width: 180px;
+  min-width: 150px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.news-font-size {
+  font-size: 36px !important;
+  top: 4vh;
+}
+
+.padding-top-news {
+  padding-top: 40px !important;
+}
+
+.head-news {
+  flex:2; 
+  padding: 0 40px; 
+  font-size: 20px; 
+  padding-right: 0; 
+  font-weight: 700; 
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* .modal-dialog p {
+  margin-top: 5%; 
+  margin-bottom: 5%;    
+
+} */
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -263,6 +347,7 @@ footer li:hover {
     left: 20%;
     top: 16px;
 }
+
 
 .container-logo {
     background-color:#fff;
@@ -586,6 +671,7 @@ footer li:hover {
     right: 0;
     top: 120px;
     padding: 2px 25px;
+    z-index: 200;
   }
 
   .flag-reg-open p {
@@ -594,6 +680,9 @@ footer li:hover {
     margin-right: 30px
   }
 
+  .flag-reg-open:hover {
+    background: #63181C;
+  }
 
   .before-line::before {
     width: 79vw;
@@ -1683,7 +1772,7 @@ footer li:hover {
   transition: all 0.2s ease-in-out;
 } */
 
-.menu-btn {
+.menu-btn, .close-btn {
     position: relative;
     top: 40px;
     right: 0;
@@ -1708,12 +1797,38 @@ footer li:hover {
     transition: all .3s;
     position: relative;
   }
+
+  .active-close span {
+    display: block;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    height: 2px;
+  }
   
-  .menu-btn span + span, .close-modal-btn span + span {
+  .menu-btn span + span, .close-modal-btn span + span, .close-btn span + span {
+    margin-top: 8px;
+  }
+
+  .active-close span:nth-child(1) {
+    top: 14px;
+    transform: rotate(45deg);
+    animation: none !important;
+  }
+  
+  .active-close span:nth-child(2) {
+    transform: scale(0);
+    animation: none !important;
     margin-top: 8px;
   }
   
- 
+  .active-close span:nth-child(3) {
+    bottom: 6px;
+    transform: rotate(135deg);
+    animation: none !important;
+    margin-top: 8px;
+  }
+
   .active span:nth-child(1) {
     animation: ease .4s top forwards;
   }
@@ -2013,6 +2128,20 @@ footer li:hover {
 }
 
 @media screen and (max-width: 680px) { 
+
+
+  .news-font-size {
+    font-size: 26px !important;
+    top: 3vh;
+  }
+
+  .padding-top-news {
+    padding-top: 100px !important;
+  }
+
+  .head-news {
+    padding: 0 20px; 
+  }
 
   .margin-null {
     margin-left: 0 !important;

@@ -25,9 +25,11 @@ function toggleMenuMobile(is_closed) {
     }
 }
 
+
 $(document).ready(function() {
 
-
+    // TODO: Remover isso quando remover modal do coronga!
+    $('body').css('overflow', 'hidden')
    
     // $('body').on('click', '.menu .menu-item', function(e) {
 
@@ -94,6 +96,34 @@ $(document).ready(function() {
         $('.dropdown-menu .menu-item').toggleClass('show-txt-menu');
         $('.drop-btn img').toggleClass('rotate');
      });
+
+     $(".close-modal").on('click', function(event)  {
+      event.preventDefault();
+      // $('.content-modal').fadeOut()
+      $('.modal-dialog').animate({
+        opacity: '0'
+      }, 100, function() {
+        setTimeout(() => {
+          $(this).hide()
+          $('body').css('overflow', 'auto')
+        }, 100)
+      })
+      
+     });
+
+     $(".open-modal").on('click', function(event)  {
+      event.preventDefault();
+      // $('.content-modal').fadeOut()
+      $('.modal-dialog').show()
+
+      $('.modal-dialog').animate({
+        opacity: '1'
+      }, 100, function() {
+          $('body').css('overflow', 'hidden')
+        })
+      
+     });
+      
       
 
     $(".sponsors-btn, .page-top-btn, .session-btn").on('click', function(event) {
