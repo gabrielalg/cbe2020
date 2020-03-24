@@ -218,13 +218,14 @@ footer li:hover {
   bottom: 0;
   left: 0;
   background: rgba(17, 14, 39, 0.8);
-  z-index: 900;
+  z-index: 9999;
   pointer-events: revert;
   display: block;
   opacity: 1;
   -webkit-transition: opacity 200ms ease-in;
   -moz-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
+  min-width: 220px;
 }
 
 /* .modal-dialog:target {
@@ -267,7 +268,7 @@ footer li:hover {
 .logo-img-modal {
   width: 180px;
   min-width: 150px;
-  max-width: 220px;
+  max-width: 200px;
   margin: 0 auto;
 }
 
