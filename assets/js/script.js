@@ -25,30 +25,28 @@ function toggleMenuMobile(is_closed) {
     }
 }
 
+$(window).on('load',function(){
+  $('.modal-dialog').hide()
+  var countModalViews = sessionStorage.getItem('countModalViews');
+  if (!countModalViews) {
+    countModalViews = 0
+  }
+  if (countModalViews < 2) {
+    $('body').css('overflow', 'hidden')
+    $('.modal-dialog').show()
+    $('.modal-dialog').css('opacity', '1')
+    countModalViews++
+    sessionStorage.setItem('countModalViews', countModalViews);
+  }
+});
 
 $(document).ready(function() {
-
-    // TODO: Remover isso quando remover modal do coronga!
-    $('body').css('overflow', 'hidden')
-   
-    // $('body').on('click', '.menu .menu-item', function(e) {
-
-    // toggleMenuMobile()
-
-    // }
-
-    // $(window).load(function(){
-    //     $('#cover').fadeOut(1000);
-    // });
 
     $(window).resize(function(){
         if ($(this).width() >= 1120 && $('#menu').hasClass('responsive')){
           toggleMenuMobile()
         }
 
-        // if ($(this).width() >= 1120) {
-        //   changeNavColor()
-        // }
     });
 
 
@@ -157,7 +155,7 @@ $(document).ready(function() {
           });
       } // End if
     }); 
-  
+
     $(window).on('click', function(event) {
 
         if (!event.target.matches('.drop-btn') && 
