@@ -25,22 +25,20 @@ function toggleMenuMobile(is_closed) {
     }
 }
 
-$(window).on('load',function(){
-  $('.modal-dialog').hide()
-  var countModalViews = sessionStorage.getItem('countModalViews');
-  if (!countModalViews) {
-    countModalViews = 0
-  }
-  if (countModalViews < 2) {
-    $('body').css('overflow', 'hidden')
-    $('.modal-dialog').show()
-    $('.modal-dialog').css('opacity', '1')
-    countModalViews++
-    sessionStorage.setItem('countModalViews', countModalViews);
-  }
-});
-
 $(document).ready(function() {
+
+    $('.modal-dialog').hide()
+    var countModalViews = sessionStorage.getItem('countModalViews');
+    if (!countModalViews) {
+      countModalViews = 0
+    }
+    if (countModalViews < 2) {
+      $('body').css('overflow', 'hidden')
+      $('.modal-dialog').show()
+      $('.modal-dialog').css('opacity', '1')
+      countModalViews++
+      sessionStorage.setItem('countModalViews', countModalViews);
+    }
 
     $(window).resize(function(){
         if ($(this).width() >= 1120 && $('#menu').hasClass('responsive')){
