@@ -221,7 +221,7 @@ footer li:hover {
   z-index: 9999;
   pointer-events: revert;
   display: block;
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: opacity 200ms ease-in;
   -moz-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
