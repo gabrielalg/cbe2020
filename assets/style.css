@@ -220,8 +220,8 @@ footer li:hover {
   background: rgba(17, 14, 39, 0.8);
   z-index: 9999;
   pointer-events: revert;
-  display: block;
-  opacity: 0;
+  display: none;
+  opacity: 1;
   -webkit-transition: opacity 200ms ease-in;
   -moz-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
