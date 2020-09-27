@@ -102,6 +102,7 @@ $(document).ready(function() {
       }, 100, function() {
         setTimeout(() => {
           $(this).hide()
+          $(this).removeClass('flex')
           $('body').css('overflow', 'auto')
         }, 100)
       })
@@ -111,6 +112,7 @@ $(document).ready(function() {
      $(".open-modal").on('click', function(event)  {
       event.preventDefault();
       // $('.content-modal').fadeOut()
+      $('.modal-dialog').addClass('flex')
       $('.modal-dialog').show()
 
       $('.modal-dialog').animate({
