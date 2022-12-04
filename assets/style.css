@@ -350,12 +350,6 @@ footer li:hover {
   margin: 15px 0;
 }
 
-/* .modal-dialog p {
-  margin-top: 5%; 
-  margin-bottom: 5%;    
-
-} */
-
 .menu {
   display: flex;
   justify-content: space-around;

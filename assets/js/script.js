@@ -511,16 +511,4 @@ $(document).ready(function () {
       $(".program-slick").slick("unslick");
     }
   });
-
-  // --------- UNITE GALLERY
-
-  $("#gallery").unitegallery({
-    tiles_type: "justified",
-    // lightbox_textpanel_width: 230
-  });
-
-  $("#gallerypt2").unitegallery({
-    tiles_type: "justified",
-    // lightbox_textpanel_width: 230
-  });
 });
