@@ -90,7 +90,7 @@ const modalHTML = `
 
         <p
           style="
-            font-family: 'Shadows Into Light', cursive;
+            font-family: 'Yellowtail', cursive;
             font-size: 24px;
             margin-top: 10px;
             margin-bottom: 0;
@@ -153,7 +153,10 @@ $(document).ready(function () {
   }
   if (countModalViews < 1) {
     $(".modal-dialog").addClass("flex");
-    $("body").css("overflow", "hidden");
+    $("html").css({
+      position: "fixed",
+      "overflow-y": "scroll",
+    });
     $(".modal-dialog").show();
     countModalViews++;
     sessionStorage.setItem("countModalViews", countModalViews);
@@ -170,7 +173,10 @@ $(document).ready(function () {
         setTimeout(() => {
           $(this).hide();
           $(this).removeClass("flex");
-          $("body").css("overflow", "auto");
+          $("html").css({
+            position: "static",
+            overflow: "auto",
+          });
         }, 100);
       }
     );
@@ -187,7 +193,10 @@ $(document).ready(function () {
       },
       100,
       function () {
-        $("body").css("overflow", "hidden");
+        $("html").css({
+          position: "fixed",
+          "overflow-y": "scroll",
+        });
       }
     );
   });
