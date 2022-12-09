@@ -94,7 +94,7 @@ const modalHTML = `
             font-size: 24px;
             margin-top: 10px;
             margin-bottom: 0;
-            line-height: 36px;
+            line-height: 1.2;
           "
         >
           Camila Signori, Cristina Nakayama, Maurício Shimabukuro, Paulo
