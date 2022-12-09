@@ -1531,6 +1531,12 @@ footer li:hover {
   margin-left: 40px;
 }
 
+.info-tip.full-width {
+  margin: 0;
+  margin-top: 30px;
+  width: auto;
+}
+
 .info-img {
   width: 200px;
   margin: 20px 0;

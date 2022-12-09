@@ -12,7 +12,6 @@ function toggleMenuMobile(is_closed) {
   if (!$("#menu").hasClass("responsive") && !is_closed) {
     $("#menu").addClass("responsive");
     $("#mobile-menu").addClass("mobile-menu-active");
-    // $('.menu-layout').addClass('menu-mobile-active')
   } else {
     $("#menu").removeClass("responsive");
     $("#menu").addClass("menu");
@@ -20,25 +19,10 @@ function toggleMenuMobile(is_closed) {
     $(".dropdown-menu .menu-item").removeClass("show-txt-menu");
     $(".dropdown-menu").removeClass("show");
     $(".drop-btn img").removeClass("rotate");
-    // $('.menu-layout').removeClass('menu-mobile-active')
   }
 }
 
 $(document).ready(function () {
-  // $('.modal-dialog').hide()
-
-  var countModalViews = sessionStorage.getItem("countModalViews");
-  if (!countModalViews) {
-    countModalViews = 0;
-  }
-  if (countModalViews < 1) {
-    $(".modal-dialog").addClass("flex");
-    $("body").css("overflow", "hidden");
-    $(".modal-dialog").show();
-    countModalViews++;
-    sessionStorage.setItem("countModalViews", countModalViews);
-  }
-
   $(window).resize(function () {
     if ($(this).width() >= 1120 && $("#menu").hasClass("responsive")) {
       toggleMenuMobile();
@@ -81,41 +65,6 @@ $(document).ready(function () {
     $(".dropdown-menu").toggleClass("show");
     $(".dropdown-menu .menu-item").toggleClass("show-txt-menu");
     $(".drop-btn img").toggleClass("rotate");
-  });
-
-  $(".close-modal").on("click", function (event) {
-    event.preventDefault();
-    // $('.content-modal').fadeOut()
-    $(".modal-dialog").animate(
-      {
-        opacity: "0",
-      },
-      100,
-      function () {
-        setTimeout(() => {
-          $(this).hide();
-          $(this).removeClass("flex");
-          $("body").css("overflow", "auto");
-        }, 100);
-      }
-    );
-  });
-
-  $(".open-modal").on("click", function (event) {
-    event.preventDefault();
-    // $('.content-modal').fadeOut()
-    $(".modal-dialog").addClass("flex");
-    $(".modal-dialog").show();
-
-    $(".modal-dialog").animate(
-      {
-        opacity: "1",
-      },
-      100,
-      function () {
-        $("body").css("overflow", "hidden");
-      }
-    );
   });
 
   $(".sponsors-btn, .page-top-btn, .session-btn").on("click", function (event) {
