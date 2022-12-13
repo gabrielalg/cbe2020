@@ -63,19 +63,19 @@ const modalHTML = `
         </p>
 
         <p>
-          We finally have updates of the 7th International Symposium on
-          Chemosynthesis-Based Ecosystems (CBE7). After the delay because of
-          the situation in Brazil, and around the world, due to the covid-19
-          pandemic, we are pleased to announce that the CBE7 will be held in
-          São Paulo city in the University of São Paulo between 14-18 August
-          2023.
+          We finally have updates on the 7th International Symposium on 
+          Chemosynthesis-Based Ecosystems (CBE7). Following the delay
+          imposed by COVID-19 to our agenda on the 7th International 
+          Symposium on Chemosynthesis-Based Ecosystems (CBE7), we are
+          pleased to announce that CBE 7 will finally be held on August 
+          14-18, 2023 at the University of Sao Paulo in Sao Paulo city.
         </p>
 
         <p>
           CBE7 represents the 7th edition of a successful symposium series
           that has already taken place in Europe (Portugal, France), North
           America (United States and Canada), and Asia (Japan). For the
-          first time will take place in the South hemisphere and in South
+          first time it will take place in the South hemisphere and in South
           America.
         </p>
 
@@ -110,7 +110,7 @@ const modalHTML = `
         >
           <div style="padding: 10px 0; margin-right: 20px">
             <p style="margin-bottom: 0">
-              Oceanographic Institute, University of São Paulo
+              Oceanographic Institute, University of Sao Paulo
             </p>
             <p style="margin-top: 5px">
               Contact:
