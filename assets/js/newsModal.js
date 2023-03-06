@@ -144,9 +144,7 @@ const modalHTML = `
   </div>
 `;
 
-$(document).ready(function () {
-  $("body").prepend(modalHTML);
-
+function openModalAutomatically() {
   var countModalViews = sessionStorage.getItem("countModalViews");
   if (!countModalViews) {
     countModalViews = 0;
@@ -161,6 +159,12 @@ $(document).ready(function () {
     countModalViews++;
     sessionStorage.setItem("countModalViews", countModalViews);
   }
+}
+
+$(document).ready(function () {
+  $("body").prepend(modalHTML);
+
+  // openModalAutomatically();
 
   $(".close-modal").on("click", function (event) {
     event.preventDefault();
