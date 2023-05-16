@@ -96,6 +96,7 @@
 
     <script type="text/javascript" src="../assets/js/newsModal.js"></script>
     <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="../assets/js/manageRegistration.js"></script>
 
 </head>
 
@@ -173,7 +174,8 @@
             <ul class="airports-sub" style="margin: 0; max-width: 720px;">
                 <li> Registration for the CBE7 is now processed through PayPal.</li>
                 <li> Registration fees are in Brazilian Reais (BRL - R$) and includes
-                    all coffee breaks and lunches, and cocktails at poster sessions.</li>
+                    all coffee breaks and cocktails at poster sessions.</li>
+                <li> An additional fee provides a lunch pass for all days of the event.</li>
                 <!-- <li>We are considering an exchange rate of 4.2 between US dollars and Brazilian Reais.</li> -->
                 <li> We are offering discounted registration rates for current
                     members of the Deep-Sea Biology Society (DSBS).
@@ -201,162 +203,139 @@
 
     </section>
 
-    <section class="container flex" style="flex-wrap: wrap; padding-top: 35px;">
-        <div class="reg-title">
-            <h2 class="page-h2 no-after "><span> Early Registration </span></h2>
-            <div class="flex sub-wrap" style="min-height: auto;">
-                <h3 class="org-sub sub-active reg-sub"><span>Open March, 2023<br> Deadline June 20, 2023</span></h3>
+    <div id="registrationContainer" class="flex" style="flex-direction: column;">
+        <section class="container flex" style="flex-wrap: wrap; position: relative; padding-top: 100px;">
+            <div class="reg-title before-line">
+                <h2 class="page-h2 no-after "><span> Early Registration </span></h2>
+                <div class="flex sub-wrap" style="min-height: auto;">
+                    <h3 class="org-sub sub-active reg-sub"><span>Open March, 2023<br> Deadline June 30, 2023</span></h3>
+                </div>
             </div>
-        </div>
 
-        <div class="flex" style="flex-direction: column; flex:2;">
-            <div class="flex reg-fee" style="flex:2;">
+            <div class="flex" style="flex-direction: column; flex:2;">
+                <div class="flex reg-fee" style="flex:2;">
 
-                <div class="calendar-month reg-item ">
-                    <h4 style="font-size: 22px; font-weight: 600;">Professional</h4>
-                    <div class="flex">
-                        <div class="flex reg-info">
-                            <h5 class="table-center-line line-height-change"> DSBS member</h5>
+                    <div class="calendar-month reg-item ">
+                        <h4 style="font-size: 22px; font-weight: 600;">Professional</h4>
+                        <div class="flex">
+                            <div class="flex reg-info">
+                                <h5 class="table-center-line line-height-change"> DSBS member</h5>
 
-                            <div class="btn-note flex reg-btn table-center-line">
-                                <p>R$ 2000</p>
-                                <p>ca. US$ 383</p>
-                                <a class="text-link-red" target="_blank" rel="noreferrer"
-                                    href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=4ZJCMPZVD9GC4&lc=BR&item_name=Professional%20%2d%20DSBS%20member%20%2d%20Early&item_number=007&amount=2000%2e00&currency_code=BRL&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHosted">
-                                    Pay with PayPal</a>
+                                <div class="btn-note flex reg-btn table-center-line">
+                                    <p>R$ 900</p>
+                                    <p>ca. US$ 214</p>
+                                </div>
+                            </div>
+
+                            <div class="flex reg-info">
+                                <h5> DSBS <br> non member</h5>
+
+                                <div class="btn-note flex reg-btn">
+                                    <p>R$ 1200</p>
+                                    <p>ca. US$ 286</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="flex reg-info">
-                            <h5> DSBS <br> non member</h5>
-
-                            <div class="btn-note flex reg-btn">
-                                <p>R$ 2300</p>
-                                <p>ca. US$ 441</p>
-                                <a class="text-link-red" target="_blank" rel="noreferrer"
-                                    href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=4ZJCMPZVD9GC4&lc=BR&item_name=Professional%20%2d%20non%20member%20%2d%20Early&item_number=008&amount=2300%2e00&currency_code=BRL&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHosted">
-                                    Pay with PayPal</a>
-                            </div>
-                        </div>
                     </div>
 
-                </div>
+                    <div class="calendar-month reg-item">
 
-                <div class="calendar-month reg-item">
+                        <h4 style="font-size: 22px; font-weight: 600;">Student</h4>
+                        <div class="flex">
+                            <div class="flex reg-info">
+                                <h5 class="table-center-line line-height-change"> DSBS member</h5>
 
-                    <h4 style="font-size: 22px; font-weight: 600;">Student</h4>
-                    <div class="flex">
-                        <div class="flex reg-info">
-                            <h5 class="table-center-line line-height-change"> DSBS member</h5>
-
-                            <div class="btn-note flex reg-btn table-center-line">
-                                <p>R$ 1000</p>
-                                <p>ca. US$ 191</p>
-                                <a class="text-link-red" target="_blank" rel="noreferrer"
-                                    href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=4ZJCMPZVD9GC4&lc=BR&item_name=Student%20%2d%20DSBS%20member%20%2d%20Early&item_number=005&amount=1000%2e00&currency_code=BRL&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHosted">
-                                    Pay with PayPal</a>
+                                <div class="btn-note flex reg-btn table-center-line">
+                                    <p>R$ 400</p>
+                                    <p>ca. US$ 95</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="flex reg-info">
-                            <h5> DSBS <br> non member</h5>
+                            <div class="flex reg-info">
+                                <h5> DSBS <br> non member</h5>
 
-                            <div class="btn-note flex reg-btn">
-                                <p>R$ 1300</p>
-                                <p>ca. US$ 249</p>
-                                <a class="text-link-red" target="_blank" rel="noreferrer"
-                                    href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=4ZJCMPZVD9GC4&lc=BR&item_name=Student%20%2d%20non%20member%20%2d%20Early&item_number=006&amount=1300%2e00&currency_code=BRL&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHosted">
-                                    Pay with PayPal</a>
+                                <div class="btn-note flex reg-btn">
+                                    <p>R$ 600</p>
+                                    <p>ca. US$ 143</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div id="earlyRegisterBtn"> </div>
+
             </div>
 
-            <div class="mobile-margin-btn">
-                <a href="https://forms.gle/7aX3JvmkX9m8Sj7G9" class="intro-content register-btn " target="_blank">
-                    <button style="margin: 15px 0; width: 100%; padding: 12px 0; font-size: 16px;">Register Now</button>
-                </a>
-            </div>
+        </section>
 
-            <!-- <div class="mobile-margin-btn">
-                <a href="javascript:;">
-                    <button style="margin: 15px 0; width: 100%; padding: 12px 0; font-size: 16px;"
-                        class="btn-disabled">Register Now</button>
-                </a>
-            </div> -->
-        </div>
-    </section>
 
-    <section class="container flex " style="flex-wrap: wrap; position: relative; padding-top: 100px;">
-        <div class="reg-title before-line">
-            <h2 class="page-h2 no-after"><span> Regular Registration </span></h2>
-            <div class="flex sub-wrap" style="min-height: auto;">
-                <h3 class="org-sub sub-active reg-sub"> <span>Open June 20, 2023<br> Deadline July 31, 2023</span>
-                </h3>
-            </div>
-        </div>
-
-        <div class="flex reg-fee" style="flex:2;">
-
-            <div class="calendar-month reg-item mobile-margin-top">
-                <h4 style="font-size: 22px; font-weight: 600;">Professional</h4>
-                <div class="flex">
-                    <div class="flex reg-info">
-                        <h5 class="table-center-line line-height-change"> DSBS member</h5>
-
-                        <div class="btn-note flex reg-btn table-center-line">
-                            <p>R$ 2300 </p>
-                            <p>ca. US$ 441</p>
-                            <!-- <a class="text-link-red" target="_blank" rel="noreferrer" href="">
-                                Pay with PayPal</a> -->
-                        </div>
-                    </div>
-
-                    <div class="flex reg-info">
-                        <h5> DSBS <br> non member</h5>
-
-                        <div class="btn-note flex reg-btn">
-                            <p>R$ 2600</p>
-                            <p>ca. US$ 498</p>
-                            <!-- <a class="text-link-red" target="_blank" rel="noreferrer" href="">
-                                Pay with PayPal</a> -->
-                        </div>
-                    </div>
+        <section class="container flex " style="flex-wrap: wrap; position: relative; padding-top: 100px;">
+            <div class="reg-title before-line">
+                <h2 class="page-h2 no-after"><span> Regular Registration </span></h2>
+                <div class="flex sub-wrap" style="min-height: auto;">
+                    <h3 class="org-sub sub-active reg-sub"> <span>Open July 1st, 2023<br> Deadline July 31, 2023</span>
+                    </h3>
                 </div>
             </div>
 
-            <div class="calendar-month reg-item ">
-                <h4 style="font-size: 22px; font-weight: 600;">Student</h4>
-                <div class="flex">
-                    <div class="flex reg-info">
-                        <h5 class="table-center-line line-height-change"> DSBS member</h5>
+            <div class="flex" style="flex-direction: column; flex:2;">
 
-                        <div class="btn-note flex reg-btn table-center-line">
-                            <p>R$ 1300 </p>
-                            <p>ca. US$ 249</p>
-                            <!-- <a class="text-link-red" target="_blank" rel="noreferrer" href="">
-                                Pay with PayPal</a> -->
+                <div class="flex reg-fee" style="flex:2;">
+
+                    <div class="calendar-month reg-item mobile-margin-top">
+                        <h4 style="font-size: 22px; font-weight: 600;">Professional</h4>
+                        <div class="flex">
+                            <div class="flex reg-info">
+                                <h5 class="table-center-line line-height-change"> DSBS member</h5>
+
+                                <div class="btn-note flex reg-btn table-center-line">
+                                    <p>R$ 1200 </p>
+                                    <p>ca. US$ 286</p>
+                                </div>
+                            </div>
+
+                            <div class="flex reg-info">
+                                <h5> DSBS <br> non member</h5>
+
+                                <div class="btn-note flex reg-btn">
+                                    <p>R$ 1500</p>
+                                    <p>ca. US$ 357</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="flex reg-info">
-                        <h5> DSBS <br> non member</h5>
+                    <div class="calendar-month reg-item ">
+                        <h4 style="font-size: 22px; font-weight: 600;">Student</h4>
+                        <div class="flex">
+                            <div class="flex reg-info">
+                                <h5 class="table-center-line line-height-change"> DSBS member</h5>
 
-                        <div class="btn-note flex reg-btn">
-                            <p>R$ 1600</p>
-                            <p>ca. US$ 307</p>
-                            <!-- <a class="text-link-red" target="_blank" rel="noreferrer" href="">
-                                Pay with PayPal</a> -->
+                                <div class="btn-note flex reg-btn table-center-line">
+                                    <p>R$ 700 </p>
+                                    <p>ca. US$ 166</p>
+                                </div>
+                            </div>
+
+                            <div class="flex reg-info">
+                                <h5> DSBS <br> non member</h5>
+
+                                <div class="btn-note flex reg-btn">
+                                    <p>R$ 900</p>
+                                    <p>ca. US$ 214</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div id="regularRegisterBtn"> </div>
+
             </div>
-
-        </div>
-
-    </section>
+        </section>
+    </div>
 
     <section class="container">
 
@@ -366,7 +345,7 @@
             <div>
                 <h3> Guidelines and Instructions </h3>
                 <ul class="airports-sub" style="margin: 0; max-width: 720px;">
-                    <li>The abstract submission deadline is 31 May 2023, 23:59 pm BRT (Brasília Time). </li>
+                    <li>The abstract submission deadline is 30 June 2023, 23:59 pm BRT (Brasília Time). </li>
                     <li>Abstracts must be submitted electronically and in English,
                         for oral (15 minutes) or poster presentation.</li>
                     <li>
@@ -388,15 +367,8 @@
                     </li>
                 </ul>
 
-                <a href="https://forms.gle/QCxCJ8HYSwEG4o93A" class="intro-content register-btn" target="_blank">
-                    <button style="margin: 15px 0; width: 100%;  max-width: 720px; padding: 12px 0; font-size: 16px;">
-                        Submit Your Abstract</button>
-                </a>
+                <div id="abstractBtn"></div>
 
-                <!-- <a href="javascript:;">
-                    <button style="margin: 15px 0; width: 100%;  max-width: 720px; padding: 12px 0; font-size: 16px;"
-                        class="btn-disabled">Submit Your Abstract</button>
-                </a> -->
             </div>
 
             <div class="info-tip flex" id="sessiontopic">
@@ -431,7 +403,7 @@
         <div style="margin-top: 40px; max-width: 750px;">
 
             <p> Registration fees are fully refundable (minus any processing fees)
-                until May 31, 2023. Registration fees are 50% refundable
+                until May 30, 2023. Registration fees are 50% refundable
                 (minus any processing fees) until June 30, 2023.
                 Registration fees are not refundable after June 30, 2023.</p>
 

@@ -706,13 +706,13 @@ footer li:hover {
 }
 
 .register-btn button {
+  padding: 10px 20px;
   background-color: #851c22;
   color: #fff;
 }
 
 .register-btn button:hover {
   box-shadow: 0px 3px 6px 0px rgba(66, 65, 65, 0.5);
-  /* border-color: #63181C; */
 }
 
 .flag-reg-open {
@@ -856,6 +856,13 @@ footer li:hover {
 
 .calendar-date p:last-child {
   margin: auto 10px;
+  padding: 4px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
 }
 
 #hotel-table-mobile {
