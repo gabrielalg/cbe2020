@@ -856,7 +856,13 @@ footer li:hover {
 
 .calendar-date p:last-child {
   margin: auto 10px;
-  padding: 6px 0;
+  padding: 4px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
 }
 
 #hotel-table-mobile {
