@@ -1,6 +1,7 @@
 const registrationFormLink =
   "https://docs.google.com/forms/d/e/1FAIpQLSdF2JN2zpPtPFBDEXx-Fuj97To3ftiO3z_tzi8MVEvc7ppB0w/viewform?usp=sf_link";
-const abstractFormLink = "https://forms.gle/QCxCJ8HYSwEG4o93A";
+const abstractFormLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeGqZr3YY18LG-zRJgn36rZ241CQnwbkYmCHu6OjWPpH7xGxw/viewform";
 
 const earlyDeadline = "06/30/2023 23:59:59 GMT-0300";
 const abstractDeadline = "06/30/2023 23:59:59 GMT-0300";
