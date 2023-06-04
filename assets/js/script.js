@@ -119,13 +119,13 @@ $(document).ready(function () {
       $(".organizers").show();
 
       $(".organizers").animate(
+        { left: 0 },
         {
-          left: "0",
-        },
-        300,
-        "swing",
-        function () {
-          $(".org-wrap").css("height", "auto");
+          duration: 300,
+          easing: "swing",
+          complete: function () {
+            $(".org-wrap").css("height", "auto");
+          },
         }
       );
 
@@ -133,7 +133,7 @@ $(document).ready(function () {
         {
           left: "100vw",
         },
-        400,
+        300,
         "swing",
         function () {
           $(this).hide();
@@ -143,7 +143,7 @@ $(document).ready(function () {
         {
           left: "200vw",
         },
-        400,
+        300,
         "swing",
         function () {
           $(this).hide();
@@ -153,26 +153,26 @@ $(document).ready(function () {
       $(".scicom").css("display", "flex");
 
       $(".scicom").animate(
+        { left: 0 },
         {
-          left: "0",
-        },
-        300,
-        "swing",
-        function () {}
-      );
-
-      $(".org-wrap").css(
-        "height",
-        $(".scicom").height() +
-          +$(".scicom").css("padding-top").replace("px", "") +
-          10
+          duration: 300,
+          easing: "swing",
+          start: function () {
+            $(".org-wrap").css(
+              "height",
+              $(".scicom").height() +
+                +$(".scicom").css("padding-top").replace("px", "") +
+                10
+            );
+          },
+        }
       );
 
       $(".organizers").animate(
         {
           left: "-100vw",
         },
-        400,
+        300,
         "swing",
         function () {
           $(this).hide();
@@ -182,28 +182,28 @@ $(document).ready(function () {
         {
           left: "100vw",
         },
-        400,
+        300,
         "swing",
         function () {
           $(this).hide();
         }
       );
     } else {
-      $(".local-organizing").show();
+      $(".local-organizing").css("display", "flex");
 
       $(".local-organizing").animate(
+        { left: 0 },
         {
-          left: "0",
-        },
-        300,
-        "swing",
-        function () {
-          $(".org-wrap").css(
-            "height",
-            $(".local-organizing").height() +
-              +$(".local-organizing").css("padding-top").replace("px", "") +
-              10
-          );
+          duration: 300,
+          easing: "swing",
+          start: function () {
+            $(".org-wrap").css(
+              "height",
+              $(".local-organizing").height() +
+                +$(".local-organizing").css("padding-top").replace("px", "") +
+                10
+            );
+          },
         }
       );
 
@@ -211,7 +211,7 @@ $(document).ready(function () {
         {
           left: "-100vw",
         },
-        400,
+        300,
         "swing",
         function () {
           $(this).hide();
@@ -222,7 +222,7 @@ $(document).ready(function () {
         {
           left: "-200vw",
         },
-        400,
+        300,
         "swing",
         function () {
           $(this).hide();
