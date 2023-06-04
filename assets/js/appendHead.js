@@ -85,22 +85,7 @@ const getHead = (title) => `
 <meta property="pin:description"
   content="${description}" />
 
-<!-- External Links -->
-
-<link rel="stylesheet" type="text/css" href="/assets/normalize.css" />
-
-<link href="https://fonts.googleapis.com/css?family=Neuton:400,700|Open+Sans:400,600,700&display=swap"
-  rel="stylesheet" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet" />
-
-<link rel="stylesheet" type="text/css" href="/libs/slick-1.8.1/slick/slick.css" />
-<link rel="stylesheet" type="text/css" href="/libs/slick-1.8.1/slick/slick-theme.css" />
-
-<link rel="stylesheet" type="text/css" href="/assets/style.css" />
-
-<script type="text/javascript" src="/libs/slick-1.8.1/slick/slick.min.js"></script>
+<!-- Stop Loading -->
 
 <script type="text/javascript">
   $(window).load(function () {
@@ -111,6 +96,8 @@ const getHead = (title) => `
 <!-- Common JS -->
 
 <script type="text/javascript" src="/assets/js/appendFooter.js"></script>
+<script type="text/javascript" src="/assets/js/appendSponsors.js"></script>
+<script type="text/javascript" src="/assets/js/appendPartnership.js"></script>
 <script type="text/javascript" src="/assets/js/newsModal.js"></script>
 <script type="text/javascript" src="/assets/js/script.js"></script>
 

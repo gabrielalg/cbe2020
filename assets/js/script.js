@@ -35,7 +35,6 @@ $(document).ready(function () {
 
   function changeNavColor(_this) {
     const is_scroll = $(_this || window).scrollTop() > 60;
-    // const is_scrollBanner = $(_this || window).scrollTop() > 200;
 
     var pageURL = window.location.pathname;
 
@@ -44,8 +43,6 @@ $(document).ready(function () {
       $(".container-logo").toggleClass("scroll", is_scroll);
       $(".logo-img").toggleClass("scroll", is_scroll);
       $(".dropdown-menu").toggleClass("scroll", is_scroll);
-
-      // $('.banner').toggleClass('move-banner', is_scrollBanner)
     }
   }
 
@@ -53,12 +50,6 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     changeNavColor(this);
-
-    // if ($('.nav').hasClass('scroll')) return
-
-    // if ($('#menu').hasClass('responsive')) {
-    //     $('#menu').toggleClass('scroll', is_scroll);
-    // }
   });
 
   $(".drop-btn").on("click", () => {
@@ -312,8 +303,6 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 1,
           autoplaySpeed: 3000,
-          // infinite: true,
-          // dots: true
         },
       },
       {
@@ -393,11 +382,6 @@ $(document).ready(function () {
     focusOnSelect: true,
     infinite: false,
     arrows: false,
-    // centerMode: true,
-    // centerPadding: '60px',
-    // infinite: true,
-    // autoplay: true,
-    // vertical: true,
   });
 
   if ($(window).width() <= 530) {
