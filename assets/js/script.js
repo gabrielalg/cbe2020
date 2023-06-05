@@ -244,9 +244,6 @@ $(document).ready(function () {
 
         animateOrgSlide();
       }, 0);
-      // tempo que o victor pediu pra animação acontecer
-
-      // left
     }
   );
 
