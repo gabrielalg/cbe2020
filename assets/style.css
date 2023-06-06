@@ -9,7 +9,6 @@ body {
   color: #110e27;
   overflow-x: hidden;
   min-width: 220px;
-  /* scroll-behavior: smooth; */
 }
 
 p {
@@ -68,178 +67,6 @@ footer li:hover {
   text-decoration: underline;
 }
 
-/* ------------------------ LOADER SPINNER */
-
-#cover {
-  background-color: white;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  z-index: 550;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 40px;
-}
-
-#cover p {
-  color: #1b1740;
-}
-
-.sk-circle {
-  margin: 100px auto;
-  width: 40px;
-  height: 40px;
-  position: relative;
-}
-.sk-circle .sk-child {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.sk-circle .sk-child:before {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 15%;
-  height: 15%;
-  background-color: #1b1740;
-  border-radius: 100%;
-  -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
-  animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
-}
-.sk-circle .sk-circle2 {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-.sk-circle .sk-circle3 {
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  transform: rotate(60deg);
-}
-.sk-circle .sk-circle4 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.sk-circle .sk-circle5 {
-  -webkit-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  transform: rotate(120deg);
-}
-.sk-circle .sk-circle6 {
-  -webkit-transform: rotate(150deg);
-  -ms-transform: rotate(150deg);
-  transform: rotate(150deg);
-}
-.sk-circle .sk-circle7 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.sk-circle .sk-circle8 {
-  -webkit-transform: rotate(210deg);
-  -ms-transform: rotate(210deg);
-  transform: rotate(210deg);
-}
-.sk-circle .sk-circle9 {
-  -webkit-transform: rotate(240deg);
-  -ms-transform: rotate(240deg);
-  transform: rotate(240deg);
-}
-.sk-circle .sk-circle10 {
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
-.sk-circle .sk-circle11 {
-  -webkit-transform: rotate(300deg);
-  -ms-transform: rotate(300deg);
-  transform: rotate(300deg);
-}
-.sk-circle .sk-circle12 {
-  -webkit-transform: rotate(330deg);
-  -ms-transform: rotate(330deg);
-  transform: rotate(330deg);
-}
-.sk-circle .sk-circle2:before {
-  -webkit-animation-delay: -1.1s;
-  animation-delay: -1.1s;
-}
-.sk-circle .sk-circle3:before {
-  -webkit-animation-delay: -1s;
-  animation-delay: -1s;
-}
-.sk-circle .sk-circle4:before {
-  -webkit-animation-delay: -0.9s;
-  animation-delay: -0.9s;
-}
-.sk-circle .sk-circle5:before {
-  -webkit-animation-delay: -0.8s;
-  animation-delay: -0.8s;
-}
-.sk-circle .sk-circle6:before {
-  -webkit-animation-delay: -0.7s;
-  animation-delay: -0.7s;
-}
-.sk-circle .sk-circle7:before {
-  -webkit-animation-delay: -0.6s;
-  animation-delay: -0.6s;
-}
-.sk-circle .sk-circle8:before {
-  -webkit-animation-delay: -0.5s;
-  animation-delay: -0.5s;
-}
-.sk-circle .sk-circle9:before {
-  -webkit-animation-delay: -0.4s;
-  animation-delay: -0.4s;
-}
-.sk-circle .sk-circle10:before {
-  -webkit-animation-delay: -0.3s;
-  animation-delay: -0.3s;
-}
-.sk-circle .sk-circle11:before {
-  -webkit-animation-delay: -0.2s;
-  animation-delay: -0.2s;
-}
-.sk-circle .sk-circle12:before {
-  -webkit-animation-delay: -0.1s;
-  animation-delay: -0.1s;
-}
-
-@-webkit-keyframes sk-circleBounceDelay {
-  0%,
-  80%,
-  100% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes sk-circleBounceDelay {
-  0%,
-  80%,
-  100% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-/* ------------------------------ */
-
 .modal-dialog {
   position: fixed;
   top: 0;
@@ -247,7 +74,7 @@ footer li:hover {
   bottom: 0;
   left: 0;
   background: rgba(17, 14, 39, 0.8);
-  z-index: 9999;
+  z-index: 550;
   pointer-events: revert;
   display: none;
   opacity: 1;
@@ -256,13 +83,6 @@ footer li:hover {
   transition: opacity 200ms ease-in;
   min-width: 220px;
 }
-
-/* .modal-dialog:target {
-  display: none;
-  opacity: 0;
-  pointer-events: auto;
-  
-}*/
 
 .modal-dialog h2,
 .modal-dialog p {
@@ -279,7 +99,7 @@ footer li:hover {
   border-radius: 5px;
   background-color: #fff;
   scrollbar-width: thin;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .close-modal {
@@ -325,7 +145,7 @@ footer li:hover {
   padding: 10px 8%;
   margin: 0 auto;
   bottom: 0;
-  z-index: 9999;
+  z-index: 550;
   position: absolute;
   border-radius: 5px;
   -webkit-box-shadow: 0px -1px 40px -10px rgba(0, 0, 0, 0.2);
@@ -688,7 +508,6 @@ footer li:hover {
 
 .intro-content a {
   width: max-content;
-  /* align-self: center; */
 }
 
 .intro-content button {
@@ -758,12 +577,12 @@ footer li:hover {
 }
 
 .talks-aside h4 {
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   margin-top: 20px;
   padding: 8px 0;
   font-weight: 700;
   position: relative;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .talks-aside h4::after {
@@ -776,20 +595,71 @@ footer li:hover {
   left: 0;
 }
 
-.talks-aside p {
-  margin-top: 0;
-  margin-bottom: 15px;
+.talks-aside .plenary-item {
+  margin-bottom: 24px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 16px;
 }
 
-.talks-aside p:last-child {
-  margin-bottom: 5px;
+.talks-aside .plenary-item p {
+  font-size: 14px;
+  margin: 0;
 }
 
-.talks-aside span {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
+.talks-aside .plenary-item h5 {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.talks-aside .plenary-item .viewmore {
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.talks-aside .plenary-item .viewmore.hideContent {
+  height: calc(14px * 3 * 1.5);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.talks-aside .plenary-item .viewmore-btn {
+  all: unset;
+  cursor: pointer;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: auto;
   display: block;
+  color: #851c22;
+}
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.program-table tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.program-table td:first-child {
+  font-weight: 700;
+  color: #1b1740;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 60px;
+  text-align: center;
+}
+
+.program-table td.link {
+  width: 60px;
+}
+
+.program-table td {
+  padding: 12px;
 }
 
 .reg-item p {
@@ -955,7 +825,7 @@ footer li:hover {
 
 .org-wrap {
   position: relative;
-  min-height: 240px;
+  min-height: 260px;
 }
 
 .org-padding {
@@ -976,14 +846,11 @@ footer li:hover {
   font-weight: 400;
   display: table;
   right: -5px;
-  /* bottom: -5px; */
   position: relative;
   color: #fff;
-
   border-color: white;
   border-style: solid;
   border-width: 0 5px;
-  /* top: 0; */
 }
 
 .sub-active span,
@@ -1139,7 +1006,13 @@ footer li:hover {
   top: 0;
   width: 100%;
   display: none;
-  /* bottom: 0 !important; */
+}
+
+.org-item {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 40px 0;
 }
 
 .local-organizing li {
@@ -1158,13 +1031,18 @@ footer li:hover {
 }
 
 .organizers {
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
   left: 0;
 }
 
 .scicom {
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.local-organizing {
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -1173,17 +1051,14 @@ footer li:hover {
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  min-width: 160px;
-}
-
-.min-width-changer {
-  min-width: 178px;
+  width: 200px;
+  text-align: center;
 }
 
 .organizer-item p:first-of-type {
   font-weight: 600;
-  margin-bottom: 5px;
-  line-height: initial;
+  margin: 8px 0 5px;
+  line-height: 1.2;
 }
 
 .organizer-item p:last-child {
@@ -1192,20 +1067,31 @@ footer li:hover {
 }
 
 .perfil {
-  width: 100px !important;
-  height: 100px;
-}
-
-.perfil img {
-  height: auto;
-  width: 100px;
-  position: relative;
+  width: 120px !important;
+  height: 120px;
 }
 
 .perfil-horizontal img {
-  height: 100px;
+  height: 120px;
   width: auto;
   left: -18px;
+}
+
+.plenariesImg {
+  width: 90px !important;
+  height: 90px;
+  flex-shrink: 0;
+  margin: 0;
+  margin-top: 4px;
+  margin-right: 12px;
+}
+
+.perfil img,
+.plenariesImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .sub-university {
@@ -1254,8 +1140,8 @@ footer li:hover {
 
 .program-head-wrap {
   margin-right: 50px;
-  flex: 55%;
-  min-width: 200px;
+  flex: 1.3;
+  min-width: 400px;
 }
 
 .program-head p:first-child {
@@ -1334,6 +1220,111 @@ footer li:hover {
   width: auto;
   height: 300px;
   margin-bottom: 20px;
+}
+
+.hotels-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.hotel-item,
+.place-item {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+}
+
+.hotel-item .img-wrapper {
+  height: 150px;
+}
+
+.hotel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 4px;
+}
+
+.hotel-item .hotel-info {
+  padding: 12px 16px 16px;
+}
+
+.hotel-item .hotel-info h4 {
+  margin: 0 0 4px;
+  line-height: 1.3;
+}
+
+.hotel-item .hotel-info h4 span {
+  padding: 0 6px;
+  background-color: rgba(27, 23, 64, 0.1);
+  margin-left: -2px;
+  margin-right: 4px;
+  border-radius: 16px;
+  min-width: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.hotel-item .hotel-info p {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.hotel-item .hotel-info a,
+.place-item .place-info a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  font-size: 15px;
+}
+
+.places-container {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.place-item .place-info {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.place-item .place-info h4 {
+  margin: 0;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.place-item .place-info p {
+  font-size: 14px;
+  margin: 4px 0 12px;
+}
+
+.place-item .place-info .link {
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.place-item .place-info .link span {
+  padding: 4px 8px;
+  background-color: rgba(27, 23, 64, 0.1);
+  margin-left: -2px;
+  margin-right: 12px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  white-space: nowrap;
 }
 
 .other-info h3 {
@@ -1429,6 +1420,7 @@ footer li:hover {
 .airports-list {
   padding-left: 0;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .airports-list li {
@@ -1436,6 +1428,7 @@ footer li:hover {
   margin: 15px 35px;
   padding: 3px;
   min-width: 270px;
+  max-width: 500px;
 }
 
 .airports-list h4 {
@@ -1488,11 +1481,68 @@ footer li:hover {
   margin-bottom: 15px;
 }
 
-.airports-sub.ol li {
+.airports-sub ol {
+  padding-left: 28px;
+}
+
+.airports-sub ol li {
   list-style-type: decimal;
   line-height: 22px;
-  margin-bottom: 15px;
-  padding-left: 10px;
+  margin: 12px 0;
+  padding-left: 4px;
+}
+
+.airports-sub figure {
+  margin: 12px 0 40px;
+}
+
+.airports-sub figure figcaption {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.airports-sub .metro-links {
+  margin: -16px 0 64px;
+}
+
+.airports-sub .metro-links p {
+  margin: 12px 0;
+}
+
+.airport-banner {
+  height: 150px;
+  position: relative;
+  margin: 40px 0 28px;
+}
+
+.airport-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.airport-banner::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(27, 23, 64, 0.8);
+  border-radius: 4px;
+}
+
+.airport-banner h4 {
+  color: white;
+  position: absolute;
+  margin: 16px 24px;
+  bottom: 0;
+  font-family: "Neuton", serif;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .text-link-red {
@@ -1503,11 +1553,6 @@ footer li:hover {
 .text-link-red:visited {
   color: #851c22;
 }
-
-/* .text-link-red:hover {
-    background-color: rgba(133, 28, 33, 0.1);
-    text-decoration: none;
-  } */
 
 .force-display-none {
   display: none !important;
@@ -1560,6 +1605,13 @@ footer li:hover {
 
 .info-txt {
   flex: 1;
+}
+
+.partnership img {
+  min-width: 320px;
+  width: 50%;
+  max-width: 360px;
+  padding: 40px 16px 24px;
 }
 
 /* --------- SLICK */
@@ -2173,6 +2225,7 @@ footer li:hover {
   }
 
   .organizer-item {
+    width: auto;
     min-width: 220px;
   }
 
@@ -2432,6 +2485,22 @@ footer li:hover {
     height: 250px;
   }
 
+  .program-head-wrap {
+    min-width: 250px;
+  }
+
+  .plenary-item > div {
+    flex-direction: column;
+  }
+
+  .plenariesImg {
+    width: 120px !important;
+    height: 120px;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
   .box-circle-img {
     margin-left: 0;
     margin-top: 40px;
@@ -2463,7 +2532,6 @@ footer li:hover {
     margin-top: 3px;
     width: 100%;
     font-size: 14px;
-    /* border-left-width: 0; */
   }
 
   .sub-active span,
@@ -2564,7 +2632,6 @@ footer li:hover {
   }
 
   .org-wrap {
-    /* min-height: 260px; */
     overflow: hidden;
   }
 
@@ -2661,11 +2728,6 @@ footer li:hover {
     min-width: 250px;
   }
 
-  /* 
-  .nav-footer {
-    min-width: 325px;
-  } */
-
   .airports-list li {
     margin: 15px 0;
     padding: 3px;
@@ -2724,6 +2786,26 @@ footer li:hover {
 
   .talks-aside {
     min-width: 200px;
+  }
+
+  .partnership img {
+    min-width: auto;
+    width: 100%;
+    padding: 24px 12px;
+  }
+
+  .hotels-container {
+    gap: 24px;
+  }
+
+  .places-container {
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .airport-banner h4 {
+    margin: 16px 20px;
+    font-size: 30px;
   }
 }
 
