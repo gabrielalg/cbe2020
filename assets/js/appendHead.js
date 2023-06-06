@@ -95,6 +95,7 @@ const getHead = (title) => `
 
 <!-- Common JS -->
 
+<script type="text/javascript" src="/assets/js/appendFooter.js"></script>
 <script type="text/javascript" src="/assets/js/appendSponsors.js"></script>
 <script type="text/javascript" src="/assets/js/appendPartnership.js"></script>
 <script type="text/javascript" src="/assets/js/newsModal.js"></script>

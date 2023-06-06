@@ -1,18 +1,18 @@
 const pagePaths = {
   ["/"]: { href: "/", class: "" },
   ["/pages/the-symposium"]: {
-    href: "/pages/the-symposium.html",
+    href: "/pages/the-symposium",
     class: "",
   },
   ["#sponsors"]: { href: "#sponsors", class: "sponsors-btn" },
-  ["/pages/program"]: { href: "/pages/program.html", class: "" },
-  ["/pages/logistics"]: { href: "/pages/logistics.html", class: "" },
+  ["/pages/program"]: { href: "/pages/program", class: "" },
+  ["/pages/logistics"]: { href: "/pages/logistics", class: "" },
   ["/pages/awards-and-travel-support"]: {
-    href: "/pages/awards-and-travel-support.html",
+    href: "/pages/awards-and-travel-support",
     class: "",
   },
   ["/pages/registration-and-submission"]: {
-    href: "/pages/registration-and-submission.html",
+    href: "/pages/registration-and-submission",
     class: "",
   },
 };
@@ -80,10 +80,10 @@ const getFooter = (paths) => `
 </div>
 `;
 
-(function () {
+$(document).ready(function () {
   const url = window.location.pathname;
   const normalizedUrl = url.split(".")[0];
   pagePaths[normalizedUrl] = { href: "#page-top", class: "page-top-btn" };
 
   $("footer").append(getFooter(pagePaths));
-})();
+});
