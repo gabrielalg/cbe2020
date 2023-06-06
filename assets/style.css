@@ -1058,7 +1058,7 @@ footer li:hover {
 .organizer-item p:first-of-type {
   font-weight: 600;
   margin: 8px 0 5px;
-  line-height: initial;
+  line-height: 1.2;
 }
 
 .organizer-item p:last-child {
