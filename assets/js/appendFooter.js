@@ -80,10 +80,10 @@ const getFooter = (paths) => `
 </div>
 `;
 
-$(document).ready(function () {
+(function () {
   const url = window.location.pathname;
   const normalizedUrl = url.split(".")[0];
   pagePaths[normalizedUrl] = { href: "#page-top", class: "page-top-btn" };
 
   $("footer").append(getFooter(pagePaths));
-});
+})();
