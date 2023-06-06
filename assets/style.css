@@ -1222,6 +1222,111 @@ footer li:hover {
   margin-bottom: 20px;
 }
 
+.hotels-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.hotel-item,
+.place-item {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+}
+
+.hotel-item .img-wrapper {
+  height: 150px;
+}
+
+.hotel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 4px;
+}
+
+.hotel-item .hotel-info {
+  padding: 12px 16px 16px;
+}
+
+.hotel-item .hotel-info h4 {
+  margin: 0 0 4px;
+  line-height: 1.3;
+}
+
+.hotel-item .hotel-info h4 span {
+  padding: 0 6px;
+  background-color: rgba(27, 23, 64, 0.1);
+  margin-left: -2px;
+  margin-right: 4px;
+  border-radius: 16px;
+  min-width: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.hotel-item .hotel-info p {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.hotel-item .hotel-info a,
+.place-item .place-info a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  font-size: 15px;
+}
+
+.places-container {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.place-item .place-info {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.place-item .place-info h4 {
+  margin: 0;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.place-item .place-info p {
+  font-size: 14px;
+  margin: 4px 0 12px;
+}
+
+.place-item .place-info .link {
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.place-item .place-info .link span {
+  padding: 4px 8px;
+  background-color: rgba(27, 23, 64, 0.1);
+  margin-left: -2px;
+  margin-right: 12px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
 .other-info h3 {
   font-size: 24px;
   font-weight: 700;
@@ -1315,6 +1420,7 @@ footer li:hover {
 .airports-list {
   padding-left: 0;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .airports-list li {
@@ -1322,6 +1428,7 @@ footer li:hover {
   margin: 15px 35px;
   padding: 3px;
   min-width: 270px;
+  max-width: 500px;
 }
 
 .airports-list h4 {
@@ -1374,11 +1481,68 @@ footer li:hover {
   margin-bottom: 15px;
 }
 
-.airports-sub.ol li {
+.airports-sub ol {
+  padding-left: 28px;
+}
+
+.airports-sub ol li {
   list-style-type: decimal;
   line-height: 22px;
-  margin-bottom: 15px;
-  padding-left: 10px;
+  margin: 12px 0;
+  padding-left: 4px;
+}
+
+.airports-sub figure {
+  margin: 12px 0 40px;
+}
+
+.airports-sub figure figcaption {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.airports-sub .metro-links {
+  margin: -16px 0 64px;
+}
+
+.airports-sub .metro-links p {
+  margin: 12px 0;
+}
+
+.airport-banner {
+  height: 150px;
+  position: relative;
+  margin: 40px 0 28px;
+}
+
+.airport-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.airport-banner::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(27, 23, 64, 0.8);
+  border-radius: 4px;
+}
+
+.airport-banner h4 {
+  color: white;
+  position: absolute;
+  margin: 16px 24px;
+  bottom: 0;
+  font-family: "Neuton", serif;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .text-link-red {
@@ -1389,11 +1553,6 @@ footer li:hover {
 .text-link-red:visited {
   color: #851c22;
 }
-
-/* .text-link-red:hover {
-    background-color: rgba(133, 28, 33, 0.1);
-    text-decoration: none;
-  } */
 
 .force-display-none {
   display: none !important;
@@ -2633,6 +2792,20 @@ footer li:hover {
     min-width: auto;
     width: 100%;
     padding: 24px 12px;
+  }
+
+  .hotels-container {
+    gap: 24px;
+  }
+
+  .places-container {
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .airport-banner h4 {
+    margin: 16px 20px;
+    font-size: 30px;
   }
 }
 

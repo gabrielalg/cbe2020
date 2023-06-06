@@ -23,6 +23,9 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/libs/slick-1.8.1/slick/slick.min.js"></script>
 
+    <script type="text/javascript" src="/assets/js/appendHotels.js"></script>
+    <script type="text/javascript" src="/assets/js/appendPlaces.js"></script>
+
     <script type="text/javascript" src="/assets/js/appendHead.js"></script>
 </head>
 
@@ -133,12 +136,11 @@
             <p style="font-size: 14px"></p>
             <p style="font-size: 18px">Universidade de São Paulo (USP)</p>
             <p style="font-size: 16px">
-                São Paulo, SP – Brazil <br>
+                São Paulo, SP - Brazil <br>
                 CEP: 05508-220</p>
         </div>
 
     </section>
-
 
     <section class="container-full">
         <iframe
@@ -147,67 +149,133 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-
-    <section class="container" style="padding-top: 45px;">
-
-        <h2 class="page-h2"><span> Hotel & Accommodation</span></h2>
-
-        <div class="flex hotel-intro">
-            <div class="margin-null" style="margin-right: 40px; flex: 42%; min-width: 200px;">
-                <p style="margin-top: 0;">Coming soon.</p>
-            </div>
-        </div>
-
-    </section>
-
-    </section>
-
     <section class="container other-info">
 
         <h2 class="page-h2"><span>Transportation</span></h2>
 
-        <div style="margin-top: 40px;">
+        <div style="margin-top: 40px; max-width: 800px;">
+            <h3>Air Travel</h3>
+            <p class="h3-paragraph">The two airports in São Paulo city are <a class="text-link-red"
+                    href="https://www.gru.com.br/en" target="_blank">Guarulhos Airport (GRU) </a>, which is around 43 km
+                from the University of São Paulo
+                and <a class="text-link-red" href="https://www.aeroportocongonhas.net/en/" target="_blank">
+                    Congonhas Airport (CGH)</a>, which is around 14 km.</p>
 
-            <h3> Airports</h3>
-            <p>The closest international airports to Sao Paulo are: </p>
-            <ul class="airports-list flex">
-                <li><a href="https://www.gru.com.br/en" target="_blank">
-                        <div class="airport-logo"> <img src="../assets/img/logistics/gru-aiport.jpg" /></div>
-                        <div class="aiport-name">
-                            <h4>Guarulhos (GRU)</h4>
-                            <p>Sao Paulo-Guarulhos International Airport </p>
-                        </div>
-                    </a></li>
 
-                <li><a href="https://www.viracopos.com/en_us/" target="_blank">
-                        <div class="airport-logo"><img src="../assets/img/logistics/vcp-airport.jpg" /></div>
-                        <div class="aiport-name">
-                            <h4>Viracopos (VCP) </h4>
-                            <p>Viracopos-Campinas International Airport </p>
-                        </div>
-                    </a></li>
-            </ul>
+            <h3 style="margin-top: 40px;">Ground Transportation</h3>
 
-            <p>
-                From the airport to Sao Paulo you can:
-            </p>
+            <div class="airport-banner">
+                <img
+                    src="https://i0.wp.com/www.tripfeatures.com/wp-content/uploads/2018/03/guarulhos-airport-sao-paulo.png?fit=800%2C581&ssl=1" />
+                <h4>Guarulhos Airport (GRU)</h4>
+            </div>
+
+            <p><b>From Guarulhos Airport:</b></p>
+
             <ul class="airports-sub">
-                <li> Take the bus/ shuttles we will provide (more information soon)</li>
-                <li> Take the bus </li>
-                <li> Take uber </li>
-                <li> Rent a car </li>
+                <li> <u>Taxi:</u> Taxis are available at the airport. Look for the official taxi stands to ensure you
+                    use a licensed service. Keep in mind that taxi fares in Brazil can vary, so it's advisable to ask
+                    for an estimated cost before starting the journey. Total cost should be around R$200,00 (~$48).</li>
+                <li> <u>Ridesharing Apps:</u> Popular ridesharing apps like Uber or 99 are commonly used in São Paulo.
+                    You can use these apps to request a ride to USP. Simply enter your destination address and wait for
+                    the driver to arrive. Total cost should be around R$140,00 (~$33).
+                </li>
+                <figure>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d234172.38381946742!2d-46.77658671629613!3d-23.498544581334798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94ce8af96f722a25%3A0x8071626c51a7154a!2sAeroporto%20Internacional%20de%20S%C3%A3o%20Paulo-Guarulhos%20(GRU)%20-%20Rodovia%20H%C3%A9lio%20Smidt%20-%20Aeroporto%2C%20Guarulhos%20-%20SP!3m2!1d-23.4306151!2d-46.4730373!4m5!1s0x94ce56148aa0ca3b%3A0xf3a4d0313b5e483c!2sInstituto%20Oceanogr%C3%A1fico%20da%20Universidade%20de%20S%C3%A3o%20Paulo%20(IO-USP)%20-%20Pra%C3%A7a%20Oceanogr%C3%A1fico%20-%20Vila%20Universitaria%2C%20S%C3%A3o%20Paulo%20-%20SP!3m2!1d-23.5609893!2d-46.732013699999996!5e0!3m2!1spt-BR!2sbr!4v1686004387820!5m2!1spt-BR!2sbr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <figcaption>The journey should take around 1h00, depending on the traffic conditions.</figcaption>
+                </figure>
+                <li> <u>Public transportation: </u>
+                    <ol>
+                        <li>The Airport shuttle will take you to “Guarulhos-Cecap” station, which is inside the airport
+                            | ~15 minutes - free ride.</li>
+                        <li> Take the Airport express train with “Luz” destination. It will take you from
+                            “Guarulhos-Cecap” station to “Luz” station - it is its final stop | ~35 minutes - R$4,40
+                            (~$1).
+                        </li>
+                        <span style="font-weight: 600;">Before boarding the train, you should buy your ticket from the
+                            ticket station.</span>
+                        <li>There, don't have to leave the station. Look for the yellow line (“Linha Amarela” in
+                            Portuguese) of the subway, which final destination is “Vila Sônia”. You will jump off the
+                            subway at “Butantã” station | ~20 minutes - Free ride: it is included on the last fee.</li>
+                        <li>At Butantã station, look for the shuttles from the University of São Paulo: 2012 or 2022. If
+                            boarding 2012, you should jump off at “FEA-USP” stop. If boarding 2022, you should jump off
+                            at “IO-USP” stop. | ~20 minutes - R$4,40 (~$1). <br>
+                            <p>Alternatively, you may take a ridesharing app like Uber or 99 from the subway station,
+                                which
+                                will take around 10 minutes with a cost of approximately R$15,00 (~$3,60).
+                            </p>
+                        </li>
+                    </ol>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d117083.88648591613!2d-46.68629099398403!3d-23.501139199078782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x94ce8af96f722a25%3A0x8071626c51a7154a!2sAeroporto%20Internacional%20de%20Guarulhos%20(GRU)%20(GRU)%20-%20Rod.%20H%C3%A9lio%20Smidt%2C%20s%2Fn%C2%BA%20-%20Aeroporto%2C%20Guarulhos%20-%20SP%2C%2007190-100!3m2!1d-23.4306151!2d-46.4730373!4m5!1s0x94ce56148aa0ca3b%3A0xf3a4d0313b5e483c!2sOceanographic%20Institute%20of%20USP%20-%20Pra%C3%A7a%20Oceanogr%C3%A1fico%20-%20Vila%20Universitaria%2C%20S%C3%A3o%20Paulo%20-%20SP!3m2!1d-23.5609893!2d-46.732013699999996!5e0!3m2!1spt-BR!2sbr!4v1686002668590!5m2!1spt-BR!2sbr"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <figcaption>
+                            The journey should take around 1h30, depending on the traffic conditions.
+                        </figcaption>
+                    </figure>
+                    <div class="metro-links">
+                        <p>You can download the subway map here:
+                            <a class="text-link-red" href="https://www.metro.sp.gov.br/pdf/mapa-da-rede-metro.pdf"
+                                target="_blank">mapa-da-rede-metro.pdf</a>
+                        </p>
+                        <p>You can access the subway website here: <a class="text-link-red"
+                                href="https://www.metro.sp.gov.br/en/your-trip/index.aspx"
+                                target="_blank">www.metro.sp.gov.br</a>
+                        </p>
+                    </div>
+                </li>
             </ul>
 
-        </div>
+            <div class="airport-banner">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Aeroporto_de_Congonhas_-_Aeronaves.jpg" />
+                <h4>Congonhas Airport (CGH)</h4>
+            </div>
 
+            <p><b>From Congonhas Airport:</b></p>
+
+            <ul class="airports-sub">
+                <li> <u>Taxi:</u> Taxis are available at the airport. Look for the official taxi stands to ensure you
+                    use a licensed service. Keep in mind that taxi fares in Brazil can vary, so it's advisable to ask
+                    for an estimated cost before starting the journey. Total cost should be aroud R$80,00 (~$19).</li>
+                <li> <u>Ridesharing Apps:</u> Popular ridesharing apps like Uber or 99 are commonly used in São Paulo.
+                    You can use these apps to request a ride to USP. Simply enter your destination address and wait for
+                    the driver to arrive. Total cost should be aroud R$50,00 (~$12).
+                </li>
+                <figure>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d58500.40591643833!2d-46.73701159831466!3d-23.594455208927396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94ce5a7ab9d400f3%3A0x3ae70697e64d7085!2sAeroporto%20Congonhas%20-%20CGH%20-%20S%C3%A3o%20Paulo%20(CGH)%20-%20Avenida%20Washington%20Lu%C3%ADs%20-%20Vila%20Congonhas%2C%20S%C3%A3o%20Paulo%20-%20SP!3m2!1d-23.626249599999998!2d-46.6594981!4m5!1s0x94ce56148aa0ca3b%3A0xf3a4d0313b5e483c!2sInstituto%20Oceanogr%C3%A1fico%20da%20Universidade%20de%20S%C3%A3o%20Paulo%20(IO-USP)%20-%20Pra%C3%A7a%20Oceanogr%C3%A1fico%20-%20Vila%20Universitaria%2C%20S%C3%A3o%20Paulo%20-%20SP!3m2!1d-23.5609893!2d-46.732013699999996!5e0!3m2!1spt-BR!2sbr!4v1686004321016!5m2!1spt-BR!2sbr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <figcaption>The journey should take around 40 min, depending on the traffic conditions.</figcaption>
+                </figure>
+            </ul>
+        </div>
     </section>
 
+    <section class="container other-info" style="padding-top: 45px;">
+        <h2 class="page-h2"><span> Hotels & Accommodation</span></h2>
+
+        <h3>Hostels</h3>
+
+        <div id="appendHostels" class="hotels-container">
+        </div>
+
+        <h3 style="margin-top: 40px;">Hotels</h3>
+
+        <div id="appendHotels" class="hotels-container">
+        </div>
+    </section>
 
     <section class="container other-info">
 
         <h2 class="page-h2"><span>Visa & Health Insurance</span></h2>
 
-        <div style="margin-top: 40px; max-width: 720px;">
+        <div style="margin-top: 40px; max-width: 800px;">
             <h3> Visa </h3>
             <p class="h3-paragraph">Depending on your nationality, you may need a visa to enter Brazil.
                 The ultimate authority on whether you need a visa or not is the
@@ -232,10 +300,9 @@
                 style="word-break: break-all;" target="_blank">
                 More Information
             </a>
-
         </div>
 
-        <div style="margin-top: 60px; max-width: 720px;">
+        <div style="margin-top: 60px; max-width: 800px;">
             <h3> Visit Visa </h3>
             <p class="h3-paragraph">To attend the CBE7 you may need to enter Brazil as a visitor:</p>
             <p>“The visit visa will be issued to foreigners traveling to Brazil
@@ -279,24 +346,25 @@
                 </a>
             </div>
         </div>
-
-        <!-- <div style="margin-top: 60px; max-width: 720px;">
-                <h3> Yellow Fever </h3> 
-                <p>More info soon.</p>
-            </div> -->
     </section>
 
     <section class="container other-info">
+        <h2 class="page-h2"><span>Places to Visit</span></h2>
 
-        <h2 class="page-h2"><span>Other Information</span></h2>
+        <h3 style="margin-top: 40px;">Parks</h3>
 
-        <div style="margin-top: 40px;">
-
-            <h3>Places to Visit</h3>
-            <p>More info soon.</p>
-
+        <div id="appendParks" class="places-container">
         </div>
 
+        <h3 style="margin-top: 40px;">Cultural tours</h3>
+
+        <div id="appendCultural" class="places-container">
+        </div>
+
+        <h3 style="margin-top: 40px;">Panoramic Buildings</h3>
+
+        <div id="appendPanoramic" class="places-container">
+        </div>
     </section>
 
     <section id="partnership" class="container">
