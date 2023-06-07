@@ -619,9 +619,9 @@ footer li:hover {
 }
 
 .talks-aside .plenary-item .viewmore.hideContent {
-  height: calc(14px * 3 * 1.5);
+  height: calc(14px * 2 * 1.5);
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1078,8 +1078,8 @@ footer li:hover {
 }
 
 .plenariesImg {
-  width: 90px !important;
-  height: 90px;
+  width: 80px !important;
+  height: 80px;
   flex-shrink: 0;
   margin: 0;
   margin-top: 4px;
@@ -1224,8 +1224,8 @@ footer li:hover {
 
 .hotels-container {
   display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 }
 
 .hotel-item,
@@ -1248,6 +1248,9 @@ footer li:hover {
 
 .hotel-item .hotel-info {
   padding: 12px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 150px);
 }
 
 .hotel-item .hotel-info h4 {
@@ -1278,6 +1281,7 @@ footer li:hover {
   text-overflow: ellipsis;
   display: block;
   font-size: 15px;
+  margin-top: auto;
 }
 
 .places-container {
@@ -2796,6 +2800,7 @@ footer li:hover {
 
   .hotels-container {
     gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
   .places-container {
