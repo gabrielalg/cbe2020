@@ -17,6 +17,12 @@ const mainOrganizers = [
     university: "Universidade de São Paulo",
     country: "Brazil",
   },
+  {
+    name: "Paulo Sumida",
+    img: "/assets/img/perfil-pesquisadores/Paulo Sumida.jpeg",
+    university: "Universidade de São Paulo",
+    country: "Brazil",
+  },
 ];
 
 const scientific = [
@@ -86,6 +92,12 @@ const scientific = [
     img: "/assets/img/perfil-pesquisadores/Vivian Pellizari.jpg",
     university: "Oceanographic Institute",
     country: "Brazil",
+  },
+  {
+    name: "Elva Escobar-Briones",
+    img: "/assets/img/perfil-pesquisadores/Elva Escobar-Briones.jpeg",
+    university: "National Autonomous University of Mexico",
+    country: "Mexico",
   },
 ];
 
