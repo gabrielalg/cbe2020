@@ -57,13 +57,6 @@ const scientific = [
     country: "Sweden",
   },
   {
-    name: "Chong Chen",
-    img: "/assets/img/perfil-pesquisadores/ChongChen.jpg",
-    university:
-      "Japan Agency for Marine-Earth Science and Technology - JAMSTEC",
-    country: "Japan",
-  },
-  {
     name: "Jozée Sarrasin",
     img: "/assets/img/perfil-pesquisadores/JozeeSarrazin.jpg",
     university: "IFREMER",

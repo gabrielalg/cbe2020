@@ -21,6 +21,12 @@ const plenariesData = [
     title: "Vent ecology: Half a century of unprecedented discoveries",
     description: `Born in Quebec, Dr. Jozée Sarrazin obtained her PhD in 1998 from the Université du Québec à Montréal on the spatial distribution and temporal evolution of hydrothermal vent communities on the Juan de Fuca Ridge (Northeast Pacific). In 2002, she joined Ifremer as a benthic ecology researcher in the "Study of deep-sea ecosystems" research unit. She is interested in the structure and functioning of deep marine ecosystems, with a particular focus on hydrothermal vents, her dedicated environment. She has participated in the development of biological observation modules deployed on deep-sea observatories that monitor the temporal dynamics of hydrothermal fauna and their environment. Jozée has published over 120 articles and 5 book chapters, and has taken part in more than 30 oceanographic cruises with underwater vehicles, including four as chief scientist. From 2012 to 2018, she was in charge of the Deep Environment Laboratory. She has long been interested in developing approaches to communicating her research to the widest audience possible. In 1997, she won a writing outreach contest and has since been involved in a wide range of public communication projects. For several years now, she has been developing approaches combining "art & science", including a long-term collaboration with the artists of Teatr PIBA on a common theme: deep-sea ecosystems and the challenges of exploiting their resources. So far, the theater play has been viewed by over 22 000 spectators.`,
   },
+  {
+    researcher: "Dr. Paulo Sumida",
+    img: "/assets/img/perfil-pesquisadores/Paulo Sumida.jpeg",
+    title: "",
+    description: `Dr. Paulo Sumida is currently a Full Professor and the director of the Oceanographic Institute at University of São Paulo. He accomplished his PhD in Biological Oceanography at the University of Southampton and worked as a post-doctoral fellow at the University of Hawaii. As a marine researcher, he is interested in the ecology and evolution of the deep-sea. Dr. Sumida has studied several aspects of the ecology of the deep-sea benthic organisms in different ocean basins (North and South Atlantic, Northeast and Northwest Pacific, Golf of Mexico and Southern Ocean). He participated in over 40 oceanographic cruises and dove in many research submersibles down to 4200 m depth. Presently, he is involved in research projects of the fauna of reducing environments, deep-water coral reefs, and polymethalic nodules and crusts.`,
+  },
 ];
 
 const getPlenaries = () =>
@@ -36,7 +42,7 @@ const getPlenaries = () =>
         <p style="font-weight: 600;">
           ${plenary.researcher}
         </p>
-        <h5>"${plenary.title}"</h5>
+        <h5>${plenary.title ? `"${plenary.title}"` : "-"}</h5>
       </div>
     </div>
     <p class="viewmore hideContent">
