@@ -5,7 +5,7 @@ const sponsors = [
   },
   {
     href: "http://www.io.usp.br/",
-    img: "/assets/img/Logos_CBE7/logo_IOUSP.png",
+    img: "/assets/img/Logos_CBE7/logo_iousp_2022.png",
   },
   { href: "https://www.usp.br/", img: "/assets/img/Logos_CBE7/logo_USP.png" },
   {

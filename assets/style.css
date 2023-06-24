@@ -51,7 +51,6 @@ footer {
   color: #fff;
   justify-content: center;
   padding: 20px 60px;
-  padding-bottom: 35px;
   overflow: hidden;
 }
 
@@ -65,6 +64,10 @@ footer p {
 
 footer li:hover {
   text-decoration: underline;
+}
+
+footer .footer-item {
+  padding: 20px;
 }
 
 .modal-dialog {
@@ -684,6 +687,7 @@ footer li:hover {
 
 .footer-logo {
   width: 240px;
+  margin-top: auto;
 }
 
 .calendar {
@@ -902,7 +906,7 @@ footer li:hover {
   position: relative;
 }
 
-.location-wrap {
+.location-wrapper {
   margin: 0 auto;
   width: auto;
   display: table;
@@ -926,23 +930,27 @@ footer li:hover {
   width: 14px !important;
 }
 
-/* .location .location-item:last-of-type {
-      margin-top: 40px;
-  } */
-
 .location-item {
   line-height: 24px;
-  /* min-width: 250px; */
+}
+
+footer .location-item {
+  min-width: 200px;
 }
 
 .location-item:first-of-type {
-  padding-right: 50px;
+  margin-right: 50px;
   margin-bottom: 30px;
 }
 
 .location-item p:nth-child(2) {
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.location-item p:nth-child(3) {
+  margin-top: 0;
 }
 
 .location-item p:first-of-type {
@@ -969,10 +977,6 @@ footer li:hover {
   margin-right: 10px;
   bottom: -3px;
   position: relative;
-}
-
-.padding {
-  padding: 20px;
 }
 
 .absolute {
@@ -1274,6 +1278,10 @@ footer li:hover {
   margin: 0 0 6px;
 }
 
+.hotel-item .hotel-info a {
+  margin-top: auto;
+}
+
 .hotel-item .hotel-info a,
 .place-item .place-info a {
   overflow: hidden;
@@ -1281,7 +1289,7 @@ footer li:hover {
   text-overflow: ellipsis;
   display: block;
   font-size: 15px;
-  margin-top: auto;
+  padding-bottom: 2px;
 }
 
 .places-container {
@@ -1314,6 +1322,7 @@ footer li:hover {
 .place-item .place-info .link {
   margin-top: auto;
   justify-content: space-between;
+  align-items: center;
 }
 
 .place-item .place-info .link span {
@@ -1874,7 +1883,7 @@ footer li:hover {
 }
 
 .nav-footer {
-  min-width: 265px;
+  min-width: 260px;
 }
 
 .break-flex {
@@ -1892,12 +1901,6 @@ footer li:hover {
 .mobile-menu {
   display: none;
 }
-
-/* .mobile-menu-active {
-  top:0 !important;
-  margin-top: 60px !important;
-  transition: all 0.2s ease-in-out;
-} */
 
 .menu-btn,
 .close-btn {
@@ -2241,6 +2244,19 @@ footer li:hover {
     flex-wrap: wrap;
   }
 
+  footer .footer-item {
+    width: 100%;
+  }
+
+  footer .footer-logo {
+    width: 220px;
+    margin-top: 60px;
+  }
+
+  .location-wrapper {
+    margin: 0;
+  }
+
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -2268,15 +2284,6 @@ footer li:hover {
   .head-news {
     font-size: 18px;
   }
-  /* 
-  .margin-control img:first-child {
-    margin: 0;
-    margin-right:15px;
-  }
-
-  .margin-control img:last-child {
-    margin: 0;
-  } */
 
   .margin-null {
     margin-left: 0 !important;
@@ -2295,12 +2302,20 @@ footer li:hover {
     display: table;
   }
 
-  .location-item:first-of-type {
-    padding-right: 0;
+  footer {
+    padding: 20px 0 10px;
+  }
+
+  footer .location-item:first-of-type {
+    margin-right: 0;
+  }
+
+  footer .footer-item {
+    padding: 20px 8%;
   }
 
   .nav-footer {
-    min-width: 285px;
+    min-width: auto;
   }
 
   .assinatura-img {
@@ -2312,6 +2327,11 @@ footer li:hover {
   .footer-email-logo p a {
     font-size: 9px;
     margin-top: 10px;
+    text-align: center;
+  }
+
+  footer .footer-logo {
+    align-self: center;
   }
 
   .title-after-change::after {
@@ -2320,7 +2340,6 @@ footer li:hover {
 
   .reg-fee {
     flex-wrap: wrap;
-    /* margin-top: 5px; */
   }
 
   .reg-item {
@@ -2380,12 +2399,6 @@ footer li:hover {
 
   .mobile-margin-btn {
     margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  footer {
-    padding: 20px 0;
   }
 }
 

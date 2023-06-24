@@ -8,12 +8,12 @@ const plenariesData = [
       "Dr. Chong Chen is currently a senior scientist with tenure at the Japan Agency for Marine-Earth Science and Technology (JAMSTEC). He earned his Doctorate in Zoology at the University of Oxford. His research focuses on deep-sea ecosystems, especially chemosynthesis-based systems, and invertebrate animals, chiefly molluscs. He is interested in documenting and understanding biodiversity and its evolution across multiple levels: from species to ecosystem, and from phenome to genome. He also has extensive experience on-board deep-sea research vessels (37 cruises totaling over 500 days) and deep submergence research vehicles (15 dives) exploring habitats such as hydrothermal vents and hydrocarbon seeps. Besides research, he is involved in and motivated by public engagement and outreach events.",
   },
   {
-    researcher: "Dr. Michel Loïc",
+    researcher: "Dr. Loïc Michel",
     img: "/assets/img/perfil-pesquisadores/MichelLoic.jpg",
     title:
       "The place of chemosynthesis in marine food webs: towards a global perspective",
     description:
-      "Dr. Michel Loïc is currently an assistant professor at the University of Liège and runs the Animal Systematics & Diversity Lab. He holds a PhD in Biology of Organisms and Ecology from the same university. From 2017 to 2022, he was a tenured researcher at Ifremer Brittany's Deep-Sea lab (BEEP). As a marine ecologist, he is interested in how food web structure and trophic interactions influence ecosystem functioning and biodiversity. He is also interested in how natural or anthropogenic environmental variations impact animal feeding, and how ecological plasticity mediates marine consumers’ response to change. His research uses polar and deep-sea benthic invertebrates as ecological models, and develops approaches based on trophic markers, notably stable isotopes. ",
+      "Dr. Loïc Michel is currently an assistant professor at the University of Liège and runs the Animal Systematics & Diversity Lab. He holds a PhD in Biology of Organisms and Ecology from the same university. From 2017 to 2022, he was a tenured researcher at Ifremer Brittany's Deep-Sea lab (BEEP). As a marine ecologist, he is interested in how food web structure and trophic interactions influence ecosystem functioning and biodiversity. He is also interested in how natural or anthropogenic environmental variations impact animal feeding, and how ecological plasticity mediates marine consumers' response to change. His research uses polar and deep-sea benthic invertebrates as ecological models, and develops approaches based on trophic markers, notably stable isotopes.",
   },
   {
     researcher: "Dr. Jozée Sarrazin",
@@ -23,8 +23,8 @@ const plenariesData = [
   },
   {
     researcher: "Dr. Paulo Sumida",
-    img: "/assets/img/perfil-pesquisadores/Paulo Sumida.jpeg",
-    title: "",
+    img: "/assets/img/perfil-pesquisadores/Paulo Sumida.jpg",
+    title: "The hardships of studying chemosynthetic environments in Brazil",
     description: `Dr. Paulo Sumida is currently a Full Professor and the director of the Oceanographic Institute at University of São Paulo. He accomplished his PhD in Biological Oceanography at the University of Southampton and worked as a post-doctoral fellow at the University of Hawaii. As a marine researcher, he is interested in the ecology and evolution of the deep-sea. Dr. Sumida has studied several aspects of the ecology of the deep-sea benthic organisms in different ocean basins (North and South Atlantic, Northeast and Northwest Pacific, Golf of Mexico and Southern Ocean). He participated in over 40 oceanographic cruises and dove in many research submersibles down to 4200 m depth. Presently, he is involved in research projects of the fauna of reducing environments, deep-water coral reefs, and polymethalic nodules and crusts.`,
   },
 ];
