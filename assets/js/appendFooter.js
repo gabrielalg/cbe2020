@@ -4,7 +4,7 @@ const pagePaths = {
     href: "/pages/the-symposium",
     class: "",
   },
-  ["#sponsors"]: { href: "#sponsors", class: "sponsors-btn" },
+  ["#partnership"]: { href: "#partnership", class: "sponsors-btn" },
   ["/pages/program"]: { href: "/pages/program", class: "" },
   ["/pages/logistics"]: { href: "/pages/logistics", class: "" },
   ["/pages/awards-and-travel-support"]: {
@@ -25,7 +25,7 @@ const getFooter = (paths) => `
     <li>
       <a class="${paths["/pages/the-symposium"].class}" href="${paths["/pages/the-symposium"].href}"> The Symposium </a>
     </li>
-    <li><a class="${paths["#sponsors"].class}" href="${paths["#sponsors"].href}"> Sponsors </a></li>
+    <li><a class="${paths["#partnership"].class}" href="${paths["#partnership"].href}"> Partnership </a></li>
     <li><a class="${paths["/pages/program"].class}" href="${paths["/pages/program"].href}"> Program </a></li>
     <li><a class="${paths["/pages/logistics"].class}" href="${paths["/pages/logistics"].href}"> Logistics </a></li>
     <li>

@@ -453,13 +453,16 @@ footer .footer-item {
   color: #1b1740;
   display: table;
   margin-top: 38%;
-  /* padding-bottom: 0 !important; */
 }
 
 .container {
   padding: 60px 10%;
   padding-bottom: 0px;
   background-color: #fff;
+}
+
+#sponsors.container {
+  padding-top: 10px;
 }
 
 .box-circle-img {
@@ -870,7 +873,6 @@ footer .footer-item {
   align-items: flex-end;
   position: relative;
   padding-bottom: 10px;
-  /* min-height: 82px; */
 }
 
 .sponsors {
@@ -1623,7 +1625,7 @@ footer .location-item {
 .partnership img {
   min-width: 320px;
   width: 50%;
-  max-width: 360px;
+  max-width: 350px;
   padding: 40px 16px 24px;
 }
 
@@ -1649,10 +1651,6 @@ footer .location-item {
 
 .banner .slick-slide {
   height: 90vh;
-  /* width: 100vw !important;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center; / */
 }
 
 .banner .slick-slide img {

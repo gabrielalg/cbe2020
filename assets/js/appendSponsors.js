@@ -19,7 +19,6 @@ const sponsors = [
 ];
 
 const getSponsors = () => `
-  <h2 class="page-h2"><span>Sponsors</span></h2>
   <div class="sponsors">
     ${sponsors
       .map((sponsor) => {
