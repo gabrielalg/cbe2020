@@ -462,7 +462,7 @@ footer .footer-item {
 }
 
 #sponsors.container {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .box-circle-img {
@@ -877,7 +877,8 @@ footer .footer-item {
 
 .sponsors {
   margin-bottom: 70px !important;
-  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #dedede;
 }
 
 .location-img {
