@@ -217,7 +217,9 @@ const getHotels = (data) =>
               <h4><span>${place.price}</span>${place.name} </h4>
               <p>${place.address}</p>
               <a class="text-link-red" href="${place.link.url}"
-                  target="_blank">${place.link.text}</a>
+                  target="_blank">
+                  ${place.link.text}
+              </a>
           </div>
         </div>
       `

@@ -66,7 +66,7 @@ $(document).ready(function () {
       toggleMenuMobile(true);
     }
     if ($(this).hasClass("session-btn")) {
-      top_distance = 110;
+      top_distance = 100;
       toggleMenuMobile(true);
     }
     // Make sure this.hash has a value before overriding default behavior

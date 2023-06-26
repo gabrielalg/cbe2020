@@ -19,7 +19,7 @@ const mainOrganizers = [
   },
   {
     name: "Paulo Sumida",
-    img: "/assets/img/perfil-pesquisadores/Paulo Sumida.jpeg",
+    img: "/assets/img/perfil-pesquisadores/Paulo Sumida.jpg",
     university: "Universidade de São Paulo",
     country: "Brazil",
   },
@@ -63,7 +63,7 @@ const scientific = [
     country: "France",
   },
   {
-    name: "Michel Loïc",
+    name: "Loïc Michel",
     img: "/assets/img/perfil-pesquisadores/MichelLoic.jpg",
     university: "University of Liége",
     country: "Belgium",

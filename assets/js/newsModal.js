@@ -130,7 +130,7 @@ const modalHTML = `
           >
             <img
               style="width: 110px"
-              src="/assets/img/Logos_CBE7/logo_IOUSP.png"
+              src="/assets/img/Logos_CBE7/logo_iousp_2022.png"
             />
             <img
               style="width: 110px"
