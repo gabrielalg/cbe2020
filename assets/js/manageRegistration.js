@@ -3,8 +3,8 @@ const registrationFormLink =
 const abstractFormLink =
   "https://docs.google.com/forms/d/e/1FAIpQLSeGqZr3YY18LG-zRJgn36rZ241CQnwbkYmCHu6OjWPpH7xGxw/viewform";
 
-const abstractDeadline = "06/30/2023 23:59:59 GMT-0300";
-const earlyDeadline = "07/13/2023 23:59:59 GMT-0300";
+const abstractDeadline = "07/14/2023 23:59:59 GMT-0300";
+const earlyDeadline = "07/21/2023 23:59:59 GMT-0300";
 const regularDeadline = "07/31/2023 23:59:59 GMT-0300";
 const isRegistrationOpen = true;
 
