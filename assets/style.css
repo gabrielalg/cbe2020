@@ -1508,11 +1508,21 @@ footer .location-item {
   padding-left: 4px;
 }
 
-.airports-sub figure {
+.figure-style {
+  text-align: center;
+}
+
+.figure-style img {
+  max-height: 350px;
+}
+
+.airports-sub figure,
+.figure-style {
   margin: 12px 0 40px;
 }
 
-.airports-sub figure figcaption {
+.airports-sub figure figcaption,
+.figure-style figcaption {
   font-size: 14px;
   font-style: italic;
   margin-top: 6px;
