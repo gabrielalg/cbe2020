@@ -203,7 +203,7 @@ const getProgramDate = (events) => `
           event.extraContent
             ? `<tr><td colspan="2" class="extraContent">${event.extraContent}</td></tr>`
             : `
-              <tr class="program-table-line">
+              <tr>
                 <td>${event.hour}</td>
                 <td>
                   <div class="content">
