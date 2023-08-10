@@ -82,7 +82,7 @@ const programData = {
       hour: "14:00",
       title: "InterRidge talk",
       speaker: "Prof. Sang-Mook Lee, Seoul National University",
-      contentTitle: "Restless earth and life on the edge",
+      contentTitle: '"Restless earth and life on the edge"',
     },
     {
       hour: "15:00",
@@ -185,7 +185,7 @@ const programData = {
     },
     {
       extraContent: `
-        <p>*If you want to visit USP by bus and under guidance, please book your room. Our
+        <p> * If you want to visit USP by bus and under guidance, please book your room. Our
           committee will provide a list to be signed on Tuesday (8/16). </p>
         <p> ** If you want a room for a small meeting and/or meet a specific researcher/laboratory
           at the University of São Paulo, please write to us (cbe7brazil@gmail.com) until
