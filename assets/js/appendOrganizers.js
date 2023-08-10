@@ -8,7 +8,7 @@ const mainOrganizers = [
   {
     name: "Maurício Shimabukuro",
     img: "/assets/img/perfil-pesquisadores/Mauricio Shimabukuro.jpg",
-    university: "Universidade de São Paulo",
+    university: "Universidade Federal do Rio Grande",
     country: "Brazil",
   },
   {
@@ -75,9 +75,9 @@ const scientific = [
     country: "Brazil",
   },
   {
-    name: "Mauricio Shima",
+    name: "Maurício Shimabukuro",
     img: "/assets/img/perfil-pesquisadores/Mauricio Shimabukuro.jpg",
-    university: "Oceanographic Institute",
+    university: "Universidade Federal do Rio Grande",
     country: "Brazil",
   },
   {
