@@ -2,7 +2,7 @@ const plenariesData = [
   {
     researcher: "Dr. Sang-Mook Lee",
     img: "/assets/img/perfil-pesquisadores/lee-sang-mook.jpg",
-    title: "Restless Earth and Life on the Edge",
+    title: "Restless earth and life on the edge",
     description: `Dr. Sang-Mook Lee is currently a professor at Seoul National University, School of Earth 
       and Environmental Sciences, specializing in global Geodynamics and Geophysics. He heads
       both the undergraduate and graduate computational sciences programs and recently
