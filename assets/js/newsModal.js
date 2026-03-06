@@ -68,7 +68,7 @@ const modalHTML = `
           imposed by COVID-19 to our agenda on the 7th International 
           Symposium on Chemosynthesis-Based Ecosystems (CBE7), we are
           pleased to announce that CBE 7 will finally be held on August 
-          14-18, 2023 at the University of Sao Paulo in Sao Paulo city.
+          14-18, 2023 at the University of São Paulo in São Paulo city.
         </p>
 
         <p>
@@ -110,7 +110,7 @@ const modalHTML = `
         >
           <div style="padding: 10px 0; margin-right: 20px">
             <p style="margin-bottom: 0">
-              Oceanographic Institute, University of Sao Paulo
+              Oceanographic Institute, University of São Paulo
             </p>
             <p style="margin-top: 5px">
               Contact:
@@ -145,63 +145,63 @@ const modalHTML = `
 `;
 
 function openModalAutomatically() {
-  var countModalViews = sessionStorage.getItem("countModalViews");
+  var countModalViews = sessionStorage.getItem('countModalViews');
   if (!countModalViews) {
     countModalViews = 0;
   }
   if (countModalViews < 1) {
-    $(".modal-dialog").addClass("flex");
-    $("html").css({
-      position: "fixed",
-      "overflow-y": "scroll",
+    $('.modal-dialog').addClass('flex');
+    $('html').css({
+      position: 'fixed',
+      'overflow-y': 'scroll',
     });
-    $(".modal-dialog").show();
+    $('.modal-dialog').show();
     countModalViews++;
-    sessionStorage.setItem("countModalViews", countModalViews);
+    sessionStorage.setItem('countModalViews', countModalViews);
   }
 }
 
 $(document).ready(function () {
-  $("body").prepend(modalHTML);
+  $('body').prepend(modalHTML);
 
   // openModalAutomatically();
 
-  $(".close-modal").on("click", function (event) {
+  $('.close-modal').on('click', function (event) {
     event.preventDefault();
-    $(".modal-dialog").animate(
+    $('.modal-dialog').animate(
       {
-        opacity: "0",
+        opacity: '0',
       },
       100,
       function () {
         setTimeout(() => {
           $(this).hide();
-          $(this).removeClass("flex");
-          $("html").css({
-            position: "static",
-            overflow: "auto",
+          $(this).removeClass('flex');
+          $('html').css({
+            position: 'static',
+            overflow: 'auto',
           });
         }, 100);
-      }
+      },
     );
   });
 
-  $(".open-modal").on("click", function (event) {
+  $('.open-modal').on('click', function (event) {
     event.preventDefault();
-    $(".modal-dialog").addClass("flex");
-    $(".modal-dialog").show();
+    $('.modal-dialog').addClass('flex');
+    $('.modal-dialog').show();
 
-    $(".modal-dialog").animate(
+    $('.modal-dialog').animate(
       {
-        opacity: "1",
+        opacity: '1',
       },
       100,
       function () {
-        $("html").css({
-          position: "fixed",
-          "overflow-y": "scroll",
+        $('html').css({
+          position: 'fixed',
+          'overflow-y': 'scroll',
         });
-      }
+      },
     );
   });
 });
